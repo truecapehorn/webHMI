@@ -1,4 +1,5 @@
-import requests, json
+import requests
+import json
 import time
 
 
@@ -6,14 +7,14 @@ def response_status(action, r):
     '''Wydrukowanie wynikow'''
     # Response, status etc
     print('\n' + 140 * '-' + '\n')
-    print('* {0} dla URL: {1}\n  Kodowanie znaków: {2}\n'.format(action, r.url,r.apparent_encoding))
+    print('* {0} dla URL: {1}\n  Kodowanie znaków: {2}\n'.format(action, r.url, r.apparent_encoding))
     print('* ODPOWIEDZ SERWERA:\n{0}'.format(r.text))  # TEXT/HTML
     print('* KOD STATUSU I STATUS:\n[{0} --> {1}]\n'.format(r.status_code, r.reason))  # HTTP
     print('* NAGLOWEK ODPOWIEDZI:\n{0}\n'.format(r.headers))
     print('<!---------koniec-----------!>')
 
 
-def connectionList(device_adress,headers):
+def connectionList(device_adress, headers):
     '''Zczytanie listy połaczen webHMI'''
     # ADRESS
     api_adress = '/api/connections'
@@ -24,7 +25,7 @@ def connectionList(device_adress,headers):
     return r.json()
 
 
-def registerList(device_adress,headers):
+def registerList(device_adress, headers):
     '''Zczytanie listy rejestrow webHMI'''
     # ADRESS
     api_adress = '/api/registers/'
@@ -34,7 +35,7 @@ def registerList(device_adress,headers):
     return r.json()
 
 
-def trendList(device_adress,headers):
+def trendList(device_adress, headers):
     '''Zczytanie listy trendow webHMI'''
     # ADRESS
     api_adress = '/api/trends/'
@@ -44,7 +45,7 @@ def trendList(device_adress,headers):
     return r.json()
 
 
-def graphList(device_adress,headers):
+def graphList(device_adress, headers):
     '''Zczytanie listy grafow webHMI'''
     # ADRESS
     api_adress = '/api/graphs/'
@@ -54,7 +55,7 @@ def graphList(device_adress,headers):
     return r.json()
 
 
-def getCurValue(device_adress,headers):
+def getCurValue(device_adress, headers):
     '''Zczytanie wartosci z rejestru'''
     # ADRESS
     api_adress = '/api/register-values'
@@ -63,7 +64,8 @@ def getCurValue(device_adress,headers):
     r = requests.get(url, headers=headers)
     return r.json()
 
-def getLocTime(device_adress,headers):
+
+def getLocTime(device_adress, headers):
     '''Zczytanie daty UNIX time'''
     # ADRESS
     api_adress = '/api/timeinfo'
@@ -72,7 +74,8 @@ def getLocTime(device_adress,headers):
     r = requests.get(url, headers=headers)
     return r.json()
 
-def getRegLog(device_adress,headers):
+
+def getRegLog(device_adress, headers):
     '''Zczytanie wartosci logow'''
     # ADRESS
     api_adress = '/api/register-log'
@@ -81,33 +84,29 @@ def getRegLog(device_adress,headers):
     r = requests.get(url, headers=headers)
     return r.json()
 
-def getGraphData(device_adress,headers):
+
+def getGraphData(device_adress, headers):
     '''Zczytanie wartosc i wykresow'''
     # ADRESS
     api_adress = '/api/graph-data/'
     url = device_adress + api_adress
     # GET
     r = requests.get(url, headers=headers)
-    action='pobranie wykresow'
-    response_status(action,r)
+    action = 'pobranie wykresow'
+    response_status(action, r)
     return r.json()
 
-def getGraph(device_adress,headers,graphID):
+
+def getGraph(device_adress, headers, graphID):
     '''Zczytanie wartosc i wykresow ale dla konkretnego'''
     # ADRESS
     api_adress = '/api/graph-data/{}'.format(graphID)
     url = device_adress + api_adress
     # GET
     r = requests.get(url, headers=headers)
-    action='pobranie wykresow'
-    response_status(action,r)
+    action = 'pobranie wykresow'
+    # response_status(action,r)
     return r.json()
-
-
-
-
-
-
 
 
 if __name__ == "__main__":
@@ -131,17 +130,17 @@ if __name__ == "__main__":
 
     l = []
 
-    dict1 = registerList(device_adress,headers)
+    dict1 = registerList(device_adress, headers)
     print(len(dict1))
     for i in dict1:
         print(i)
         pass
 
     while True:
-        dict2 = getCurValue(device_adress,headers)
+        dict2 = getCurValue(device_adress, headers)
         print('pomiar ', a)
-        #print(getLocTime()['timestamp'])
-        timestamp=getLocTime(device_adress,headers)['timestamp']
+        # print(getLocTime()['timestamp'])
+        timestamp = getLocTime(device_adress, headers)['timestamp']
 
         for i in range(len(dict1)):
             ids = dict1[i]['id']
@@ -149,38 +148,32 @@ if __name__ == "__main__":
             l.append(dict2[str(ids)]['v'])
 
         log = open('log.txt', 'a')
-        print(timestamp,',',l, file=log)
+        print(timestamp, ',', l, file=log)
         log.close()
-        l=[]
+        l = []
 
         time.sleep(0)
         a += 1
         break
-    #print(getRegLog())
+    # print(getRegLog())
 
-    dict3=getRegLog(device_adress,headers)
+    dict3 = getRegLog(device_adress, headers)
     print(dict3)
     for i in dict3:
-        if i['r']==2:
+        if i['r'] == 2:
             logi = open('logi.txt', 'a')
             print(i['r'], ',', i['t'], ',', i['v'], file=logi)
             logi.close()
 
-    dict4=graphList(device_adress,headers)
+    dict4 = graphList(device_adress, headers)
     for i in dict4:
         print(i)
 
-    dict5=getGraphData(device_adress,headers)
+    dict5 = getGraphData(device_adress, headers)
     print(len(dict5))
     for i in dict5:
         print(i)
     print('\nconnection')
-    dict6=connectionList(device_adress,headers)
+    dict6 = connectionList(device_adress, headers)
     for i in dict6:
         print(i)
-    for i in dict6:
-        print(i['id'])
-
-
-
-
