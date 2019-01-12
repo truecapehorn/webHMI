@@ -92,6 +92,17 @@ def getGraphData(device_adress,headers):
     response_status(action,r)
     return r.json()
 
+def getGraph(device_adress,headers,graphID):
+    '''Zczytanie wartosc i wykresow ale dla konkretnego'''
+    # ADRESS
+    api_adress = '/api/graph-data/{}'.format(graphID)
+    url = device_adress + api_adress
+    # GET
+    r = requests.get(url, headers=headers)
+    action='pobranie wykresow'
+    response_status(action,r)
+    return r.json()
+
 
 
 

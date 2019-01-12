@@ -65,7 +65,6 @@ fif_graphs_humidity = []
 fif_graphs_temperature = []
 apar_graphs_humidity = []
 apar_graphs_temperature = []
-graphs_data = []
 
 print('\nConnection Req')
 displayHeader(headers)
@@ -103,8 +102,6 @@ for i in req2:
         print(i)
 
 # Ustalenie jakie rejstry mają wykresy
-# todo : Nie ma chyba sensu rozdzielac tylko na wilgotnosc i temperature.
-#  Jak wywala przy sciaganiu to trzeba chyba wszystkir sciagac po koleii
 regs = {}
 for i in req2:
     if i['plcid'] in connection.keys():
@@ -151,53 +148,44 @@ print('Ilosc rejestrow apar temperatury wykresami: {}'.format(len(apar_graphs_te
 # print(apar_graphs_temperature)
 
 # Pobranie wykresow
-
-req4=graphList(device_adress,headers)
-displayList(req4)
-
+graphsDict = {}
+req3 = graphList(device_adress, headers)
+displayList(req3)
+for i in req3:
+    graphsDict[i['id']] = [i['category'], i['title']]
+print(graphsDict)
 
 print('\nDane z wykresow')
 wh_start = 1546819261  # start dla wykresu
 wh_stop = wh_start + 60 * 60  # 24 h
-wh_slices = 4  # minimlana ilosc czesci
+wh_slices = 400  # minimlana ilosc czesci
 
-
-def getGraph_step(regsID):
-    for i in regsID:
-        print('Pobranie wykresu dla id: {}, Połaczenie: {}'.format(i, connection[regs[i]]))
-        time.sleep(2)
-        # Ustalenie nagłowka dla wykresu
-        headers['X-WH-CONNS'] = ''
-        headers['X-WH-REGS'] = i
-        headers['X-WH-START'] = str(wh_start)
-        headers['X-WH-END'] = str(wh_stop)
-        headers['X-WH-SLICES'] = str(wh_slices)
-        displayHeader(headers)
-        req3 = getGraphData(device_adress, headers)  # odczytanie danych z wykresow
-        graphs_data.append(req3)
-        # displayList(req3)
-    return graphs_data
-
-def getGraph_all(regsID):
-    print('Pobranie wykresu dla rejestrow: ',regsID)
+for k in graphsDict.keys():
+    print('Pobranie wykresu {}:{} w {}'.format(k, graphsDict[k][1], graphsDict[k][0]))
     time.sleep(2)
     # Ustalenie nagłowka dla wykresu
     headers['X-WH-CONNS'] = ''
-    headers['X-WH-REGS'] = makeRegIDs(regsID)
+    headers['X-WH-REGS'] = ''
     headers['X-WH-START'] = str(wh_start)
     headers['X-WH-END'] = str(wh_stop)
     headers['X-WH-SLICES'] = str(wh_slices)
     displayHeader(headers)
-    req3 = getGraphData(device_adress, headers)  # odczytanie danych z wykresow
-    graphs_data=req3
-    # displayList(req3)
-    return graphs_data
+    req4 = getGraph(device_adress, headers, k)  # odczytanie danych z wykresow
+    print('\n')
+    print(req4[0])
+    for i in range(4):
+        print('.')
+    print(req4[-1])
+    print('\n')
 
 # g = getGraph_step(all_graphs_temperature)
-g = getGraph_all(all_graphs_temperature)
-displayList(g)
-
-
-log = open('graphs.txt', 'w')
-print(g, file=log)
-log.close()
+# g = getGraph_all(all_graphs_temperature)
+# displayList(g)
+#
+#
+# log = open('graphs.txt', 'w')
+# print(g, file=log)
+# log.close()
+#todo : pobieranie danych z wykresu za pomoca wykres id .
+# Trzeba w uzyskanych danych zamienic reg id na nazwe polaczenia i wywalic nie potrzebne wartosci min i max zostawic avg.
+# Zrobic porzadek w programie, funkcje klasy etc..
