@@ -2,6 +2,16 @@ import requests, json
 import time
 
 
+def response_status(action, r):
+    '''Wydrukowanie wynikow'''
+    # Response, status etc
+    print('\n' + 140 * '-' + '\n')
+    print('* {0} dla URL: {1}\n  Kodowanie znaków: {2}\n'.format(action, r.url,r.apparent_encoding))
+    print('* ODPOWIEDZ SERWERA:\n{0}'.format(r.text))  # TEXT/HTML
+    print('* KOD STATUSU I STATUS:\n[{0} --> {1}]\n'.format(r.status_code, r.reason))  # HTTP
+    print('* NAGLOWEK ODPOWIEDZI:\n{0}\n'.format(r.headers))
+    print('<!---------koniec-----------!>')
+
 
 def connectionList(device_adress,headers):
     '''Zczytanie listy połaczen webHMI'''
@@ -78,15 +88,14 @@ def getGraphData(device_adress,headers):
     url = device_adress + api_adress
     # GET
     r = requests.get(url, headers=headers)
+    action='pobranie wykresow'
+    response_status(action,r)
     return r.json()
 
 
 
 
-a = 1
 
-
-l=[]
 
 
 
@@ -106,6 +115,10 @@ if __name__ == "__main__":
                'X-WH-SLICES': '400',
                'X-WH-REGS': '1,2,3,4',
                }
+
+    a = 1
+
+    l = []
 
     dict1 = registerList(device_adress,headers)
     print(len(dict1))
