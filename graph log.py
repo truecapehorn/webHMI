@@ -76,7 +76,7 @@ for i in req1:
     #     print(i)
     # if i['id']==str(237):
     #     print(i)
-    if i['disabled']=='0': # branie tylko pod uwage włączone polaczenia
+    if i['disabled'] == '0':  # branie tylko pod uwage włączone polaczenia
         connection[i['id']] = i['title']  # utworzenie slownika dla id i nazyw polaczenia
 print('Ilość połaczen : {}'.format(len(connection.keys())))
 print(connection.keys())
@@ -96,33 +96,36 @@ print('\nRegisters Req')
 displayHeader(headers)  # wystarczy podstawowy naglowek
 req2 = registerList(device_adress, headers)  # odczytanie listy rejestrow
 print('Lista rejestrów : {}'.format(len(req2)))
-# for i in req2:
-#     if i['id'] == str(648):
-#         print(i) # przykladopwy ciag danych
-#     if i['id']==str(3862):
-#         print(i)
+for i in req2:
+    if i['id'] == str(4):
+        print(i)  # przykladopwy ciag danych
+    if i['id'] == str(2):
+        print(i)
 
 # Ustalenie jakie rejstry mają wykresy
 # todo : Nie ma chyba sensu rozdzielac tylko na wilgotnosc i temperature.
 #  Jak wywala przy sciaganiu to trzeba chyba wszystkir sciagac po koleii
+regs = {}
 for i in req2:
     if i['plcid'] in connection.keys():
         if i['save_graph_data'] == '1':
             graphs_all.append(i['id'])  # dla wszystkich ktore maja wykresy
+            regs[i['id']] = i['plcid']
             if i['measureUnits'] == '%RH':
                 all_graphs_humidity.append(i['id'])  # dla wilgotnosci
-            elif i['measureUnits'] == '°C':
+            elif i['measureUnits'] == '°C' and i['title'] != 'Punkt rosy/szronu':
                 all_graphs_temperature.append(i['id'])  # dla temperatury
-        if i['plcid'] in fifs: # tylko dla fifow
-            if i['save_graph_data'] == '1' and i['measureUnits'] == '%RH':
-                fif_graphs_humidity.append(i['id'])  # dla wilgotnosci
-            elif i['save_graph_data'] == '1' and i['measureUnits'] == '°C':
-                fif_graphs_temperature.append(i['id'])  # dla temperatury
-        if i['plcid'] in appars: # tylko dla aparow
-            if i['save_graph_data'] == '1' and i['measureUnits'] == '%RH':
-                apar_graphs_humidity.append(i['id'])  # dla wilgotnosci
-            elif i['save_graph_data'] == '1' and i['measureUnits'] == '°C':
-                apar_graphs_temperature.append(i['id'])  # dla temperatury
+
+            if i['plcid'] in fifs:  # tylko dla fifow
+                if i['measureUnits'] == '%RH':
+                    fif_graphs_humidity.append(i['id'])  # dla wilgotnosci
+                elif i['measureUnits'] == '°C':
+                    fif_graphs_temperature.append(i['id'])  # dla temperatury
+            if i['plcid'] in appars:  # tylko dla aparow
+                if i['measureUnits'] == '%RH':
+                    apar_graphs_humidity.append(i['id'])  # dla wilgotnosci
+                elif i['measureUnits'] == '°C' and i['title'] != 'Punkt rosy/szronu':
+                    apar_graphs_temperature.append(i['id'])  # dla temperatury
 
 # todo : Problem nie wszystkie maja %RH . Trzeba by bylo w  rej. webhmi zrobic kategorie
 
@@ -134,7 +137,6 @@ print('Ilosc rejestrow wilgotnosci z wykresami: {}'.format(len(all_graphs_humidi
 
 print('Ilosc rejestrow temperatury wykresami: {}'.format(len(all_graphs_temperature)))
 # print(all_graphs_temperature)
-
 
 print('Ilosc rejestrow fif wilgotnosci z wykresami: {}'.format(len(fif_graphs_humidity)))
 # print(fif_graphs_humidity)
@@ -150,26 +152,52 @@ print('Ilosc rejestrow apar temperatury wykresami: {}'.format(len(apar_graphs_te
 
 # Pobranie wykresow
 
+req4=graphList(device_adress,headers)
+displayList(req4)
+
+
 print('\nDane z wykresow')
 wh_start = 1546819261  # start dla wykresu
 wh_stop = wh_start + 60 * 60  # 24 h
 wh_slices = 4  # minimlana ilosc czesci
 
-for i in fif_graphs_temperature:
 
-    print('Polaczenie dla {}'.format(i))
+def getGraph_step(regsID):
+    for i in regsID:
+        print('Pobranie wykresu dla id: {}, Połaczenie: {}'.format(i, connection[regs[i]]))
+        time.sleep(2)
+        # Ustalenie nagłowka dla wykresu
+        headers['X-WH-CONNS'] = ''
+        headers['X-WH-REGS'] = i
+        headers['X-WH-START'] = str(wh_start)
+        headers['X-WH-END'] = str(wh_stop)
+        headers['X-WH-SLICES'] = str(wh_slices)
+        displayHeader(headers)
+        req3 = getGraphData(device_adress, headers)  # odczytanie danych z wykresow
+        graphs_data.append(req3)
+        # displayList(req3)
+    return graphs_data
+
+def getGraph_all(regsID):
+    print('Pobranie wykresu dla rejestrow: ',regsID)
     time.sleep(2)
     # Ustalenie nagłowka dla wykresu
     headers['X-WH-CONNS'] = ''
-    headers['X-WH-REGS'] = str(i)
+    headers['X-WH-REGS'] = makeRegIDs(regsID)
     headers['X-WH-START'] = str(wh_start)
     headers['X-WH-END'] = str(wh_stop)
     headers['X-WH-SLICES'] = str(wh_slices)
-    # displayHeader(headers)
-    req3 = getGraphData(device_adress, headers) # odczytanie danych z wykresow
-    graphs_data.append(req3)
+    displayHeader(headers)
+    req3 = getGraphData(device_adress, headers)  # odczytanie danych z wykresow
+    graphs_data=req3
+    # displayList(req3)
+    return graphs_data
+
+# g = getGraph_step(all_graphs_temperature)
+g = getGraph_all(all_graphs_temperature)
+displayList(g)
 
 
 log = open('graphs.txt', 'w')
-print(graphs_data, file=log)
+print(g, file=log)
 log.close()
