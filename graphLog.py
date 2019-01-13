@@ -39,9 +39,10 @@ def graphData(wh_start=1546819261,lenght=60*60*24,wh_slices=4):
         print('-------------\n Wielkosc tablicy', len(graphData))
     return graphData
 
+graphData=graphData()
+
 
 if __name__=='__main__':
-    graphData=graphData()
     print(graphsDict)
     print(graphData[0])
     for i in range(4):
