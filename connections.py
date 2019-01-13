@@ -32,6 +32,8 @@ def devices(req1):
 req1=request()
 conn=devices(req1)
 
+
+
 if __name__ == '__main__':
 
 

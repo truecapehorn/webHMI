@@ -62,3 +62,4 @@ print('Ilosc rejestrow apar wilgotnosci z wykresami: {}'.format(len(apar_graphs_
 
 print('Ilosc rejestrow apar temperatury wykresami: {}'.format(len(apar_graphs_temperature)))
 # print(apar_graphs_temperature)
+

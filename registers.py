@@ -12,7 +12,7 @@ def request():
 
 registers=request()
 
-
+#todo : zrobic slownik z numerem rejestru i czego dotyczy.
 
 
 if __name__=='__main__':
