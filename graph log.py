@@ -1,4 +1,5 @@
 from API_webHMI import *
+import connections
 
 
 def displayHeader(dic):
@@ -90,6 +91,8 @@ print('Ilosc Aparow: {}'.format(len(appars)))
 print(appars)
 print('Ilosc Fifow: {}'.format(len(fifs)))
 print(fifs)
+
+
 
 print('\nRegisters Req')
 displayHeader(headers)  # wystarczy podstawowy naglowek
