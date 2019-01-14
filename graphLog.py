@@ -30,7 +30,7 @@ for i in graphList[0:3]:  # tymczosow tylmko 2 wykresy
 print(graphsDict)
 
 
-def graphData(wh_start=1546819261, lenght=60 * 60 * 24, wh_slices=400):
+def graphData(wh_start=1546819261, lenght=60 * 60 * 24, wh_slices=4):
     print('\nDane z wykresow')
     wh_stop = wh_start + lenght
     # Ustalenie nagłowka dla wykresu
@@ -65,7 +65,8 @@ for k, v in graphDatas.items():
         for key in regList.keys():
             if key in i.keys():
                 i[regList[key]['plcname']]=i[key] # zamiana klucza na bardziej przyjazna wersje:)
-                del[i[key]] # skasowanie starego wpisu
+                # del[i[key]] # skasowanie starego wpisu
+                i.pop(key)
 
 
 print('Po konwersji.\n')
