@@ -30,7 +30,7 @@ for i in graphList[0:3]:  # tymczosow tylmko 2 wykresy
 print(graphsDict)
 
 
-def graphData(wh_start=1546819261, lenght=60 * 60 * 24, wh_slices=4):
+def graphData(wh_start=1546819261, lenght=60 * 60 * 24, wh_slices=400):
     print('\nDane z wykresow')
     wh_stop = wh_start + lenght
     # Ustalenie nagłowka dla wykresu
@@ -56,32 +56,34 @@ print(regList.keys())
 graph = {}
 graphDatas = graphData()
 print('Lista rejestrow')
-for k, v in regList.items():
-    print(k, ':', v)
+# for k, v in regList.items():
+#     print(k, ':', v)
+# Zamiana klucza
 for k, v in graphDatas.items():
     print(k)
     for i in v:
         for key in regList.keys():
             if key in i.keys():
-                i[regList[key]['plcname']]=i[key]
-                del[i[key]]
+                i[regList[key]['plcname']]=i[key] # zamiana klucza na bardziej przyjazna wersje:)
+                del[i[key]] # skasowanie starego wpisu
 
 
-print('Po konwersji\n')
+print('Po konwersji.\n')
+# Zmniejsznie ilosci danych wynikowych. Zostawienie tylko wartosci sredniej z próbki.
 for k, v in graphDatas.items():
     print(k)
     for i in v:
         graph = {key: val.split(';')[2] for (key, val) in i.items() if isinstance(val, str)}
         i.update(graph)
         print(i)
-#
-# if __name__ == '__main__':
-#
-#     os.remove('graphs.txt')
-#     log = open('graphs.txt', 'a')
-#     for k, v in graphDatas.items():
-#         for i in v:
-#             i=str(i)
-#             print(k,i, file=log)
-#     log.close()
-#     pass
+
+if __name__ == '__main__':
+
+    os.remove('graphs.txt')
+    log = open('graphs.txt', 'a')
+    for k, v in graphDatas.items():
+        for i in v:
+            i=str(i)
+            print(k,i, file=log)
+    log.close()
+    pass
