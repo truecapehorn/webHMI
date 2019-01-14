@@ -20,7 +20,7 @@ registers = request()
 # Stworzenie krótrzego  slownika rejestrow z nazwami połaczen.
 for r in registers:
     if r['plcid'] in connection.keys():  # uwzglednia tylko wlaczone polaczenia
-        regList[r['id']] = (r['plcid'], connection[r['plcid']], r['title'])
+        regList[r['id']] = {'plcid':r['plcid'], 'plcname':connection[r['plcid']], 'regtitle':r['title']}
 
 if __name__ == '__main__':
     print('Lista rejestrów : {}'.format(len(regList)))
