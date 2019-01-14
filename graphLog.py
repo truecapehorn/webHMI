@@ -64,10 +64,9 @@ for k, v in graphDatas.items():
     for i in v:
         for key in regList.keys():
             if key in i.keys():
-                i[regList[key]['plcname']]=i[key] # zamiana klucza na bardziej przyjazna wersje:)
+                i[regList[key]['plcname']] = i[key]  # zamiana klucza na bardziej przyjazna wersje:)
                 # del[i[key]] # skasowanie starego wpisu
                 i.pop(key)
-
 
 print('Po konwersji.\n')
 # Zmniejsznie ilosci danych wynikowych. Zostawienie tylko wartosci sredniej z próbki.
@@ -84,7 +83,7 @@ if __name__ == '__main__':
     log = open('graphs.txt', 'a')
     for k, v in graphDatas.items():
         for i in v:
-            i=str(i)
-            print(k,i, file=log)
+            i = str(i)
+            print(k, i, file=log)
     log.close()
     pass
