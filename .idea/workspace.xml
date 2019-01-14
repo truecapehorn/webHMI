@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d90ded8e-d0f2-496c-ab33-7ae8487bb676" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/graphLog.py" beforeDir="false" afterPath="$PROJECT_DIR$/graphLog.py" afterDir="false" />
-    </list>
+    <list default="true" id="d90ded8e-d0f2-496c-ab33-7ae8487bb676" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +40,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/graphLog.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="228">
+                <state relative-caret-position="381">
                   <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
                   <folding>
                     <element signature="e#0#24#0" expanded="true" />
@@ -145,13 +143,15 @@
         <option value="$PROJECT_DIR$/graphs.py" />
         <option value="$PROJECT_DIR$/registers.py" />
         <option value="$PROJECT_DIR$/graphLog.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
-    <option name="height" value="1160" />
+    <option name="x" value="1327" />
+    <option name="y" value="25" />
+    <option name="width" value="1553" />
+    <option name="height" value="842" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -368,14 +368,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1327" y="25" width="1553" height="842" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.12806901" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2740544" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.63674617" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2622721" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44179523" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997195" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -560,9 +559,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/graphLog.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
+        <state relative-caret-position="381">
           <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
