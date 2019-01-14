@@ -24,7 +24,7 @@ def graphDataReq(k):
 
 graphList = graphListReq()
 
-for i in graphList: #[0:3]:  # tymczosow tylmko 2 wykresy
+for i in graphList[0:3]:  # tymczosow tylmko 2 wykresy
     graphsDict[i['id']] = {'apartment': i['category'], 'category': i['title']}
 
 print(graphsDict)
