@@ -24,7 +24,7 @@ def graphDataReq(k):
 
 graphList = graphListReq()
 
-for i in graphList[0:3]:  # tymczosow tylmko 2 wykresy
+for i in graphList: #[0:3]:  # tymczosow tylmko 2 wykresy
     graphsDict[i['id']] = {'apartment': i['category'], 'category': i['title']}
 
 print(graphsDict)
@@ -56,12 +56,17 @@ print(regList.keys())
 graph = {}
 graphDatas = graphData()
 print('Lista rejestrow')
-# for k, v in regList.items():
-#     print(k, ':', v)
+for k, v in regList.items():
+    print(k, ':', v)
 for k, v in graphDatas.items():
     print(k)
     for i in v:
-        print(i)
+        for key in regList.keys():
+            if key in i.keys():
+                i[regList[key]['plcname']]=i[key]
+                del[i[key]]
+
+
 print('Po konwersji\n')
 for k, v in graphDatas.items():
     print(k)
@@ -69,14 +74,14 @@ for k, v in graphDatas.items():
         graph = {key: val.split(';')[2] for (key, val) in i.items() if isinstance(val, str)}
         i.update(graph)
         print(i)
-
-if __name__ == '__main__':
-
-    os.remove('graphs.txt')
-    log = open('graphs.txt', 'a')
-    for k, v in graphDatas.items():
-        for i in v:
-            i=str(i)
-            print(k,i, file=log)
-    log.close()
-    pass
+#
+# if __name__ == '__main__':
+#
+#     os.remove('graphs.txt')
+#     log = open('graphs.txt', 'a')
+#     for k, v in graphDatas.items():
+#         for i in v:
+#             i=str(i)
+#             print(k,i, file=log)
+#     log.close()
+#     pass
