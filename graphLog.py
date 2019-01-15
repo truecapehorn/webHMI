@@ -3,6 +3,7 @@ from defs import *
 from head import headers, device_adress
 from registers import regList
 import os
+from datetime import datetime
 
 # Pobranie wykresow
 graphsDict = {}
@@ -24,13 +25,13 @@ def graphDataReq(k):
 
 graphList = graphListReq()
 
-for i in graphList[0:3]:  # tymczosow tylmko 2 wykresy
+for i in graphList[0:2]:  # tymczosow tylmko 2 wykresy
     graphsDict[i['id']] = {'apartment': i['category'], 'category': i['title']}
 
 print(graphsDict)
 
 
-def graphData(wh_start=1546819261, lenght=60 * 60 * 24, wh_slices=4):
+def graphData(wh_start=1547078400, lenght=60 * 60 * 24, wh_slices=400):
     print('\nDane z wykresow')
     wh_stop = wh_start + lenght
     # Ustalenie nagłowka dla wykresu
@@ -62,6 +63,12 @@ print('Lista rejestrow')
 for k, v in graphDatas.items():
     print(k)
     for i in v:
+        # for key in i.keys():
+        #
+        #     if key == 'x':
+        #         print(" keje w graphah", i.keys())
+        #         # print(datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S'))
+        #         i[key] = datetime.utcfromtimestamp(int(i[key])).strftime('%Y-%m-%d %H:%M:%S')
         for key in regList.keys():
             if key in i.keys():
                 i[regList[key]['plcname']] = i[key]  # zamiana klucza na bardziej przyjazna wersje:)
@@ -71,19 +78,44 @@ for k, v in graphDatas.items():
 print('Po konwersji.\n')
 # Zmniejsznie ilosci danych wynikowych. Zostawienie tylko wartosci sredniej z próbki.
 for k, v in graphDatas.items():
-    print(k)
+    # print('Dane dla Mieszknia {} - {} '.format(k[0],k[1]))
     for i in v:
         graph = {key: val.split(';')[2] for (key, val) in i.items() if isinstance(val, str)}
         i.update(graph)
-        print(i)
+        # print(i)
+
+# Podział na pliki
+def save_data():
+    head=[]
+    value=[]
+    try:
+        os.mkdir('logi')
+    except FileExistsError:
+        pass
+    for k, v in graphDatas.items():
+        # logi = open('C:\\Users\\User\\Documents\\PYCHARM\\GIT\\testy\\startup.txt', 'a', encoding='utf8')
+        print('Dane dla Mieszknia {} - {} '.format(k[0], k[1]))
+        try:
+            os.remove('logi\\graphs_{}_{}.csv'.format(k[0],k[1]))
+        except FileNotFoundError:
+            pass
+        log = open('logi\\graphs_{}_{}.csv'.format(k[0],k[1]), 'a')
+        head=v[0].keys()
+        print(str(list(head)), file=log)
+        for i in v:
+            value=i.values()
+            print(str(list(value)), file=log)
+        log.close()
+
+save_data()
 
 if __name__ == '__main__':
 
-    os.remove('graphs.txt')
-    log = open('graphs.txt', 'a')
-    for k, v in graphDatas.items():
-        for i in v:
-            i = str(i)
-            print(k, i, file=log)
-    log.close()
+    # os.remove('graphs.txt')
+    # log = open('graphs.txt', 'a')
+    # for k, v in graphDatas.items():
+    #     for i in v:
+    #         i = str(i)
+    #         print(k, i, file=log)
+    # log.close()
     pass
