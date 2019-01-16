@@ -32,7 +32,7 @@ for i in graphList[0:2]:  # tymczosow tylmko 2 wykresy
 print(graphsDict)
 
 
-def graphData(wh_start=1547078400, lenght=60 * 60 * 24*7, wh_slices=400):
+def graphData(wh_start=1547078400, lenght=60 * 60 * 24, wh_slices=400):
     print('\nDane z wykresow')
     wh_stop = wh_start + lenght
     # Ustalenie nagłowka dla wykresu
@@ -89,18 +89,22 @@ for k, v in graphDatas.items():
 def save_data():
     head=[]
     value=[]
+    day = datetime.utcfromtimestamp(1547078400).strftime('%Y-%m-%d')
+
     try:
         os.mkdir('logi')
+        os.mkdir('logi\\dane_{}'.format(day))
+
     except FileExistsError:
         pass
     for k, v in graphDatas.items():
         # logi = open('C:\\Users\\User\\Documents\\PYCHARM\\GIT\\testy\\startup.txt', 'a', encoding='utf8')
         print('Dane dla Mieszknia {} - {} '.format(k[0], k[1]))
         try:
-            os.remove('logi\\graphs_{}_{}.csv'.format(k[0],k[1]))
+            os.remove('logi\\dane_{}\\graphs_{}_{}.csv'.format(day,k[0],k[1]))
         except FileNotFoundError:
             pass
-        log = open('logi\\graphs_{}_{}.csv'.format(k[0],k[1]), 'a')
+        log = open('logi\\dane_{}\\graphs_{}_{}.csv'.format(day,k[0],k[1]), 'a')
         head=str(list(v[0].keys()))
         head=re.sub('\ |\[|\]|\"|\'|\;', '', head)
         print(head, file=log)
