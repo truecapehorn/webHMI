@@ -4,6 +4,7 @@ from head import headers, device_adress
 from registers import regList
 import os
 from datetime import datetime
+import re
 
 # Pobranie wykresow
 graphsDict = {}
@@ -25,7 +26,7 @@ def graphDataReq(k):
 
 graphList = graphListReq()
 
-for i in graphList[0:2]:  # tymczosow tylmko 2 wykresy
+for i in graphList:#[0:2]:  # tymczosow tylmko 2 wykresy
     graphsDict[i['id']] = {'apartment': i['category'], 'category': i['title']}
 
 print(graphsDict)
@@ -63,12 +64,12 @@ print('Lista rejestrow')
 for k, v in graphDatas.items():
     print(k)
     for i in v:
-        # for key in i.keys():
-        #
-        #     if key == 'x':
-        #         print(" keje w graphah", i.keys())
-        #         # print(datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S'))
-        #         i[key] = datetime.utcfromtimestamp(int(i[key])).strftime('%Y-%m-%d %H:%M:%S')
+        for key in i.keys():
+
+            if key == 'x':
+                # print(" keje w graphah", i[key])
+                # print(datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S'))
+                i[key] = datetime.utcfromtimestamp(int(i[key])/1000).strftime('%Y-%m-%d--%H:%M:%S')
         for key in regList.keys():
             if key in i.keys():
                 i[regList[key]['plcname']] = i[key]  # zamiana klucza na bardziej przyjazna wersje:)
@@ -80,7 +81,7 @@ print('Po konwersji.\n')
 for k, v in graphDatas.items():
     # print('Dane dla Mieszknia {} - {} '.format(k[0],k[1]))
     for i in v:
-        graph = {key: val.split(';')[2] for (key, val) in i.items() if isinstance(val, str)}
+        graph = {key: val.split(';')[2] for (key, val) in i.items() if isinstance(val, str) and key != 'x'}
         i.update(graph)
         # print(i)
 
@@ -100,11 +101,13 @@ def save_data():
         except FileNotFoundError:
             pass
         log = open('logi\\graphs_{}_{}.csv'.format(k[0],k[1]), 'a')
-        head=v[0].keys()
-        print(str(list(head)), file=log)
+        head=str(list(v[0].keys()))
+        head=re.sub('\ |\[|\]|\"|\'|\;', '', head)
+        print(head, file=log)
         for i in v:
-            value=i.values()
-            print(str(list(value)), file=log)
+            value=str(list(i.values()))
+            value = re.sub('\ |\[|\]|\"|\'|\;', '', value)
+            print(value, file=log)
         log.close()
 
 save_data()
