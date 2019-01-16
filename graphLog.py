@@ -86,17 +86,20 @@ for k, v in graphDatas.items():
         # print(i)
 
 # Podział na pliki
-def save_data():
+def save_data(unixtime):
     head=[]
     value=[]
-    day = datetime.utcfromtimestamp(1547078400).strftime('%Y-%m-%d')
+    day = datetime.utcfromtimestamp(unixtime).strftime('%Y-%m-%d')
 
     try:
-        os.mkdir('logi')
-        os.mkdir('logi\\dane_{}'.format(day))
-
+        os.mkdir('logi\\')
     except FileExistsError:
         pass
+    try:
+        os.mkdir('logi\\dane_{}'.format(day))
+    except FileExistsError:
+        pass
+
     for k, v in graphDatas.items():
         # logi = open('C:\\Users\\User\\Documents\\PYCHARM\\GIT\\testy\\startup.txt', 'a', encoding='utf8')
         print('Dane dla Mieszknia {} - {} '.format(k[0], k[1]))
@@ -114,7 +117,7 @@ def save_data():
             print(value, file=log)
         log.close()
 
-save_data()
+save_data(111122)
 
 if __name__ == '__main__':
 
