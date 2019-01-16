@@ -26,13 +26,13 @@ def graphDataReq(k):
 
 graphList = graphListReq()
 
-for i in graphList:#[0:2]:  # tymczosow tylmko 2 wykresy
+for i in graphList[0:2]:  # tymczosow tylmko 2 wykresy
     graphsDict[i['id']] = {'apartment': i['category'], 'category': i['title']}
 
 print(graphsDict)
 
 
-def graphData(wh_start=1547078400, lenght=60 * 60 * 24, wh_slices=400):
+def graphData(wh_start=1547078400, lenght=60 * 60 * 24*7, wh_slices=400):
     print('\nDane z wykresow')
     wh_stop = wh_start + lenght
     # Ustalenie nagłowka dla wykresu
