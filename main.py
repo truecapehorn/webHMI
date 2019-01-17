@@ -6,6 +6,21 @@ import graph_range
 import graphs_data
 import graphs_save
 
+'''
+Obsluga danych z wykresow na webHMI
+
+# aby zrobic exeka to :
+# zaisntalowac pyinstalera
+# pip install pyinstaller
+# pip install PyWin32 # jak w windows
+# Sprawdzic czy skrypt działa
+# python your_script.py
+# uruchmoc pyinstalera
+# pyinstaller --onefile <your_script_name>.py
+# exec bedzie w folderze dist
+
+'''
+
 print('Ilość połaczen : {}'.format(len(connection.keys())))
 # print(connection)
 print('Ilosc Aparow: {}'.format(len(appars)))
@@ -55,5 +70,16 @@ graphs_save.save_data(wh_start,graphDatas)
   # todo: cos trzeba zrobic zeby z graph-range wychodzil czas lokalny dla unixtima.
   # todo: zrobic wyjatki jak urzytkownik wprowadzi zle date
 
+
+
+# aby zrobic exeka to :
+# zaisntalowac pyinstalera
+# pip install pyinstaller
+# pip install PyWin32 # jak w windows
+# Sprawdzic czy skrypt działa
+# python your_script.py
+# uruchmoc pyinstalera
+# pyinstaller --onefile <your_script_name>.py
+# exec bedzie w folderze dist
 
 
