@@ -71,15 +71,3 @@ graphs_save.save_data(wh_start,graphDatas)
   # todo: zrobic wyjatki jak urzytkownik wprowadzi zle date
 
 
-
-# aby zrobic exeka to :
-# zaisntalowac pyinstalera
-# pip install pyinstaller
-# pip install PyWin32 # jak w windows
-# Sprawdzic czy skrypt działa
-# python your_script.py
-# uruchmoc pyinstalera
-# pyinstaller --onefile <your_script_name>.py
-# exec bedzie w folderze dist
-
-
