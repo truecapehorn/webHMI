@@ -2,6 +2,10 @@ from connections import connection, fifs, appars
 from registers import regList
 from graphs_stat import graphs_all, all_graphs_humidity, all_graphs_temperature, fif_graphs_humidity, fif_graphs_temperature, \
     apar_graphs_humidity, apar_graphs_temperature
+import graphs_list
+import graph_range
+import graphs_data
+import graphs_save
 
 print('Ilość połaczen : {}'.format(len(connection.keys())))
 print(connection)
@@ -32,3 +36,20 @@ print('Ilosc rejestrow apar wilgotnosci z wykresami: {}'.format(len(apar_graphs_
 
 print('Ilosc rejestrow apar temperatury wykresami: {}'.format(len(apar_graphs_temperature)))
 # print(apar_graphs_temperature)
+
+print("Wybierz zakres danych do pobrania")
+
+
+wh_start,wh_slices=graph_range.range()
+
+print('Pobranie wykresow w dniu {} ilość próbek {}'.format(wh_start,wh_slices))
+
+graphDatas=graphs_data.datas(wh_start,wh_slices)
+
+for k, v in graphDatas.items():
+    print(k, '>', v)
+
+print('Czy chcesz zapisac dane')
+graphs_save.save_data(wh_start,graphDatas)
+
+
