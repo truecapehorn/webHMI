@@ -2,7 +2,6 @@ from connections import connection, fifs, appars
 from registers import regList
 from graphs_stat import graphs_all, all_graphs_humidity, all_graphs_temperature, fif_graphs_humidity, fif_graphs_temperature, \
     apar_graphs_humidity, apar_graphs_temperature
-import graphs_list
 import graph_range
 import graphs_data
 import graphs_save
@@ -37,7 +36,8 @@ print('Ilosc rejestrow apar wilgotnosci z wykresami: {}'.format(len(apar_graphs_
 print('Ilosc rejestrow apar temperatury wykresami: {}'.format(len(apar_graphs_temperature)))
 # print(apar_graphs_temperature)
 
-print("Wybierz zakres danych do pobrania")
+print(40*'-')
+print("\nWybierz zakres danych do pobrania")
 
 
 wh_start,wh_slices=graph_range.range()
@@ -46,10 +46,14 @@ print('Pobranie wykresow w dniu {} ilość próbek {}'.format(wh_start,wh_slices
 
 graphDatas=graphs_data.datas(wh_start,wh_slices)
 
-for k, v in graphDatas.items():
-    print(k, '>', v)
+# for k, v in graphDatas.items():
+#     print(k, '>', v)
 
-print('Czy chcesz zapisac dane')
+print('Zapisanie danych:')
 graphs_save.save_data(wh_start,graphDatas)
+
+  # todo: cos trzeba zrobic zeby z graph-range wychodzil czas lokalny dla unixtima.
+  # todo: zrobic wyjatki jak urzytkownik wprowadzi zle date
+
 
 

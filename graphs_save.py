@@ -21,7 +21,7 @@ def save_data(unixtime,graphDatas):
 
     for k, v in graphDatas.items():
         # logi = open('C:\\Users\\User\\Documents\\PYCHARM\\GIT\\testy\\startup.txt', 'a', encoding='utf8')
-        print('Dane dla Mieszknia {} - {} '.format(k[0], k[1]))
+        print('Zapis danych dla Mieszknia {} - {} '.format(k[0], k[1]))
         try:
             os.remove('logi\\dane_{}\\graphs_{}_{}.csv'.format(day,k[0],k[1]))
         except FileNotFoundError:

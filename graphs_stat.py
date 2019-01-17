@@ -1,7 +1,5 @@
-from API_webHMI import *
-from defs import *
-from head import headers, device_adress
-from registers import registers,regList
+
+from registers import registers
 from connections import connection, appars, fifs
 
 graphs_all = []
