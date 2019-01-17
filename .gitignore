@@ -9,5 +9,9 @@ db.sqlite3
 .DS_Store
 startup.txt
 /.idea*
-/logi*
+/logi/*
+/bulid/*
+/dist/*
+*.spec
+
 
