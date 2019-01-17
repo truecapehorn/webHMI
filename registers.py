@@ -29,6 +29,5 @@ if __name__ == '__main__':
             print(i)  # przykladopwy ciag danych
         if i['id'] == str(2):
             print(i)
-        print(i)
     for k, v in regList.items():
         print(k, v)

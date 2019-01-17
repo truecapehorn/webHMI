@@ -36,7 +36,7 @@ conn = devices(req1)
 
 if __name__ == '__main__':
     print('Ilość połaczen : {}'.format(len(req1[0].keys())))
-    print(connection.keys())
+    print(connection)
     print('Ilosc Aparow: {}'.format(len(req1[1])))
     print(appars)
     print('Ilosc Fifow: {}'.format(len(req1[2])))

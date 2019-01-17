@@ -1,6 +1,7 @@
 from API_webHMI import *
 from defs import *
 from head import headers, device_adress
+from registers import regList
 
 
 # Pobranie wykresow
@@ -25,9 +26,9 @@ def graphDataReq(k):
 
 
 def graphData(wh_start=1547078400,wh_slices=400, lenght=60 * 60 * 24) :
-    # Pobranie ilosci zapisanych w webhmi wykresow
+    # Pobranie zapisanych w webhmi wykresow
     graphList = graphListReq()
-    for i in graphList: #[0:2]:  # tymczosow tylmko 2 wykresy
+    for i in graphList[0:2]:  # tymczosow tylmko 2 wykresy
         graphsDict[i['id']] = {'apartment': i['category'], 'category': i['title']}
     print('\nDane z wykresow')
     wh_stop = wh_start + lenght
@@ -53,6 +54,15 @@ if __name__ == '__main__':
     for k, v in graphDatas.items():
         print(k)
         for i in v:
-            print(i)
+            # print(i.keys())
+            for key in i.keys():
+                if key not in regList.keys():
+                    if key !='x':
+                        print(key,end=',')
+                        #todo: dodac  wynik do listy poiterowac i usunac z danych
+
+
 
     pass
+
+#todo: wywalic rejetry w nie używancyh połączeniach, które sa w graphDict
