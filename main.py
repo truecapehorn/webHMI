@@ -7,7 +7,7 @@ import graphs_data
 import graphs_save
 
 '''
-Obsluga danych z wykresow na webHMI
+Obsluga danych z wykresow na webHMI. Dane połaczenia w pliku head.py
 
 # aby zrobic exeka to :
 # zaisntalowac pyinstalera
