@@ -7,13 +7,13 @@ import graphs_data
 import graphs_save
 
 print('Ilość połaczen : {}'.format(len(connection.keys())))
-print(connection)
+# print(connection)
 print('Ilosc Aparow: {}'.format(len(appars)))
-print(appars)
+# print(appars)
 print('Ilosc Fifow: {}'.format(len(fifs)))
-print(fifs)
+# print(fifs)
 print('Lista rejestrów : {}'.format(len(regList.keys())))
-print(regList)
+# print(regList)
 
 print('Ilosc rejestrow z wykresami: {}'.format(len(graphs_all)))
 # print(graphs_all)

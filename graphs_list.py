@@ -27,7 +27,7 @@ def graphDataReq(k):
 def graphData(wh_start=1547078400,wh_slices=400, lenght=60 * 60 * 24) :
     # Pobranie ilosci zapisanych w webhmi wykresow
     graphList = graphListReq()
-    for i in graphList:#[0:2]:  # tymczosow tylmko 2 wykresy
+    for i in graphList[0:2]:  # tymczosow tylmko 2 wykresy
         graphsDict[i['id']] = {'apartment': i['category'], 'category': i['title']}
     print('\nDane z wykresow')
     wh_stop = wh_start + lenght
@@ -44,7 +44,7 @@ def graphData(wh_start=1547078400,wh_slices=400, lenght=60 * 60 * 24) :
         time.sleep(2)
         graphData[graphsDict[k]['apartment'], graphsDict[k]['category']] = graphDataReq(
             k)  # odczytanie danych z wykresow
-        print('Wielkosc tablicy: {}\n-------------\n'.format(len(graphData)))
+        print('-------------\n')
 
     return graphData
 
