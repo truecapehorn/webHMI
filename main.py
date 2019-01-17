@@ -1,6 +1,6 @@
 from connections import connection, fifs, appars
 from registers import regList
-from graphs import graphs_all, all_graphs_humidity, all_graphs_temperature, fif_graphs_humidity, fif_graphs_temperature, \
+from graphs_stat import graphs_all, all_graphs_humidity, all_graphs_temperature, fif_graphs_humidity, fif_graphs_temperature, \
     apar_graphs_humidity, apar_graphs_temperature
 
 print('Ilość połaczen : {}'.format(len(connection.keys())))

@@ -57,10 +57,7 @@ def graphData(wh_start=1547078400, lenght=60 * 60 * 24, wh_slices=400):
 print(regList.keys())
 graph = {}
 graphDatas = graphData()
-print('Lista rejestrow')
-# for k, v in regList.items():
-#     print(k, ':', v)
-# Zamiana klucza
+
 for k, v in graphDatas.items():
     print(k)
     for i in v:
