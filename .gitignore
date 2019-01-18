@@ -10,7 +10,7 @@ db.sqlite3
 startup.txt
 /.idea*
 /logi/*
-/bulid/*
+/build/*
 /dist/*
 *.spec
 
