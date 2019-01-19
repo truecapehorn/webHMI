@@ -1,29 +1,26 @@
-from graphs_data import graphData
+from datetime import datetime
+from registers import regList
 
 
-graph = {}
-def datas(wh_start,wh_slices):
-    graphDatas = graphData(wh_start,wh_slices)
-    for k, v in graphDatas.items():
-        # print(k)
+def data_change(graphData):
+    graph = {}
+    for k, v in graphData.items():
         for i in v:
             for key in i.keys():
-
+                #Zmiana daty z unixa na normalna date
                 if key == 'x':
-                    # print(" keje w graphah", i[key])
-                    # print(datetime.utcfromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S'))
                     i[key] = datetime.utcfromtimestamp(int(i[key])/1000).strftime('%Y-%m-%d--%H:%M:%S')
             for key in regList.keys():
+                # zamiana klucza na bardziej przyjazna wersje:)
                 if key in i.keys():
-                    i[regList[key]['plcname']] = i[key]  # zamiana klucza na bardziej przyjazna wersje:)
-                    # del[i[key]] # skasowanie starego wpisu
+                    i[regList[key]['plcname']] = i[key]
                     i.pop(key)
-
-    # Zmniejsznie ilosci danych wynikowych. Zostawienie tylko wartosci sredniej z próbki.
-    for k, v in graphDatas.items():
-        # print('Dane dla Mieszknia {} - {} '.format(k[0],k[1]))
-        for i in v:
+            # Zmniejsznie ilosci danych wynikowych. Zostawienie tylko wartosci sredniej z próbki.
             graph = {key: val.split(';')[2] for (key, val) in i.items() if isinstance(val, str) and key != 'x'}
             i.update(graph)
-            # print(i)
-    return graphDatas
+    return graphData
+
+
+if __name__=="__main__":
+
+    pass

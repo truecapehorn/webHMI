@@ -3,6 +3,8 @@ import os
 import re
 import graphs_data
 
+#todo: sworzyc wersje na linuxa i windowsa
+#todo: to jescze nie to :(
 
 # Podział na pliki
 def save_data(unixtime,graphDatas):
@@ -11,22 +13,22 @@ def save_data(unixtime,graphDatas):
     day = datetime.utcfromtimestamp(unixtime).strftime('%Y-%m-%d')
 
     try:
-        os.mkdir('logi\\')
+        os.mkdir('logi/')
     except FileExistsError:
         pass
     try:
-        os.mkdir('logi\\dane_{}'.format(day))
+        os.mkdir('logi/dane_{}'.format(day))
     except FileExistsError:
         pass
 
     for k, v in graphDatas.items():
         # logi = open('C:\\Users\\User\\Documents\\PYCHARM\\GIT\\testy\\startup.txt', 'a', encoding='utf8')
-        print('Zapis danych dla Mieszknia {} - {} '.format(k[0], k[1]))
+        print('Zapis danych dla Mieszknia {}'.format(k))
         try:
-            os.remove('logi\\dane_{}\\graphs_{}_{}.csv'.format(day,k[0],k[1]))
+            os.remove('logi/dane_{}/graphs_{}.csv'.format(day,k))
         except FileNotFoundError:
             pass
-        log = open('logi\\dane_{}\\graphs_{}_{}.csv'.format(day,k[0],k[1]), 'a')
+        log = open('logi/dane_{}/graphs_{}.csv'.format(day,k), 'a')
         head=str(list(v[0].keys()))
         head=re.sub('\ |\[|\]|\"|\'|\;', '', head)
         print(head, file=log)
