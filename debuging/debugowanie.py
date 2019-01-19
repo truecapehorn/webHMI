@@ -1,3 +1,10 @@
+'''
+Analiza polaczen z błedem odczytu.
+logi ze strony wkliec do pliku logi
+zapis listy do errory
+'''
+
+
 def remove_duplicates(l):
     lista=[int(i.strip('#')) for i in list(set(l))]
     return sorted(lista)
