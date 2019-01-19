@@ -1,5 +1,6 @@
 def remove_duplicates(l):
-    return sorted(list(set(l)))
+    lista=[int(i.strip('#')) for i in list(set(l))]
+    return sorted(lista)
 
 
 filepath = 'logi.txt'
@@ -8,13 +9,17 @@ with open(filepath) as fp:
    line = fp.readline()
    cnt = 1
    while line:
-       # print("Line {}: {}".format(cnt, line.strip()))
-       if 'Error! Register' in line:
-           # print("Line {}: {}".format(cnt, line.strip()))
-           l=line.split(" ")
-           lista.append(l[9])
+       if 'Error!' in line:
 
+           result = line.find('conn')
+           print('L{} - {} i conn find na {}'.format(cnt, line.strip(),result))
+           l=line[result:].split(" ")
+           lista.append(l[1])
        line = fp.readline()
        cnt += 1
-
-print(remove_duplicates(lista))
+print(30*'-','\n')
+err=remove_duplicates(lista)
+print('Lista połączen z errorem:')
+print(err)
+errory=open('errory.txt','a')
+print(err, file=errory)
