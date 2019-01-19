@@ -67,6 +67,5 @@ graphDatas=graphs_data.datas(wh_start,wh_slices)
 print('Zapisanie danych:')
 graphs_save.save_data(wh_start,graphDatas)
 
-  # todo: zrobic wyjatki jak urzytkownik wprowadzi zle date
-
+#todo: Zastosowac plik konfiguracyjny do pobieraania wlasciwosci polaczenia lub pytac uzytkownika jaki adres chcesz pytac.
 

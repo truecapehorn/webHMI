@@ -1,12 +1,13 @@
 from datetime import datetime
 import time
 #import pytz
+import sys
 
 
 
 def range():
     wh_slices = 400
-
+    wh_start=''
     print('Pobierz dane dla dnia: rrrr-mm-dd: ',end='>> ')
     while True:
         try:
@@ -16,8 +17,11 @@ def range():
             unixtime = time.mktime(dt.timetuple())
             date = datetime.fromtimestamp(unixtime).strftime('%Y-%m-%d')
             break
-        except :
-            print('Zła date!!\nWprowadz jescze raz date rrrr-mm-dd: ',end='>> ')
+        except:
+            if wh_start !='q':
+                print('Zła date!!\nWprowadz jescze raz date rrrr-mm-dd: ', end='>> ')
+            else:sys.exit(0)
+
     return int(unixtime), wh_slices,date
 
 

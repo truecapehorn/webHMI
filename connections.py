@@ -2,9 +2,9 @@ from API_webHMI import *
 from defs import *
 from head import headers, device_adress
 
-connection = {}
-appars = []
-fifs = []
+# connection = {}
+# appars = []
+# fifs = []
 
 
 def request():
@@ -15,11 +15,11 @@ def request():
 
 
 def devices(req1):
+    connection = {}
+    appars=[]
+    fifs=[]
     for i in req1:
-        # if i['id']==str(159):
-        #     print(i)
-        # if i['id']==str(237):
-        #     print(i)
+
         if i['disabled'] == '0':  # branie tylko pod uwage włączone polaczenia
             connection[i['id']] = i['title']  # utworzenie slownika dla id i nazyw polaczenia
 
@@ -31,13 +31,14 @@ def devices(req1):
     return connection, appars, fifs
 
 
-req1 = request()
-conn = devices(req1)
+# req1 = request()
+# conn = devices(req1)
+connection,appars,fifs=devices(request())
 
 if __name__ == '__main__':
-    print('Ilość połaczen : {}'.format(len(req1[0].keys())))
+    print('Ilość połaczen : {}'.format(len(connection.keys())))
     print(connection)
-    print('Ilosc Aparow: {}'.format(len(req1[1])))
+    print('Ilosc Aparow: {}'.format(len(appars)))
     print(appars)
-    print('Ilosc Fifow: {}'.format(len(req1[2])))
+    print('Ilosc Fifow: {}'.format(len(fifs)))
     print(fifs)
