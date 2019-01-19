@@ -31,10 +31,14 @@ def datas(wh_start=1547078400,wh_slices=4,lenght=60 * 60 * 24):
         time.sleep(2)
         graphData[k] = graphDataReq(k)  # odczytanie danych z wykresow
         print('-------------\n')
-    return data_change(graphData)
+    return graphData
+
+
 
 if __name__=="__main__":
-    [print(key, '-', val) for key, val in datas().items()]
+    graphData = data_change(datas())
+    [print(key, '-', val) for key, val in graphData.items()]
+
     pass
 
 

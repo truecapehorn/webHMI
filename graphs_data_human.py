@@ -22,5 +22,10 @@ def data_change(graphData):
 
 
 if __name__=="__main__":
-
+    from graphs_data import graphData
+    for k,v in graphData.items():
+        print(k,v)
+    data=data_change(graphData)
+    for k,v in data.items():
+        print(k,v)
     pass
