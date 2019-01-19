@@ -1,7 +1,5 @@
 from API_webHMI import *
-from defs import *
 from head import headers, device_adress
-from registers import regList
 
 
 '''
@@ -18,6 +16,7 @@ def graphListReq():
 
 graphList = graphListReq()
 
+#todo: wywalic rejetry w nie używancyh połączeniach, które sa w graphDict
 
 
 for i in graphList[0:2]:  # tymczosow tylmko 2 wykresy

@@ -4,7 +4,6 @@ from registers import regList
 from graphs_list import graphsDict
 from datetime import datetime
 
-#todo: wywalic rejetry w nie używancyh połączeniach, które sa w graphDict
 
 def graphDataReq(k):
     print('\n4 :Graph Data Req\n')
@@ -16,8 +15,8 @@ def graphData(wh_start=1547078400,wh_slices=400, lenght=60 * 60 * 24) :
     # Pobranie zapisanych w webhmi wykresow
 
     print('\nDane z wykresow')
-    wh_stop = wh_start + lenght
     # Ustalenie nagłowka dla wykresu
+    wh_stop = wh_start + lenght
     headers['X-WH-CONNS'] = ''
     headers['X-WH-REGS'] = ''
     headers['X-WH-START'] = str(wh_start)
