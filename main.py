@@ -1,6 +1,6 @@
 from connections import connection, fifs, appars
 from registers import regList
-from graphs_stat import graphs_all, all_graphs_humidity, all_graphs_temperature, fif_graphs_humidity, fif_graphs_temperature, \
+from reg_stat import graphs_all, all_graphs_humidity, all_graphs_temperature, fif_graphs_humidity, fif_graphs_temperature, \
     apar_graphs_humidity, apar_graphs_temperature
 import graph_range
 import graphs_data
