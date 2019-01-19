@@ -55,9 +55,9 @@ print(40*'-')
 print("\nWybierz zakres danych do pobrania")
 
 
-wh_start,wh_slices=graph_range.range()
+wh_start,wh_slices,date=graph_range.range()
 
-print('Pobranie wykresow w dniu {} ilość próbek {}'.format(wh_start,wh_slices))
+print('Pobranie wykresow w dniu {} ilość próbek {}'.format(date,wh_slices))
 
 graphDatas=graphs_data.datas(wh_start,wh_slices)
 
@@ -67,7 +67,6 @@ graphDatas=graphs_data.datas(wh_start,wh_slices)
 print('Zapisanie danych:')
 graphs_save.save_data(wh_start,graphDatas)
 
-  # todo: cos trzeba zrobic zeby z graph-range wychodzil czas lokalny dla unixtima.
   # todo: zrobic wyjatki jak urzytkownik wprowadzi zle date
 
 
