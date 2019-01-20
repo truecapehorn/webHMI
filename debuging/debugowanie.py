@@ -5,28 +5,48 @@ zapis listy do errory
 '''
 
 
-def remove_duplicates(l):
-    lista=[int(i.strip('#')) for i in list(set(l))]
+def strip_and_remove(l, stripp):
+    lista = [int(i.strip(stripp)) for i in list(set(l))]
     return sorted(lista)
 
 
-filepath = 'logi.txt'
-lista=[]
-with open(filepath) as fp:
-   line = fp.readline()
-   cnt = 1
-   while line:
-       if 'Error!' in line:
+def search_file(line, char, cnt=1):
+    if 'Error' in line:
+        result = line.find(char)
+        if result != -1:
+            print('L{} - {} i conn find na {}'.format(cnt, line.strip(), result))
+            line = line[result:].split(" ")
+            line = [i.strip() for i in line]
+    return line
 
-           result = line.find('conn')
-           print('L{} - {} i conn find na {}'.format(cnt, line.strip(),result))
-           l=line[result:].split(" ")
-           lista.append(l[1])
-       line = fp.readline()
-       cnt += 1
-print(30*'-','\n')
-err=remove_duplicates(lista)
-print('Lista połączen z errorem:')
-print(err)
-errory=open('errory.txt','a')
-print(err, file=errory)
+
+def save_con(path, lista):
+    errory = open(path, 'a')
+    print(lista, file=errory)
+
+
+def open_file(path):
+    lista = []
+    with open(path) as fp:
+        line = fp.readline()
+        cnt = 0
+        while line:
+            l = search_file(line, 'conn #', cnt)
+            if isinstance(l, list):
+                lista.append(l[1])
+            line = fp.readline()
+            cnt += 1
+    print('\n', 80 * '-')
+    return lista
+
+
+if __name__ == '__main__':
+    filepath_open = 'logi.txt'
+    filepath_save = 'errory.txt'
+
+    lista = open_file(filepath_open)
+    err = strip_and_remove(lista, '#')
+
+    print('Lista połączen z errorem:')
+    print(err)
+    save_con(filepath_save, err)
