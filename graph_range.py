@@ -13,8 +13,8 @@ def range():
         try:
             wh_start = input()
             wh_start = [int(i) for i in wh_start.split('-')]
-            dt = datetime(wh_start[0], wh_start[1], wh_start[2], 0, 0)
-            unixtime = time.mktime(dt.timetuple())
+            dt = datetime(wh_start[0], wh_start[1], wh_start[2])
+            unixtime = time.mktime(dt.timetuple())-time.timezone
             date = datetime.fromtimestamp(unixtime).strftime('%Y-%m-%d')
             break
         except:
