@@ -11,14 +11,15 @@ sep=os.sep
 
 
 def csv_writer(path,headers,rows):
-    with open(path, 'w') as f:
-        f_csv = csv.DictWriter(f, headers,lineterminator='\n')
-        f_csv.writeheader()
-        f_csv.writerows(rows)
+    try:
+        with open(path, 'w') as f:
+            f_csv = csv.DictWriter(f, headers,lineterminator='\n')
+            f_csv.writeheader()
+            f_csv.writerows(rows)
+    except IOError:
+        print('Nie mozna zapisac pliku csv')
 
-
-
-# Podział na pliki
+        # Podział na pliki
 def save_data(unixtime,graphDatas):
     day = datetime.utcfromtimestamp(unixtime).strftime('%Y-%m-%d')
     log_dir='logi{0}dane_{1}'.format(sep,day)
