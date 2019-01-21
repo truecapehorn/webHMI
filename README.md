@@ -12,4 +12,4 @@
 4. Moze zeby dane w pliku były liczbami nie stringiem,
 5. Jeszcze nie wiem. Ale mozna by pewnie wyminiac do bólu,
 
-###### by Python 3.7
+###### by Python 3.67 lub 3.72
