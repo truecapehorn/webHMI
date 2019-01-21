@@ -1,9 +1,8 @@
 from datetime import datetime
-import os
-import sys
-import re
+from graphs_list import graphsDict
 import graphs_data
-import csv
+import csv,os
+
 
 sep=os.sep
 #todo: sworzyc wersje na linuxa i windowsa
@@ -21,7 +20,7 @@ def csv_writer(path,headers,rows):
 
         # Podział na pliki
 def save_data(unixtime,graphDatas):
-    day = datetime.utcfromtimestamp(unixtime).strftime('%Y-%m-%d')
+    day=datetime.fromtimestamp(unixtime).strftime('%Y-%m-%d')
     log_dir='logi{0}dane_{1}'.format(sep,day)
 
     try:
@@ -30,7 +29,7 @@ def save_data(unixtime,graphDatas):
         pass
 
     for key, val in graphDatas.items():
-        file_path='{}{}wykres_{}.csv'.format(log_dir,sep,key)
+        file_path='{}{}{}_wykres_{}_{}.csv'.format(log_dir,sep,key,graphsDict[key]['apartment'],graphsDict[key]['category'])
         print('Zapis danych dla Mieszknia {}'.format(key))
         try:
             os.remove(file_path)
@@ -50,4 +49,6 @@ if __name__=='__main__':
     for k, v in graphDatas.items():
         print(k, '>', v)
 
+    for k,v in graphsDict.items():
+        print(k, '>', v)
     save_data(1547078400,graphDatas)

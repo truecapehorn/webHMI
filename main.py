@@ -57,7 +57,7 @@ print("\nWybierz zakres danych do pobrania")
 
 wh_start,wh_slices,date=graph_range.range()
 
-print('Pobranie wykresow w dniu {} ilość próbek {}'.format(date,wh_slices))
+print('Pobranie wykresow w dniu {} ({}) ilość próbek {}'.format(date,wh_start,wh_slices))
 
 graphDatas=graphs_data.datas(wh_start,wh_slices)
 
