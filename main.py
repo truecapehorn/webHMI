@@ -1,6 +1,7 @@
 from connections import connection, fifs, appars
 from registers import regList
-from reg_stat import graphs_all, all_graphs_humidity, all_graphs_temperature, fif_graphs_humidity, fif_graphs_temperature, \
+from reg_stat import graphs_all, all_graphs_humidity, all_graphs_temperature, fif_graphs_humidity, \
+    fif_graphs_temperature, \
     apar_graphs_humidity, apar_graphs_temperature
 import graph_range
 import graphs_data
@@ -51,21 +52,19 @@ print('Ilosc rejestrow apar wilgotnosci z wykresami: {}'.format(len(apar_graphs_
 print('Ilosc rejestrow apar temperatury wykresami: {}'.format(len(apar_graphs_temperature)))
 # print(apar_graphs_temperature)
 
-print(40*'-')
+print(40 * '-')
 print("\nWybierz zakres danych do pobrania")
 
+wh_start, wh_slices, date = graph_range.range()
 
-wh_start,wh_slices,date=graph_range.range()
+print('Pobranie wykresow w dniu {} ({}) ilość próbek {}'.format(date, wh_start, wh_slices))
 
-print('Pobranie wykresow w dniu {} ({}) ilość próbek {}'.format(date,wh_start,wh_slices))
-
-graphDatas=graphs_data.datas(wh_start,wh_slices)
+graphDatas = graphs_data.datas(wh_start, wh_slices)
 
 # for k, v in graphDatas.items():
 #     print(k, '>', v)
 
 print('Zapisanie danych:')
-graphs_save.save_data(wh_start,graphDatas)
+graphs_save.save_data(wh_start, graphDatas)
 
-#todo: Zastosowac plik konfiguracyjny do pobieraania wlasciwosci polaczenia lub pytac uzytkownika jaki adres chcesz pytac.
-
+# todo: Zastosowac plik konfiguracyjny do pobieraania wlasciwosci polaczenia lub pytac uzytkownika jaki adres chcesz pytac.

@@ -7,9 +7,9 @@ def data_change(graphData):
     for k, v in graphData.items():
         for i in v:
             for key in i.keys():
-                #Zmiana daty z unixa na normalna date
+                # Zmiana daty z unixa na normalna date
                 if key == 'x':
-                    i[key] = datetime.utcfromtimestamp(int(i[key])/1000).strftime('%Y-%m-%d--%H:%M:%S')
+                    i[key] = datetime.utcfromtimestamp(int(i[key]) / 1000).strftime('%Y-%m-%d--%H:%M:%S')
             for key in regList.keys():
                 # zamiana klucza na bardziej przyjazna wersje:)
                 if key in i.keys():
@@ -21,7 +21,7 @@ def data_change(graphData):
     return graphData
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     # import graphs_data
     # #
     # # graphData=graphs_data.datas()

@@ -24,6 +24,7 @@ def connectionList(device_adress, headers):
 
     return r.json()
 
+
 def registerList(device_adress, headers):
     '''Zczytanie listy rejestrow webHMI'''
     # ADRESS

@@ -2,6 +2,7 @@ from API_webHMI import *
 from defs import *
 from head import headers, device_adress
 
+
 # connection = {}
 # appars = []
 # fifs = []
@@ -16,8 +17,8 @@ def request():
 
 def devices(req1):
     connection = {}
-    appars=[]
-    fifs=[]
+    appars = []
+    fifs = []
     for i in req1:
 
         if i['disabled'] == '0':  # branie tylko pod uwage włączone polaczenia
@@ -33,7 +34,7 @@ def devices(req1):
 
 # req1 = request()
 # conn = devices(req1)
-connection,appars,fifs=devices(request())
+connection, appars, fifs = devices(request())
 
 if __name__ == '__main__':
     print('Ilość połaczen : {}'.format(len(connection.keys())))

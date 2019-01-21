@@ -11,9 +11,7 @@ def graphDataReq(k):
     return req4
 
 
-
-def datas(wh_start=1547078400,wh_slices=4,lenght=60 * 60 * 23):
-
+def datas(wh_start=1547078400, wh_slices=4, lenght=60 * 60 * 23):
     # Pobranie zapisanych w webhmi wykresow
     print('\nDane z wykresow')
     # Ustalenie nagłowka dla wykresu
@@ -31,13 +29,11 @@ def datas(wh_start=1547078400,wh_slices=4,lenght=60 * 60 * 23):
         time.sleep(2)
         graphData[k] = graphDataReq(k)  # odczytanie danych z wykresow
         print('-------------\n')
-    graphData=data_change(graphData)
+    graphData = data_change(graphData)
     return graphData
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     [print(key, '-', val) for key, val in datas().items()]
 
     pass
-
-
