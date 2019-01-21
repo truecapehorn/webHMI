@@ -2,6 +2,7 @@ from datetime import datetime
 import os
 import re
 import graphs_data
+import csv
 
 #todo: sworzyc wersje na linuxa i windowsa
 #todo: to jescze nie to :(
@@ -37,6 +38,12 @@ def save_data(unixtime,graphDatas):
             value = re.sub('\ |\[|\]|\"|\'|\;', '', value)
             print(value, file=log)
         log.close()
+
+def csv_writer(day,k,headers,value):
+    with open('logi/dane_{}/graphs_{}.csv'.format(day,k), 'a') as f:
+        f_csv = csv.writer(f)
+        f_csv.writerow(headers)
+        f_csv.writerows(value)
 
 if __name__=='__main__':
     wh_start = 1547078400
