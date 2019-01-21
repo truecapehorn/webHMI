@@ -2,7 +2,7 @@
 
 ### Odczytywanie danych wykresów z urządzenia webHMI
 ##### Program main wykonuje zapytania requestowe.
-###Do roboty:
+####Do roboty:
 
 1. Plik konfiguracyjny,
 2. Cos zrobic z ta data( cos jest nie tak),
