@@ -2,6 +2,7 @@
 ### Odczytywanie danych wykresów z urządzenia webHMI
 ##### Program main wykonuje zapytania requestowe.
 ###Do roboty:
+
 1. Plik konfiguracyjny,
 
 2. Cos zrobic z ta data( cos jest nie tak),
@@ -14,3 +15,4 @@
 
 5. Jeszcze nie wiem. Ale mozna by pewnie wyminiac do bólu,
 
+######by Python 3.7
