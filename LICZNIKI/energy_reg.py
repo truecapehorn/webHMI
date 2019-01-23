@@ -18,6 +18,13 @@ S3sum = []
 Q1sum = []
 Q2sum = []
 Q3sum = []
+
+Psum=[]
+Ssum=[]
+Qsum=[]
+
+
+
 Ep = []
 Eq = []
 for k, v in sorted(regList.items()):
@@ -88,6 +95,19 @@ for k, v in sorted(regList.items()):
                 Q3sum = [int(i) for i in Q3sum]
 
 
+            if 'Calkowita moc ukladu' in v['regtitle']:
+                # print(k, v)
+                Psum.append(k)
+                Psum = [int(i) for i in Psum]
+            if 'Calkowita moc pozorna ukladu' in v['regtitle']:
+                # print(k, v)
+                Ssum.append(k)
+                Ssum = [int(i) for i in Ssum]
+            if 'Calkowita moc bierna ukladu' in v['regtitle']:
+                Qsum.append(k)
+                Qsum = [int(i) for i in Qsum]
+
+
             if 'Calkowita energia czynna' in v['regtitle']:
                 # print(k, v)
                 Ep.append(k)
@@ -117,17 +137,26 @@ for k, v in sorted(regList.items()):
                 P1sum.append(k)
                 P1sum = [int(i) for i in P1sum]
 
+                Psum.append(k)
+                Psum = [int(i) for i in Psum]
+
 
             if 'Moc pozorna' in v['regtitle']:
                 # print(k, v)
                 S1sum.append(k)
                 S1sum = [int(i) for i in S1sum]
 
+                Ssum.append(k)
+                Ssum = [int(i) for i in Ssum]
+
 
             if 'Moc bierna' in v['regtitle']:
                 # print(k, v)
                 Q1sum.append(k)
                 Q1sum = [int(i) for i in Q1sum]
+
+                Qsum.append(k)
+                Qsum = [int(i) for i in Qsum]
 
 
             if 'Cal. energia czynna' in v['regtitle']:
@@ -165,6 +194,14 @@ print('local Q1sum_l =' ,Q1sum)
 print('local Q2sum_l =' ,Q2sum)
 print('local Q3sum_l =' ,Q3sum)
 
+print('--CALKOWITA MOC CZYNNA')
+print('local Psum_l =' ,Psum)
+
+print('--CALKOWITA MOC POZORNA ')
+print('local Ssum_l =' ,Ssum)
+
+print('--CALKOWITA MOC BIERNA')
+print('local Qsum_l =' ,Qsum)
 
 print('--Energia czynna')
 print('local Ep_l =' ,Ep)
