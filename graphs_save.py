@@ -36,10 +36,7 @@ def save_data(unixtime, graphDatas):
                                                     graphsDict[key]['category'])
         file_path.replace('/', os.sep)
         print('Zapis danych dla Wykresu {}'.format(key))
-        try:
-            os.remove(file_path)
-        except FileNotFoundError:
-            pass
+
         csv_writer(file_path, val)
 
 

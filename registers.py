@@ -39,5 +39,12 @@ if __name__ == '__main__':
 
     print('Lista rejestrów : {}'.format(len(regList)))
 
+    for i in registers:
+        print(i)
+    try:
+        os.remove(file_path)
+    except FileNotFoundError:
+        pass
+
     csv_writer(file_path,registers)
 

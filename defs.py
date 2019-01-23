@@ -1,4 +1,4 @@
-import csv
+import csv,os
 
 def displayHeader(dic):
     print('\nHeader')
@@ -25,10 +25,17 @@ def csv_writer(file_path, dictionary):
 
     key_set = set()
     dict_list = list()
+
+    try:
+        os.remove(file_path)
+    except FileNotFoundError:
+        pass
+
     for dic in dictionary:
         key_set.update(dic.keys())
         dict_list.append(dic)
-    keys = list(sorted(list(key_set)))
+    # keys = list(sorted(list(key_set)))
+    keys = list(list(key_set))
     try:
         with open(file_path, 'w',encoding='utf-8') as f:
             w = csv.DictWriter(f, keys, delimiter=';', lineterminator='\n')
