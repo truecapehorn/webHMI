@@ -5,10 +5,6 @@ import csv, os
 from defs import csv_writer
 
 
-# todo: sworzyc wersje na linuxa i windowsa
-# todo: to jescze nie to :(
-
-
 # def csv_writer(path, headers, rows):
 #     try:
 #         with open(path, 'w') as f:
@@ -36,9 +32,9 @@ def save_data(unixtime, graphDatas):
                                                     graphsDict[key]['category'])
         file_path.replace('/', os.sep)
         print('Zapis danych dla Wykresu {}'.format(key))
-
         csv_writer(file_path, val)
-
+        #todo: cos trzeba zmienic z danymi od licznikow, bo wszedzie jest albo appators albo bmeters
+        #todo: nie zapisuje wykresu 24. nie wiem dlaczego
 
 if __name__ == '__main__':
     wh_start = 1547078400
