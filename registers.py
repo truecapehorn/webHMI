@@ -23,7 +23,8 @@ registers = request()
 # Stworzenie krótrzego  slownika rejestrow z nazwami połaczen.
 for r in registers:
     if r['plcid'] in connection.keys():  # uwzglednia tylko wlaczone polaczenia
-        regList[r['id']] = {'plcid': r['plcid'], 'plcname': connection[r['plcid']]['dev'], 'regtitle': r['title'],'category':connection[r['plcid']]['category']}
+        regList[r['id']] = {'plcid': r['plcid'], 'plcname': connection[r['plcid']]['dev'], 'regtitle': r['title'],
+                            'category': connection[r['plcid']]['category']}
 
 if __name__ == '__main__':
     key_set = set()
@@ -41,10 +42,5 @@ if __name__ == '__main__':
 
     for i in registers:
         print(i)
-    try:
-        os.remove(file_path)
-    except FileNotFoundError:
-        pass
 
-    csv_writer(file_path,registers)
-
+    csv_writer(file_path, registers)

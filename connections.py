@@ -21,14 +21,14 @@ def devices(req1):
     fifs = []
     for i in req1:
         if i['disabled'] == '0':  # branie tylko pod uwage włączone polaczenia
-            connection[i['id']] = {'dev':i['title'],'category':i['category']}  # utworzenie slownika dla id i nazyw polaczenia
-            #connection[i['category']] = i['category']  # dodanie do slownika gdzie jest dane urzadzenie
-
+            connection[i['id']] = {'dev': i['title'],
+                                   'category': i['category']}  # utworzenie slownika dla id i nazyw polaczenia
+            # connection[i['category']] = i['category']  # dodanie do slownika gdzie jest dane urzadzenie
 
     for k, v in connection.items():  # rozdzial na fiy i apary
         if 'APA' in v['dev']:
             appars.append(k)  # apary
-        elif 'FIF' in  v['dev']:
+        elif 'FIF' in v['dev']:
             fifs.append(k)  # fify
     return connection, appars, fifs
 
@@ -38,7 +38,6 @@ def devices(req1):
 connection, appars, fifs = devices(request())
 
 if __name__ == '__main__':
-
     print('Ilość połaczen : {}'.format(len(connection.keys())))
     print(connection)
     print('Ilosc Aparow: {}'.format(len(appars)))

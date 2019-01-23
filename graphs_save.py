@@ -18,7 +18,7 @@ from defs import csv_writer
 #     except IOError:
 #         print('Nie mozna zapisac pliku csv')
 
-        # Podział na pliki
+# Podział na pliki
 
 
 def save_data(unixtime, graphDatas):

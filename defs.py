@@ -1,4 +1,5 @@
-import csv,os
+import csv, os
+
 
 def displayHeader(dic):
     print('\nHeader')
@@ -21,8 +22,8 @@ def makeRegIDs(ids):
     regs = regs[:-1]
     return regs
 
-def csv_writer(file_path, dictionary):
 
+def csv_writer(file_path, dictionary):
     key_set = set()
     dict_list = list()
 
@@ -37,7 +38,7 @@ def csv_writer(file_path, dictionary):
     # keys = list(sorted(list(key_set)))
     keys = list(list(key_set))
     try:
-        with open(file_path, 'w',encoding='utf-8') as f:
+        with open(file_path, 'w', encoding='utf-8') as f:
             w = csv.DictWriter(f, keys, delimiter=';', lineterminator='\n')
             w.writeheader()
             w.writerows(dict_list)
