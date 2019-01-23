@@ -1,3 +1,5 @@
+import csv
+
 def displayHeader(dic):
     print('\nHeader')
     for k, v in dic.items():
@@ -18,3 +20,19 @@ def makeRegIDs(ids):
         regs = regs + i + ','
     regs = regs[:-1]
     return regs
+
+def csv_writer(file_path, dictionary):
+
+    key_set = set()
+    dict_list = list()
+    for dic in dictionary:
+        key_set.update(dic.keys())
+        dict_list.append(dic)
+    keys = list(sorted(list(key_set)))
+    try:
+        with open(file_path, 'w',encoding='utf-8') as f:
+            w = csv.DictWriter(f, keys, delimiter=';', lineterminator='\n')
+            w.writeheader()
+            w.writerows(dict_list)
+    except IOError:
+        print('Nie mozna zapisac pliku csv')

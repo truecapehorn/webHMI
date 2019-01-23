@@ -1,7 +1,10 @@
 from API_webHMI import *
-from defs import *
+from defs import csv_writer
 from head import headers, device_adress
 from connections import connection
+import csv
+
+import os
 
 # req2=[]
 
@@ -23,8 +26,18 @@ for r in registers:
         regList[r['id']] = {'plcid': r['plcid'], 'plcname': connection[r['plcid']]['dev'], 'regtitle': r['title'],'category':connection[r['plcid']]['category']}
 
 if __name__ == '__main__':
+    key_set = set()
+    dict_list = list()
+
+    file_path = 'rejestry/reg.csv'
+    file_path.replace('/', os.sep)
+
+    try:
+        os.makedirs('rejestry')
+    except FileExistsError:
+        pass
 
     print('Lista rejestrów : {}'.format(len(regList)))
-    for k,v in sorted(regList.items()):
-        print(k,v)
+
+    csv_writer(file_path,registers)
 

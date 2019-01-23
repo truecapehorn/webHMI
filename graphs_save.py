@@ -2,20 +2,21 @@ from datetime import datetime
 from graphs_list import graphsDict
 import graphs_data
 import csv, os
+from defs import csv_writer
 
 
 # todo: sworzyc wersje na linuxa i windowsa
 # todo: to jescze nie to :(
 
 
-def csv_writer(path, headers, rows):
-    try:
-        with open(path, 'w') as f:
-            f_csv = csv.DictWriter(f, headers, lineterminator='\n')
-            f_csv.writeheader()
-            f_csv.writerows(rows)
-    except IOError:
-        print('Nie mozna zapisac pliku csv')
+# def csv_writer(path, headers, rows):
+#     try:
+#         with open(path, 'w') as f:
+#             f_csv = csv.DictWriter(f, headers, lineterminator='\n')
+#             f_csv.writeheader()
+#             f_csv.writerows(rows)
+#     except IOError:
+#         print('Nie mozna zapisac pliku csv')
 
         # Podział na pliki
 
@@ -34,13 +35,12 @@ def save_data(unixtime, graphDatas):
         file_path = '{}/{}_wykres_{}_{}.csv'.format(log_dir, key, graphsDict[key]['apartment'],
                                                     graphsDict[key]['category'])
         file_path.replace('/', os.sep)
-        print('Zapis danych dla Mieszknia {}'.format(key))
+        print('Zapis danych dla Wykresu {}'.format(key))
         try:
             os.remove(file_path)
         except FileNotFoundError:
             pass
-        headers = [x.strip() for x in val[0].keys()]
-        csv_writer(file_path, headers, val)
+        csv_writer(file_path, val)
 
 
 if __name__ == '__main__':
