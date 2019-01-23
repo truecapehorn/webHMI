@@ -20,14 +20,15 @@ def devices(req1):
     appars = []
     fifs = []
     for i in req1:
-
         if i['disabled'] == '0':  # branie tylko pod uwage włączone polaczenia
-            connection[i['id']] = i['title']  # utworzenie slownika dla id i nazyw polaczenia
+            connection[i['id']] = {'dev': i['title'],
+                                   'category': i['category']}  # utworzenie slownika dla id i nazyw polaczenia
+            # connection[i['category']] = i['category']  # dodanie do slownika gdzie jest dane urzadzenie
 
     for k, v in connection.items():  # rozdzial na fiy i apary
-        if v[0:3] == 'APA':
+        if 'APA' in v['dev']:
             appars.append(k)  # apary
-        elif v[0:3] == 'FIF':
+        elif 'FIF' in v['dev']:
             fifs.append(k)  # fify
     return connection, appars, fifs
 
