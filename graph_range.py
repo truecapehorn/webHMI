@@ -1,11 +1,18 @@
 from datetime import datetime
-import time
+import time,json
 # import pytz
 import sys
 
+filepath = 'setup.json'
+def json_read(path):
+    with open(path,'r') as f:
+        data=json.load(f)
+    return data
+
 
 def range():
-    wh_slices = 400
+    data=json_read(filepath)
+    wh_slices = data["properties"]["samples"]
     wh_start = ''
     print('Pobierz dane dla dnia: rrrr-mm-dd: ', end='>> ')
     while True:

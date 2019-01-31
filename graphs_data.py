@@ -26,7 +26,7 @@ def datas(wh_start=1547078400, wh_slices=4, lenght=60 * 60 * 23):
     # stworzenie slownika z danymi wykresow
     for k in graphsDict.keys():
         print('Pobranie wykresu {}:{} w {}'.format(k, graphsDict[k]['category'], graphsDict[k]['apartment']))
-        time.sleep(0.5)
+        time.sleep(1)
         graphData[k] = graphDataReq(k)  # odczytanie danych z wykresow
         print('-------------\n')
     graphData = data_change(graphData)
