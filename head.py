@@ -1,8 +1,24 @@
+filepath_open = 'setup.json'
+
+def open_file(path):
+    lista = []
+    with open(path) as fp:
+        line = fp.readline()
+        while line:
+            line = fp.readline()
+            lista.append(line)
+    return lista
+
+print(open_file(filepath_open))
+
+
 
 APIKEY='D606230FEB2CCF4A3520B334BE0E5A29C1311EB0'
 # USER = 'admin'
 # PASS = 'elam4321'
-device_adress = 'http://80.50.4.62:60043'
+# device_adress = 'http://80.50.4.62:60043'
+device_adress = 'http://192.168.10.229'
+
 
 headers = {'X-WH-APIKEY': APIKEY,
            'Accept': 'application/json',

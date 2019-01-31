@@ -1,3 +1,6 @@
+import os
+
+
 '''
 Analiza polaczen z błedem odczytu.
 logi ze strony wkliec do pliku logi
@@ -41,8 +44,8 @@ def open_file(path):
 
 
 if __name__ == '__main__':
-    filepath_open = 'logi.txt'
-    filepath_save = 'errory.txt'
+    filepath_open = 'debuging{}logi.txt'.format(os.sep)
+    filepath_save = 'debuging{}errory.txt'.format(os.sep)
 
     lista = open_file(filepath_open)
     err = strip_and_remove(lista, '#')
