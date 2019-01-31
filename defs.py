@@ -39,7 +39,7 @@ def csv_writer(file_path, dictionary):
     keys = list(list(key_set))
     try:
         with open(file_path, 'w', encoding='utf-8') as f:
-            w = csv.DictWriter(f, keys, delimiter=';', lineterminator='\n')
+            w = csv.DictWriter(f, keys, delimiter=',', lineterminator='\n')
             w.writeheader()
             w.writerows(dict_list)
     except IOError:
