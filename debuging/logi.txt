@@ -1,5 +1,2391 @@
 
 
+<<<<<<< HEAD
+Jan 25 07:25:36.395: DEBUG: Error! Register #2537 at conn #216 was NOT read
+Jan 25 07:25:36.395: DEBUG: Error! Register #2538 at conn #216 was NOT read
+Jan 25 07:25:36.395: DEBUG: Error! Register #2539 at conn #216 was NOT read
+Jan 25 07:25:36.396: DEBUG: Error! Register #2540 at conn #216 was NOT read
+Jan 25 07:25:36.396: DEBUG: Error! Register #2541 at conn #216 was NOT read
+Jan 25 07:25:36.397: DEBUG: Error! Register #2542 at conn #216 was NOT read
+Jan 25 07:25:36.397: DEBUG: Error! Register #2543 at conn #216 was NOT read
+Jan 25 07:25:36.397: DEBUG: Error! Register #2544 at conn #216 was NOT read
+Jan 25 07:25:36.398: DEBUG: Error! Register #2545 at conn #216 was NOT read
+Jan 25 07:25:36.398: DEBUG: Error! Register #2546 at conn #216 was NOT read
+Jan 25 07:25:36.398: DEBUG: Error! Register #2547 at conn #216 was NOT read
+Jan 25 07:25:36.399: DEBUG: Error! Register #2577 at conn #216 was NOT read
+Jan 25 07:25:36.399: DEBUG: Error! Register #2578 at conn #216 was NOT read
+Jan 25 07:25:38.382: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:25:38.383: DEBUG: ModBus: Retry
+Jan 25 07:25:38.386: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:25:38.386: DEBUG: ModBus: Can't send packet
+Jan 25 07:25:38.387: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:25:38.387: DEBUG: ModBus: Retry
+Jan 25 07:25:38.391: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:25:38.391: DEBUG: ModBus: Can't send packet
+Jan 25 07:25:38.392: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:25:38.392: DEBUG: ModBus: Retry
+Jan 25 07:25:38.395: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:25:38.395: DEBUG: ModBus: Can't send packet
+Jan 25 07:25:38.396: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:25:38.396: DEBUG: ModBus: Retry
+Jan 25 07:25:38.399: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:25:38.400: DEBUG: ModBus: Can't send packet
+Jan 25 07:25:38.400: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:25:38.400: DEBUG: ModBus: Retry
+Jan 25 07:25:38.403: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:25:38.404: DEBUG: ModBus: Can't send packet
+Jan 25 07:25:38.404: DEBUG: ModBus: Skipping reading connection #236 due to read errors.
+Jan 25 07:25:38.405: DEBUG: Error! Register #3848 at conn #236 was NOT read
+Jan 25 07:25:38.405: DEBUG: Error! Register #3849 at conn #236 was NOT read
+Jan 25 07:25:38.405: DEBUG: Error! Register #3850 at conn #236 was NOT read
+Jan 25 07:25:38.406: DEBUG: Error! Register #3851 at conn #236 was NOT read
+Jan 25 07:25:38.406: DEBUG: Error! Register #3852 at conn #236 was NOT read
+Jan 25 07:25:38.407: DEBUG: Error! Register #3853 at conn #236 was NOT read
+Jan 25 07:25:38.407: DEBUG: Error! Register #3854 at conn #236 was NOT read
+Jan 25 07:25:38.407: DEBUG: Error! Register #3855 at conn #236 was NOT read
+Jan 25 07:25:38.408: DEBUG: Error! Register #3856 at conn #236 was NOT read
+Jan 25 07:25:38.408: DEBUG: Error! Register #3857 at conn #236 was NOT read
+Jan 25 07:25:38.408: DEBUG: Error! Register #3858 at conn #236 was NOT read
+Jan 25 07:25:38.409: DEBUG: Error! Register #3859 at conn #236 was NOT read
+Jan 25 07:25:38.409: DEBUG: Error! Register #3860 at conn #236 was NOT read
+Jan 25 07:25:38.409: DEBUG: Error! Register #3861 at conn #236 was NOT read
+Jan 25 07:25:38.572: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:25:38.573: DEBUG: ModBus: Retry
+Jan 25 07:25:38.574: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:25:38.575: DEBUG: ModBus: Can't send packet
+Jan 25 07:25:38.575: DEBUG: Error! Register #3868 at conn #240 was NOT read
+Jan 25 07:25:38.575: DEBUG: Error! Register #3869 at conn #240 was NOT read
+Jan 25 07:25:38.576: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:25:38.577: DEBUG: ModBus: Retry
+Jan 25 07:25:38.579: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:25:38.579: DEBUG: ModBus: Can't send packet
+Jan 25 07:25:38.580: DEBUG: Error! Register #4340 at conn #242 was NOT read
+Jan 25 07:25:38.580: DEBUG: Error! Register #4341 at conn #242 was NOT read
+Jan 25 07:25:38.580: DEBUG: Error! Register #4342 at conn #242 was NOT read
+Jan 25 07:25:38.581: DEBUG: Error! Register #4343 at conn #242 was NOT read
+Jan 25 07:25:38.581: DEBUG: Error! Register #4344 at conn #242 was NOT read
+Jan 25 07:25:38.581: DEBUG: Error! Register #4345 at conn #242 was NOT read
+Jan 25 07:25:38.582: DEBUG: Error! Register #4346 at conn #242 was NOT read
+Jan 25 07:25:38.582: DEBUG: Error! Register #4347 at conn #242 was NOT read
+Jan 25 07:25:38.583: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:25:38.583: DEBUG: ModBus: Retry
+Jan 25 07:25:38.584: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:25:38.585: DEBUG: ModBus: Can't send packet
+Jan 25 07:25:38.586: DEBUG: Error! Register #4348 at conn #243 was NOT read
+Jan 25 07:25:38.586: DEBUG: Error! Register #4349 at conn #243 was NOT read
+Jan 25 07:25:38.586: DEBUG: Error! Register #4350 at conn #243 was NOT read
+Jan 25 07:25:38.587: DEBUG: Error! Register #4351 at conn #243 was NOT read
+Jan 25 07:25:38.587: DEBUG: Error! Register #4352 at conn #243 was NOT read
+Jan 25 07:25:38.587: DEBUG: Error! Register #4353 at conn #243 was NOT read
+Jan 25 07:25:38.588: DEBUG: Error! Register #4354 at conn #243 was NOT read
+Jan 25 07:25:38.588: DEBUG: Error! Register #4355 at conn #243 was NOT read
+Jan 25 07:25:38.589: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:25:38.590: DEBUG: ModBus: Retry
+Jan 25 07:25:38.592: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:25:38.592: DEBUG: ModBus: Can't send packet
+Jan 25 07:25:38.593: DEBUG: Error! Register #4356 at conn #244 was NOT read
+Jan 25 07:25:38.594: DEBUG: Error! Register #4357 at conn #244 was NOT read
+Jan 25 07:25:38.594: DEBUG: Error! Register #4358 at conn #244 was NOT read
+Jan 25 07:25:38.594: DEBUG: Error! Register #4359 at conn #244 was NOT read
+Jan 25 07:25:38.595: DEBUG: Error! Register #4360 at conn #244 was NOT read
+Jan 25 07:25:38.595: DEBUG: Error! Register #4361 at conn #244 was NOT read
+Jan 25 07:25:38.595: DEBUG: Error! Register #4362 at conn #244 was NOT read
+Jan 25 07:25:38.596: DEBUG: Error! Register #4363 at conn #244 was NOT read
+Jan 25 07:25:38.597: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:25:38.597: DEBUG: ModBus: Retry
+Jan 25 07:25:38.599: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:25:38.599: DEBUG: ModBus: Can't send packet
+Jan 25 07:25:38.600: DEBUG: Error! Register #4364 at conn #245 was NOT read
+Jan 25 07:25:38.601: DEBUG: Error! Register #4365 at conn #245 was NOT read
+Jan 25 07:25:38.601: DEBUG: Error! Register #4366 at conn #245 was NOT read
+Jan 25 07:25:38.601: DEBUG: Error! Register #4367 at conn #245 was NOT read
+Jan 25 07:25:38.601: DEBUG: Error! Register #4368 at conn #245 was NOT read
+Jan 25 07:25:38.602: DEBUG: Error! Register #4369 at conn #245 was NOT read
+Jan 25 07:25:38.602: DEBUG: Error! Register #4370 at conn #245 was NOT read
+Jan 25 07:25:38.602: DEBUG: Error! Register #4371 at conn #245 was NOT read
+Jan 25 07:25:43.068: DEBUG: LUA scripts: GetReg: Register #2180(IR6) was not read
+Jan 25 07:25:43.069: DEBUG: LUA scripts: GetReg: Register #2247(IR6) was not read
+Jan 25 07:25:43.072: DEBUG: LUA scripts: GetReg: Register #2381(IR6) was not read
+Jan 25 07:25:43.074: DEBUG: LUA scripts: GetReg: Register #2515(IR6) was not read
+Jan 25 07:25:43.076: DEBUG: LUA scripts: GetReg: Register #3849(IR6) was not read
+Jan 25 07:25:43.078: DEBUG: LUA scripts: GetReg: Register #2181(IR8) was not read
+Jan 25 07:25:43.080: DEBUG: LUA scripts: GetReg: Register #2248(IR8) was not read
+Jan 25 07:25:43.082: DEBUG: LUA scripts: GetReg: Register #2382(IR8) was not read
+Jan 25 07:25:43.084: DEBUG: LUA scripts: GetReg: Register #2516(IR8) was not read
+Jan 25 07:25:43.087: DEBUG: LUA scripts: GetReg: Register #2182(IR10) was not read
+Jan 25 07:25:43.089: DEBUG: LUA scripts: GetReg: Register #2249(IR10) was not read
+Jan 25 07:25:43.090: DEBUG: LUA scripts: GetReg: Register #2383(IR10) was not read
+Jan 25 07:25:43.092: DEBUG: LUA scripts: GetReg: Register #2517(IR10) was not read
+Jan 25 07:25:43.096: DEBUG: LUA scripts: GetReg: Register #2177(IR0) was not read
+Jan 25 07:25:43.098: DEBUG: LUA scripts: GetReg: Register #2244(IR0) was not read
+Jan 25 07:25:43.099: DEBUG: LUA scripts: GetReg: Register #2378(IR0) was not read
+Jan 25 07:25:43.101: DEBUG: LUA scripts: GetReg: Register #2512(IR0) was not read
+Jan 25 07:25:43.104: DEBUG: LUA scripts: GetReg: Register #3848(IR0) was not read
+Jan 25 07:25:43.106: DEBUG: LUA scripts: GetReg: Register #2178(IR2) was not read
+Jan 25 07:25:43.107: DEBUG: LUA scripts: GetReg: Register #2245(IR2) was not read
+Jan 25 07:25:43.109: DEBUG: LUA scripts: GetReg: Register #2379(IR2) was not read
+Jan 25 07:25:43.111: DEBUG: LUA scripts: GetReg: Register #2513(IR2) was not read
+Jan 25 07:25:43.114: DEBUG: LUA scripts: GetReg: Register #2179(IR4) was not read
+Jan 25 07:25:43.116: DEBUG: LUA scripts: GetReg: Register #2246(IR4) was not read
+Jan 25 07:25:43.117: DEBUG: LUA scripts: GetReg: Register #2380(IR4) was not read
+Jan 25 07:25:43.119: DEBUG: LUA scripts: GetReg: Register #2514(IR4) was not read
+Jan 25 07:25:43.123: DEBUG: LUA scripts: GetReg: Register #2183(IR12) was not read
+Jan 25 07:25:43.124: DEBUG: LUA scripts: GetReg: Register #2250(IR12) was not read
+Jan 25 07:25:43.126: DEBUG: LUA scripts: GetReg: Register #2384(IR12) was not read
+Jan 25 07:25:43.128: DEBUG: LUA scripts: GetReg: Register #2518(IR12) was not read
+Jan 25 07:25:43.131: DEBUG: LUA scripts: GetReg: Register #3850(IR12) was not read
+Jan 25 07:25:43.133: DEBUG: LUA scripts: GetReg: Register #2184(IR14) was not read
+Jan 25 07:25:43.135: DEBUG: LUA scripts: GetReg: Register #2251(IR14) was not read
+Jan 25 07:25:43.137: DEBUG: LUA scripts: GetReg: Register #2385(IR14) was not read
+Jan 25 07:25:43.139: DEBUG: LUA scripts: GetReg: Register #2519(IR14) was not read
+Jan 25 07:25:43.142: DEBUG: LUA scripts: GetReg: Register #2185(IR16) was not read
+Jan 25 07:25:43.143: DEBUG: LUA scripts: GetReg: Register #2252(IR16) was not read
+Jan 25 07:25:43.145: DEBUG: LUA scripts: GetReg: Register #2386(IR16) was not read
+Jan 25 07:25:43.147: DEBUG: LUA scripts: GetReg: Register #2520(IR16) was not read
+Jan 25 07:25:43.151: DEBUG: LUA scripts: GetReg: Register #2186(IR18) was not read
+Jan 25 07:25:43.152: DEBUG: LUA scripts: GetReg: Register #2253(IR18) was not read
+Jan 25 07:25:43.154: DEBUG: LUA scripts: GetReg: Register #2387(IR18) was not read
+Jan 25 07:25:43.156: DEBUG: LUA scripts: GetReg: Register #2521(IR18) was not read
+Jan 25 07:25:43.158: DEBUG: LUA scripts: GetReg: Register #3851(IR18) was not read
+Jan 25 07:25:43.160: DEBUG: LUA scripts: GetReg: Register #2187(IR20) was not read
+Jan 25 07:25:43.162: DEBUG: LUA scripts: GetReg: Register #2254(IR20) was not read
+Jan 25 07:25:43.164: DEBUG: LUA scripts: GetReg: Register #2388(IR20) was not read
+Jan 25 07:25:43.166: DEBUG: LUA scripts: GetReg: Register #2522(IR20) was not read
+Jan 25 07:25:43.169: DEBUG: LUA scripts: GetReg: Register #2188(IR22) was not read
+Jan 25 07:25:43.170: DEBUG: LUA scripts: GetReg: Register #2255(IR22) was not read
+Jan 25 07:25:43.173: DEBUG: LUA scripts: GetReg: Register #2389(IR22) was not read
+Jan 25 07:25:43.175: DEBUG: LUA scripts: GetReg: Register #2523(IR22) was not read
+Jan 25 07:25:43.178: DEBUG: LUA scripts: GetReg: Register #2189(IR24) was not read
+Jan 25 07:25:43.179: DEBUG: LUA scripts: GetReg: Register #2256(IR24) was not read
+Jan 25 07:25:43.182: DEBUG: LUA scripts: GetReg: Register #2390(IR24) was not read
+Jan 25 07:25:43.183: DEBUG: LUA scripts: GetReg: Register #2524(IR24) was not read
+Jan 25 07:25:43.186: DEBUG: LUA scripts: GetReg: Register #3852(IR24) was not read
+Jan 25 07:25:43.188: DEBUG: LUA scripts: GetReg: Register #2190(IR26) was not read
+Jan 25 07:25:43.190: DEBUG: LUA scripts: GetReg: Register #2257(IR26) was not read
+Jan 25 07:25:43.191: DEBUG: LUA scripts: GetReg: Register #2391(IR26) was not read
+Jan 25 07:25:43.193: DEBUG: LUA scripts: GetReg: Register #2525(IR26) was not read
+Jan 25 07:25:43.197: DEBUG: LUA scripts: GetReg: Register #2191(IR28) was not read
+Jan 25 07:25:43.199: DEBUG: LUA scripts: GetReg: Register #2258(IR28) was not read
+Jan 25 07:25:43.200: DEBUG: LUA scripts: GetReg: Register #2392(IR28) was not read
+Jan 25 07:25:43.202: DEBUG: LUA scripts: GetReg: Register #2526(IR28) was not read
+Jan 25 07:25:43.206: DEBUG: LUA scripts: GetReg: Register #2201(IR52) was not read
+Jan 25 07:25:43.207: DEBUG: LUA scripts: GetReg: Register #2268(IR52) was not read
+Jan 25 07:25:43.209: DEBUG: LUA scripts: GetReg: Register #2402(IR52) was not read
+Jan 25 07:25:43.211: DEBUG: LUA scripts: GetReg: Register #2536(IR52) was not read
+Jan 25 07:25:43.214: DEBUG: LUA scripts: GetReg: Register #3850(IR12) was not read
+Jan 25 07:25:43.216: DEBUG: LUA scripts: GetReg: Register #2202(IR56) was not read
+Jan 25 07:25:43.217: DEBUG: LUA scripts: GetReg: Register #2269(IR56) was not read
+Jan 25 07:25:43.219: DEBUG: LUA scripts: GetReg: Register #2403(IR56) was not read
+Jan 25 07:25:43.221: DEBUG: LUA scripts: GetReg: Register #2537(IR56) was not read
+Jan 25 07:25:43.224: DEBUG: LUA scripts: GetReg: Register #3851(IR18) was not read
+Jan 25 07:25:43.226: DEBUG: LUA scripts: GetReg: Register #2203(IR60) was not read
+Jan 25 07:25:43.227: DEBUG: LUA scripts: GetReg: Register #2270(IR60) was not read
+Jan 25 07:25:43.229: DEBUG: LUA scripts: GetReg: Register #2404(IR60) was not read
+Jan 25 07:25:43.231: DEBUG: LUA scripts: GetReg: Register #2538(IR60) was not read
+Jan 25 07:25:43.234: DEBUG: LUA scripts: GetReg: Register #3852(IR24) was not read
+Jan 25 07:25:43.237: DEBUG: LUA scripts: GetReg: Register #2242(IR342) was not read
+Jan 25 07:25:43.238: DEBUG: LUA scripts: GetReg: Register #2309(IR342) was not read
+Jan 25 07:25:43.240: DEBUG: LUA scripts: GetReg: Register #2443(IR342) was not read
+Jan 25 07:25:43.242: DEBUG: LUA scripts: GetReg: Register #2577(IR342) was not read
+Jan 25 07:25:43.245: DEBUG: LUA scripts: GetReg: Register #3860(IR342) was not read
+Jan 25 07:25:43.247: DEBUG: LUA scripts: GetReg: Register #2243(IR344) was not read
+Jan 25 07:25:43.248: DEBUG: LUA scripts: GetReg: Register #2310(IR344) was not read
+Jan 25 07:25:43.251: DEBUG: LUA scripts: GetReg: Register #2444(IR344) was not read
+Jan 25 07:25:43.253: DEBUG: LUA scripts: GetReg: Register #2578(IR344) was not read
+Jan 25 07:25:43.255: DEBUG: LUA scripts: GetReg: Register #3861(IR344) was not read
+Jan 25 07:25:44.663: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:25:44.663: DEBUG: ModBus: Retry
+Jan 25 07:25:44.665: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:25:44.666: DEBUG: ModBus: Can't send packet
+Jan 25 07:25:44.666: DEBUG: Error! Register #13 at conn #4 was NOT read
+Jan 25 07:25:44.666: DEBUG: Error! Register #14 at conn #4 was NOT read
+Jan 25 07:25:44.667: DEBUG: Error! Register #15 at conn #4 was NOT read
+Jan 25 07:25:44.667: DEBUG: Error! Register #16 at conn #4 was NOT read
+Jan 25 07:25:44.668: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:25:44.669: DEBUG: ModBus: Retry
+Jan 25 07:25:44.671: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:25:44.671: DEBUG: ModBus: Can't send packet
+Jan 25 07:25:44.672: DEBUG: Error! Register #17 at conn #5 was NOT read
+Jan 25 07:25:44.672: DEBUG: Error! Register #18 at conn #5 was NOT read
+Jan 25 07:25:44.672: DEBUG: Error! Register #19 at conn #5 was NOT read
+Jan 25 07:25:44.673: DEBUG: Error! Register #20 at conn #5 was NOT read
+Jan 25 07:25:51.518: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:25:51.518: DEBUG: ModBus: Retry
+Jan 25 07:25:51.520: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:25:51.520: DEBUG: ModBus: Can't send packet
+Jan 25 07:25:51.521: DEBUG: Error! Register #648 at conn #158 was NOT read
+Jan 25 07:25:51.521: DEBUG: Error! Register #649 at conn #158 was NOT read
+Jan 25 07:26:00.727: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.728: DEBUG: ModBus: Retry
+Jan 25 07:26:00.731: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.731: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:00.732: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.732: DEBUG: ModBus: Retry
+Jan 25 07:26:00.735: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.735: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:00.736: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.736: DEBUG: ModBus: Retry
+Jan 25 07:26:00.740: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.740: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:00.741: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.741: DEBUG: ModBus: Retry
+Jan 25 07:26:00.744: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.744: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:00.745: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.745: DEBUG: ModBus: Retry
+Jan 25 07:26:00.748: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.749: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:00.749: DEBUG: ModBus: Skipping reading connection #211 due to read errors.
+Jan 25 07:26:00.750: DEBUG: Error! Register #2177 at conn #211 was NOT read
+Jan 25 07:26:00.750: DEBUG: Error! Register #2178 at conn #211 was NOT read
+Jan 25 07:26:00.751: DEBUG: Error! Register #2179 at conn #211 was NOT read
+Jan 25 07:26:00.751: DEBUG: Error! Register #2180 at conn #211 was NOT read
+Jan 25 07:26:00.751: DEBUG: Error! Register #2181 at conn #211 was NOT read
+Jan 25 07:26:00.751: DEBUG: Error! Register #2182 at conn #211 was NOT read
+Jan 25 07:26:00.752: DEBUG: Error! Register #2183 at conn #211 was NOT read
+Jan 25 07:26:00.752: DEBUG: Error! Register #2184 at conn #211 was NOT read
+Jan 25 07:26:00.752: DEBUG: Error! Register #2185 at conn #211 was NOT read
+Jan 25 07:26:00.753: DEBUG: Error! Register #2186 at conn #211 was NOT read
+Jan 25 07:26:00.753: DEBUG: Error! Register #2187 at conn #211 was NOT read
+Jan 25 07:26:00.754: DEBUG: Error! Register #2188 at conn #211 was NOT read
+Jan 25 07:26:00.754: DEBUG: Error! Register #2189 at conn #211 was NOT read
+Jan 25 07:26:00.754: DEBUG: Error! Register #2190 at conn #211 was NOT read
+Jan 25 07:26:00.755: DEBUG: Error! Register #2191 at conn #211 was NOT read
+Jan 25 07:26:00.755: DEBUG: Error! Register #2192 at conn #211 was NOT read
+Jan 25 07:26:00.756: DEBUG: Error! Register #2193 at conn #211 was NOT read
+Jan 25 07:26:00.756: DEBUG: Error! Register #2194 at conn #211 was NOT read
+Jan 25 07:26:00.756: DEBUG: Error! Register #2195 at conn #211 was NOT read
+Jan 25 07:26:00.757: DEBUG: Error! Register #2196 at conn #211 was NOT read
+Jan 25 07:26:00.757: DEBUG: Error! Register #2197 at conn #211 was NOT read
+Jan 25 07:26:00.757: DEBUG: Error! Register #2198 at conn #211 was NOT read
+Jan 25 07:26:00.758: DEBUG: Error! Register #2199 at conn #211 was NOT read
+Jan 25 07:26:00.758: DEBUG: Error! Register #2200 at conn #211 was NOT read
+Jan 25 07:26:00.759: DEBUG: Error! Register #2201 at conn #211 was NOT read
+Jan 25 07:26:00.759: DEBUG: Error! Register #2202 at conn #211 was NOT read
+Jan 25 07:26:00.759: DEBUG: Error! Register #2203 at conn #211 was NOT read
+Jan 25 07:26:00.760: DEBUG: Error! Register #2204 at conn #211 was NOT read
+Jan 25 07:26:00.760: DEBUG: Error! Register #2205 at conn #211 was NOT read
+Jan 25 07:26:00.760: DEBUG: Error! Register #2206 at conn #211 was NOT read
+Jan 25 07:26:00.761: DEBUG: Error! Register #2207 at conn #211 was NOT read
+Jan 25 07:26:00.761: DEBUG: Error! Register #2208 at conn #211 was NOT read
+Jan 25 07:26:00.761: DEBUG: Error! Register #2209 at conn #211 was NOT read
+Jan 25 07:26:00.762: DEBUG: Error! Register #2210 at conn #211 was NOT read
+Jan 25 07:26:00.762: DEBUG: Error! Register #2211 at conn #211 was NOT read
+Jan 25 07:26:00.762: DEBUG: Error! Register #2212 at conn #211 was NOT read
+Jan 25 07:26:00.763: DEBUG: Error! Register #2242 at conn #211 was NOT read
+Jan 25 07:26:00.763: DEBUG: Error! Register #2243 at conn #211 was NOT read
+Jan 25 07:26:00.764: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.765: DEBUG: ModBus: Retry
+Jan 25 07:26:00.768: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.768: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:00.769: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.769: DEBUG: ModBus: Retry
+Jan 25 07:26:00.772: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.772: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:00.773: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.773: DEBUG: ModBus: Retry
+Jan 25 07:26:00.776: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.776: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:00.777: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.777: DEBUG: ModBus: Retry
+Jan 25 07:26:00.780: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.781: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:00.781: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.782: DEBUG: ModBus: Retry
+Jan 25 07:26:00.785: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:00.785: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:00.785: DEBUG: ModBus: Skipping reading connection #212 due to read errors.
+Jan 25 07:26:00.786: DEBUG: Error! Register #2244 at conn #212 was NOT read
+Jan 25 07:26:00.786: DEBUG: Error! Register #2245 at conn #212 was NOT read
+Jan 25 07:26:00.787: DEBUG: Error! Register #2246 at conn #212 was NOT read
+Jan 25 07:26:00.787: DEBUG: Error! Register #2247 at conn #212 was NOT read
+Jan 25 07:26:00.787: DEBUG: Error! Register #2248 at conn #212 was NOT read
+Jan 25 07:26:00.788: DEBUG: Error! Register #2249 at conn #212 was NOT read
+Jan 25 07:26:00.788: DEBUG: Error! Register #2250 at conn #212 was NOT read
+Jan 25 07:26:00.788: DEBUG: Error! Register #2251 at conn #212 was NOT read
+Jan 25 07:26:00.789: DEBUG: Error! Register #2252 at conn #212 was NOT read
+Jan 25 07:26:00.789: DEBUG: Error! Register #2253 at conn #212 was NOT read
+Jan 25 07:26:00.789: DEBUG: Error! Register #2254 at conn #212 was NOT read
+Jan 25 07:26:00.790: DEBUG: Error! Register #2255 at conn #212 was NOT read
+Jan 25 07:26:00.790: DEBUG: Error! Register #2256 at conn #212 was NOT read
+Jan 25 07:26:00.790: DEBUG: Error! Register #2257 at conn #212 was NOT read
+Jan 25 07:26:00.791: DEBUG: Error! Register #2258 at conn #212 was NOT read
+Jan 25 07:26:00.791: DEBUG: Error! Register #2259 at conn #212 was NOT read
+Jan 25 07:26:00.792: DEBUG: Error! Register #2260 at conn #212 was NOT read
+Jan 25 07:26:00.792: DEBUG: Error! Register #2261 at conn #212 was NOT read
+Jan 25 07:26:00.792: DEBUG: Error! Register #2262 at conn #212 was NOT read
+Jan 25 07:26:00.793: DEBUG: Error! Register #2263 at conn #212 was NOT read
+Jan 25 07:26:00.793: DEBUG: Error! Register #2264 at conn #212 was NOT read
+Jan 25 07:26:00.793: DEBUG: Error! Register #2265 at conn #212 was NOT read
+Jan 25 07:26:00.794: DEBUG: Error! Register #2266 at conn #212 was NOT read
+Jan 25 07:26:00.794: DEBUG: Error! Register #2267 at conn #212 was NOT read
+Jan 25 07:26:00.795: DEBUG: Error! Register #2268 at conn #212 was NOT read
+Jan 25 07:26:00.795: DEBUG: Error! Register #2269 at conn #212 was NOT read
+Jan 25 07:26:00.795: DEBUG: Error! Register #2270 at conn #212 was NOT read
+Jan 25 07:26:00.796: DEBUG: Error! Register #2271 at conn #212 was NOT read
+Jan 25 07:26:00.796: DEBUG: Error! Register #2272 at conn #212 was NOT read
+Jan 25 07:26:00.796: DEBUG: Error! Register #2273 at conn #212 was NOT read
+Jan 25 07:26:00.797: DEBUG: Error! Register #2274 at conn #212 was NOT read
+Jan 25 07:26:00.797: DEBUG: Error! Register #2275 at conn #212 was NOT read
+Jan 25 07:26:00.797: DEBUG: Error! Register #2276 at conn #212 was NOT read
+Jan 25 07:26:00.798: DEBUG: Error! Register #2277 at conn #212 was NOT read
+Jan 25 07:26:00.798: DEBUG: Error! Register #2278 at conn #212 was NOT read
+Jan 25 07:26:00.798: DEBUG: Error! Register #2279 at conn #212 was NOT read
+Jan 25 07:26:00.799: DEBUG: Error! Register #2309 at conn #212 was NOT read
+Jan 25 07:26:00.799: DEBUG: Error! Register #2310 at conn #212 was NOT read
+Jan 25 07:26:01.442: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:01.443: DEBUG: ModBus: Retry
+Jan 25 07:26:01.446: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:01.446: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:01.447: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:01.447: DEBUG: ModBus: Retry
+Jan 25 07:26:01.450: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:01.451: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:01.451: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:01.451: DEBUG: ModBus: Retry
+Jan 25 07:26:01.454: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:01.455: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:01.455: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:01.456: DEBUG: ModBus: Retry
+Jan 25 07:26:01.459: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:01.459: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:01.460: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:01.460: DEBUG: ModBus: Retry
+Jan 25 07:26:01.463: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:01.464: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:01.464: DEBUG: ModBus: Skipping reading connection #214 due to read errors.
+Jan 25 07:26:01.465: DEBUG: Error! Register #2378 at conn #214 was NOT read
+Jan 25 07:26:01.465: DEBUG: Error! Register #2379 at conn #214 was NOT read
+Jan 25 07:26:01.466: DEBUG: Error! Register #2380 at conn #214 was NOT read
+Jan 25 07:26:01.466: DEBUG: Error! Register #2381 at conn #214 was NOT read
+Jan 25 07:26:01.466: DEBUG: Error! Register #2382 at conn #214 was NOT read
+Jan 25 07:26:01.467: DEBUG: Error! Register #2383 at conn #214 was NOT read
+Jan 25 07:26:01.467: DEBUG: Error! Register #2384 at conn #214 was NOT read
+Jan 25 07:26:01.468: DEBUG: Error! Register #2385 at conn #214 was NOT read
+Jan 25 07:26:01.468: DEBUG: Error! Register #2386 at conn #214 was NOT read
+Jan 25 07:26:01.468: DEBUG: Error! Register #2387 at conn #214 was NOT read
+Jan 25 07:26:01.469: DEBUG: Error! Register #2388 at conn #214 was NOT read
+Jan 25 07:26:01.469: DEBUG: Error! Register #2389 at conn #214 was NOT read
+Jan 25 07:26:01.469: DEBUG: Error! Register #2390 at conn #214 was NOT read
+Jan 25 07:26:01.470: DEBUG: Error! Register #2391 at conn #214 was NOT read
+Jan 25 07:26:01.470: DEBUG: Error! Register #2392 at conn #214 was NOT read
+Jan 25 07:26:01.470: DEBUG: Error! Register #2393 at conn #214 was NOT read
+Jan 25 07:26:01.471: DEBUG: Error! Register #2394 at conn #214 was NOT read
+Jan 25 07:26:01.471: DEBUG: Error! Register #2395 at conn #214 was NOT read
+Jan 25 07:26:01.471: DEBUG: Error! Register #2396 at conn #214 was NOT read
+Jan 25 07:26:01.472: DEBUG: Error! Register #2397 at conn #214 was NOT read
+Jan 25 07:26:01.472: DEBUG: Error! Register #2398 at conn #214 was NOT read
+Jan 25 07:26:01.472: DEBUG: Error! Register #2399 at conn #214 was NOT read
+Jan 25 07:26:01.473: DEBUG: Error! Register #2400 at conn #214 was NOT read
+Jan 25 07:26:01.473: DEBUG: Error! Register #2401 at conn #214 was NOT read
+Jan 25 07:26:01.473: DEBUG: Error! Register #2402 at conn #214 was NOT read
+Jan 25 07:26:01.474: DEBUG: Error! Register #2403 at conn #214 was NOT read
+Jan 25 07:26:01.474: DEBUG: Error! Register #2404 at conn #214 was NOT read
+Jan 25 07:26:01.474: DEBUG: Error! Register #2405 at conn #214 was NOT read
+Jan 25 07:26:01.475: DEBUG: Error! Register #2406 at conn #214 was NOT read
+Jan 25 07:26:01.475: DEBUG: Error! Register #2407 at conn #214 was NOT read
+Jan 25 07:26:01.475: DEBUG: Error! Register #2408 at conn #214 was NOT read
+Jan 25 07:26:01.476: DEBUG: Error! Register #2409 at conn #214 was NOT read
+Jan 25 07:26:01.476: DEBUG: Error! Register #2410 at conn #214 was NOT read
+Jan 25 07:26:01.477: DEBUG: Error! Register #2411 at conn #214 was NOT read
+Jan 25 07:26:01.477: DEBUG: Error! Register #2412 at conn #214 was NOT read
+Jan 25 07:26:01.477: DEBUG: Error! Register #2413 at conn #214 was NOT read
+Jan 25 07:26:01.478: DEBUG: Error! Register #2443 at conn #214 was NOT read
+Jan 25 07:26:01.478: DEBUG: Error! Register #2444 at conn #214 was NOT read
+Jan 25 07:26:02.143: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:02.144: DEBUG: ModBus: Retry
+Jan 25 07:26:02.153: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:02.154: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:02.154: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:02.155: DEBUG: ModBus: Retry
+Jan 25 07:26:02.157: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:02.158: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:02.158: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:02.159: DEBUG: ModBus: Retry
+Jan 25 07:26:02.162: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:02.162: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:02.163: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:02.163: DEBUG: ModBus: Retry
+Jan 25 07:26:02.166: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:02.167: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:02.167: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:02.167: DEBUG: ModBus: Retry
+Jan 25 07:26:02.170: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:02.171: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:02.171: DEBUG: ModBus: Skipping reading connection #216 due to read errors.
+Jan 25 07:26:02.172: DEBUG: Error! Register #2512 at conn #216 was NOT read
+Jan 25 07:26:02.172: DEBUG: Error! Register #2513 at conn #216 was NOT read
+Jan 25 07:26:02.172: DEBUG: Error! Register #2514 at conn #216 was NOT read
+Jan 25 07:26:02.173: DEBUG: Error! Register #2515 at conn #216 was NOT read
+Jan 25 07:26:02.173: DEBUG: Error! Register #2516 at conn #216 was NOT read
+Jan 25 07:26:02.173: DEBUG: Error! Register #2517 at conn #216 was NOT read
+Jan 25 07:26:02.174: DEBUG: Error! Register #2518 at conn #216 was NOT read
+Jan 25 07:26:02.174: DEBUG: Error! Register #2519 at conn #216 was NOT read
+Jan 25 07:26:02.174: DEBUG: Error! Register #2520 at conn #216 was NOT read
+Jan 25 07:26:02.175: DEBUG: Error! Register #2521 at conn #216 was NOT read
+Jan 25 07:26:02.175: DEBUG: Error! Register #2522 at conn #216 was NOT read
+Jan 25 07:26:02.175: DEBUG: Error! Register #2523 at conn #216 was NOT read
+Jan 25 07:26:02.176: DEBUG: Error! Register #2524 at conn #216 was NOT read
+Jan 25 07:26:02.176: DEBUG: Error! Register #2525 at conn #216 was NOT read
+Jan 25 07:26:02.177: DEBUG: Error! Register #2526 at conn #216 was NOT read
+Jan 25 07:26:02.177: DEBUG: Error! Register #2527 at conn #216 was NOT read
+Jan 25 07:26:02.177: DEBUG: Error! Register #2528 at conn #216 was NOT read
+Jan 25 07:26:02.178: DEBUG: Error! Register #2529 at conn #216 was NOT read
+Jan 25 07:26:02.178: DEBUG: Error! Register #2530 at conn #216 was NOT read
+Jan 25 07:26:02.178: DEBUG: Error! Register #2531 at conn #216 was NOT read
+Jan 25 07:26:02.179: DEBUG: Error! Register #2532 at conn #216 was NOT read
+Jan 25 07:26:02.179: DEBUG: Error! Register #2533 at conn #216 was NOT read
+Jan 25 07:26:02.179: DEBUG: Error! Register #2534 at conn #216 was NOT read
+Jan 25 07:26:02.180: DEBUG: Error! Register #2535 at conn #216 was NOT read
+Jan 25 07:26:02.180: DEBUG: Error! Register #2536 at conn #216 was NOT read
+Jan 25 07:26:02.181: DEBUG: Error! Register #2537 at conn #216 was NOT read
+Jan 25 07:26:02.181: DEBUG: Error! Register #2538 at conn #216 was NOT read
+Jan 25 07:26:02.182: DEBUG: Error! Register #2539 at conn #216 was NOT read
+Jan 25 07:26:02.182: DEBUG: Error! Register #2540 at conn #216 was NOT read
+Jan 25 07:26:02.182: DEBUG: Error! Register #2541 at conn #216 was NOT read
+Jan 25 07:26:02.183: DEBUG: Error! Register #2542 at conn #216 was NOT read
+Jan 25 07:26:02.183: DEBUG: Error! Register #2543 at conn #216 was NOT read
+Jan 25 07:26:02.183: DEBUG: Error! Register #2544 at conn #216 was NOT read
+Jan 25 07:26:02.184: DEBUG: Error! Register #2545 at conn #216 was NOT read
+Jan 25 07:26:02.184: DEBUG: Error! Register #2546 at conn #216 was NOT read
+Jan 25 07:26:02.184: DEBUG: Error! Register #2547 at conn #216 was NOT read
+Jan 25 07:26:02.185: DEBUG: Error! Register #2577 at conn #216 was NOT read
+Jan 25 07:26:02.185: DEBUG: Error! Register #2578 at conn #216 was NOT read
+Jan 25 07:26:04.168: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:04.168: DEBUG: ModBus: Retry
+Jan 25 07:26:04.171: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:04.172: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:04.172: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:04.172: DEBUG: ModBus: Retry
+Jan 25 07:26:04.175: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:04.176: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:04.177: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:04.177: DEBUG: ModBus: Retry
+Jan 25 07:26:04.180: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:04.181: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:04.181: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:04.181: DEBUG: ModBus: Retry
+Jan 25 07:26:04.184: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:04.185: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:04.185: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:04.186: DEBUG: ModBus: Retry
+Jan 25 07:26:04.189: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:04.189: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:04.189: DEBUG: ModBus: Skipping reading connection #236 due to read errors.
+Jan 25 07:26:04.190: DEBUG: Error! Register #3848 at conn #236 was NOT read
+Jan 25 07:26:04.190: DEBUG: Error! Register #3849 at conn #236 was NOT read
+Jan 25 07:26:04.191: DEBUG: Error! Register #3850 at conn #236 was NOT read
+Jan 25 07:26:04.191: DEBUG: Error! Register #3851 at conn #236 was NOT read
+Jan 25 07:26:04.191: DEBUG: Error! Register #3852 at conn #236 was NOT read
+Jan 25 07:26:04.192: DEBUG: Error! Register #3853 at conn #236 was NOT read
+Jan 25 07:26:04.192: DEBUG: Error! Register #3854 at conn #236 was NOT read
+Jan 25 07:26:04.193: DEBUG: Error! Register #3855 at conn #236 was NOT read
+Jan 25 07:26:04.193: DEBUG: Error! Register #3856 at conn #236 was NOT read
+Jan 25 07:26:04.194: DEBUG: Error! Register #3857 at conn #236 was NOT read
+Jan 25 07:26:04.194: DEBUG: Error! Register #3858 at conn #236 was NOT read
+Jan 25 07:26:04.194: DEBUG: Error! Register #3859 at conn #236 was NOT read
+Jan 25 07:26:04.195: DEBUG: Error! Register #3860 at conn #236 was NOT read
+Jan 25 07:26:04.195: DEBUG: Error! Register #3861 at conn #236 was NOT read
+Jan 25 07:26:07.197: DEBUG: TCP: Can't read packet (no response for 3001 ms)
+Jan 25 07:26:07.198: DEBUG: TCP: Incoming buffer is empty
+Jan 25 07:26:07.198: DEBUG: ModBus/TCP: Can't read ModBusMbapHeader in response
+Jan 25 07:26:07.198: DEBUG: Closing tcp/ip connection (192.168.10.10:503).
+Jan 25 07:26:07.199: DEBUG: ModBus: Can't read register
+Jan 25 07:26:07.200: DEBUG: Error! Register #3862 at conn #237 was NOT read
+Jan 25 07:26:07.200: DEBUG: Error! Register #3863 at conn #237 was NOT read
+Jan 25 07:26:07.201: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.201: DEBUG: ModBus: Retry
+Jan 25 07:26:07.203: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.204: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.205: DEBUG: Error! Register #3864 at conn #238 was NOT read
+Jan 25 07:26:07.205: DEBUG: Error! Register #3865 at conn #238 was NOT read
+Jan 25 07:26:07.206: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.207: DEBUG: ModBus: Retry
+Jan 25 07:26:07.208: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.208: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.209: DEBUG: Error! Register #3866 at conn #239 was NOT read
+Jan 25 07:26:07.209: DEBUG: Error! Register #3867 at conn #239 was NOT read
+Jan 25 07:26:07.210: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:07.210: DEBUG: ModBus: Retry
+Jan 25 07:26:07.211: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:07.212: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.212: DEBUG: Error! Register #3868 at conn #240 was NOT read
+Jan 25 07:26:07.212: DEBUG: Error! Register #3869 at conn #240 was NOT read
+Jan 25 07:26:07.213: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:07.214: DEBUG: ModBus: Retry
+Jan 25 07:26:07.216: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:07.216: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.217: DEBUG: Error! Register #4340 at conn #242 was NOT read
+Jan 25 07:26:07.217: DEBUG: Error! Register #4341 at conn #242 was NOT read
+Jan 25 07:26:07.218: DEBUG: Error! Register #4342 at conn #242 was NOT read
+Jan 25 07:26:07.218: DEBUG: Error! Register #4343 at conn #242 was NOT read
+Jan 25 07:26:07.218: DEBUG: Error! Register #4344 at conn #242 was NOT read
+Jan 25 07:26:07.219: DEBUG: Error! Register #4345 at conn #242 was NOT read
+Jan 25 07:26:07.219: DEBUG: Error! Register #4346 at conn #242 was NOT read
+Jan 25 07:26:07.219: DEBUG: Error! Register #4347 at conn #242 was NOT read
+Jan 25 07:26:07.220: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:07.221: DEBUG: ModBus: Retry
+Jan 25 07:26:07.222: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:07.222: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.223: DEBUG: Error! Register #4348 at conn #243 was NOT read
+Jan 25 07:26:07.223: DEBUG: Error! Register #4349 at conn #243 was NOT read
+Jan 25 07:26:07.224: DEBUG: Error! Register #4350 at conn #243 was NOT read
+Jan 25 07:26:07.224: DEBUG: Error! Register #4351 at conn #243 was NOT read
+Jan 25 07:26:07.224: DEBUG: Error! Register #4352 at conn #243 was NOT read
+Jan 25 07:26:07.225: DEBUG: Error! Register #4353 at conn #243 was NOT read
+Jan 25 07:26:07.225: DEBUG: Error! Register #4354 at conn #243 was NOT read
+Jan 25 07:26:07.225: DEBUG: Error! Register #4355 at conn #243 was NOT read
+Jan 25 07:26:07.226: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:07.227: DEBUG: ModBus: Retry
+Jan 25 07:26:07.229: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:07.229: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.230: DEBUG: Error! Register #4356 at conn #244 was NOT read
+Jan 25 07:26:07.230: DEBUG: Error! Register #4357 at conn #244 was NOT read
+Jan 25 07:26:07.231: DEBUG: Error! Register #4358 at conn #244 was NOT read
+Jan 25 07:26:07.232: DEBUG: Error! Register #4359 at conn #244 was NOT read
+Jan 25 07:26:07.232: DEBUG: Error! Register #4360 at conn #244 was NOT read
+Jan 25 07:26:07.233: DEBUG: Error! Register #4361 at conn #244 was NOT read
+Jan 25 07:26:07.233: DEBUG: Error! Register #4362 at conn #244 was NOT read
+Jan 25 07:26:07.233: DEBUG: Error! Register #4363 at conn #244 was NOT read
+Jan 25 07:26:07.234: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:07.235: DEBUG: ModBus: Retry
+Jan 25 07:26:07.237: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:07.237: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.238: DEBUG: Error! Register #4364 at conn #245 was NOT read
+Jan 25 07:26:07.238: DEBUG: Error! Register #4365 at conn #245 was NOT read
+Jan 25 07:26:07.238: DEBUG: Error! Register #4366 at conn #245 was NOT read
+Jan 25 07:26:07.239: DEBUG: Error! Register #4367 at conn #245 was NOT read
+Jan 25 07:26:07.239: DEBUG: Error! Register #4368 at conn #245 was NOT read
+Jan 25 07:26:07.240: DEBUG: Error! Register #4369 at conn #245 was NOT read
+Jan 25 07:26:07.240: DEBUG: Error! Register #4370 at conn #245 was NOT read
+Jan 25 07:26:07.240: DEBUG: Error! Register #4371 at conn #245 was NOT read
+Jan 25 07:26:07.241: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.242: DEBUG: ModBus: Retry
+Jan 25 07:26:07.245: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.246: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.246: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.247: DEBUG: ModBus: Retry
+Jan 25 07:26:07.250: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.251: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.251: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.252: DEBUG: ModBus: Retry
+Jan 25 07:26:07.255: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.256: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.256: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.257: DEBUG: ModBus: Retry
+Jan 25 07:26:07.260: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.261: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.261: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.261: DEBUG: ModBus: Retry
+Jan 25 07:26:07.265: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.265: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.266: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.266: DEBUG: ModBus: Retry
+Jan 25 07:26:07.270: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.270: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.270: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.271: DEBUG: ModBus: Retry
+Jan 25 07:26:07.274: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.275: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.275: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.276: DEBUG: ModBus: Retry
+Jan 25 07:26:07.279: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.280: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.280: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.280: DEBUG: ModBus: Retry
+Jan 25 07:26:07.284: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.284: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.284: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.285: DEBUG: ModBus: Retry
+Jan 25 07:26:07.288: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.289: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.289: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.289: DEBUG: ModBus: Retry
+Jan 25 07:26:07.293: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.293: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.294: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.294: DEBUG: ModBus: Retry
+Jan 25 07:26:07.298: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.298: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.299: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.299: DEBUG: ModBus: Retry
+Jan 25 07:26:07.302: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.303: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.303: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.304: DEBUG: ModBus: Retry
+Jan 25 07:26:07.307: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.307: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.308: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.308: DEBUG: ModBus: Retry
+Jan 25 07:26:07.312: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.312: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.313: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.313: DEBUG: ModBus: Retry
+Jan 25 07:26:07.316: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.317: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.317: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.318: DEBUG: ModBus: Retry
+Jan 25 07:26:07.321: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.321: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.322: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.322: DEBUG: ModBus: Retry
+Jan 25 07:26:07.326: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.326: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.327: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.327: DEBUG: ModBus: Retry
+Jan 25 07:26:07.330: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.331: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.331: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.332: DEBUG: ModBus: Retry
+Jan 25 07:26:07.335: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.336: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.336: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.337: DEBUG: ModBus: Retry
+Jan 25 07:26:07.340: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.341: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.341: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.341: DEBUG: ModBus: Retry
+Jan 25 07:26:07.345: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.345: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.346: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.346: DEBUG: ModBus: Retry
+Jan 25 07:26:07.349: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.350: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.350: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.351: DEBUG: ModBus: Retry
+Jan 25 07:26:07.354: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.355: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.355: DEBUG: Error! Register #4240 at conn #247 was NOT read
+Jan 25 07:26:07.355: DEBUG: Error! Register #4241 at conn #247 was NOT read
+Jan 25 07:26:07.356: DEBUG: Error! Register #4242 at conn #247 was NOT read
+Jan 25 07:26:07.356: DEBUG: Error! Register #4243 at conn #247 was NOT read
+Jan 25 07:26:07.357: DEBUG: Error! Register #4244 at conn #247 was NOT read
+Jan 25 07:26:07.357: DEBUG: Error! Register #4245 at conn #247 was NOT read
+Jan 25 07:26:07.358: DEBUG: Error! Register #4246 at conn #247 was NOT read
+Jan 25 07:26:07.358: DEBUG: Error! Register #4247 at conn #247 was NOT read
+Jan 25 07:26:07.358: DEBUG: Error! Register #4248 at conn #247 was NOT read
+Jan 25 07:26:07.359: DEBUG: Error! Register #4249 at conn #247 was NOT read
+Jan 25 07:26:07.359: DEBUG: Error! Register #4250 at conn #247 was NOT read
+Jan 25 07:26:07.359: DEBUG: Error! Register #4251 at conn #247 was NOT read
+Jan 25 07:26:07.360: DEBUG: Error! Register #4252 at conn #247 was NOT read
+Jan 25 07:26:07.360: DEBUG: Error! Register #4253 at conn #247 was NOT read
+Jan 25 07:26:07.361: DEBUG: Error! Register #4254 at conn #247 was NOT read
+Jan 25 07:26:07.361: DEBUG: Error! Register #4255 at conn #247 was NOT read
+Jan 25 07:26:07.361: DEBUG: Error! Register #4256 at conn #247 was NOT read
+Jan 25 07:26:07.362: DEBUG: Error! Register #4257 at conn #247 was NOT read
+Jan 25 07:26:07.362: DEBUG: Error! Register #4258 at conn #247 was NOT read
+Jan 25 07:26:07.362: DEBUG: Error! Register #4259 at conn #247 was NOT read
+Jan 25 07:26:07.362: DEBUG: Error! Register #4260 at conn #247 was NOT read
+Jan 25 07:26:07.363: DEBUG: Error! Register #4261 at conn #247 was NOT read
+Jan 25 07:26:07.363: DEBUG: Error! Register #4262 at conn #247 was NOT read
+Jan 25 07:26:07.363: DEBUG: Error! Register #4263 at conn #247 was NOT read
+Jan 25 07:26:07.364: DEBUG: Error! Register #4264 at conn #247 was NOT read
+Jan 25 07:26:07.364: DEBUG: Error! Register #4265 at conn #247 was NOT read
+Jan 25 07:26:07.365: DEBUG: Error! Register #4266 at conn #247 was NOT read
+Jan 25 07:26:07.365: DEBUG: Error! Register #4267 at conn #247 was NOT read
+Jan 25 07:26:07.365: DEBUG: Error! Register #4268 at conn #247 was NOT read
+Jan 25 07:26:07.366: DEBUG: Error! Register #4269 at conn #247 was NOT read
+Jan 25 07:26:07.366: DEBUG: Error! Register #4270 at conn #247 was NOT read
+Jan 25 07:26:07.366: DEBUG: Error! Register #4271 at conn #247 was NOT read
+Jan 25 07:26:07.367: DEBUG: Error! Register #4272 at conn #247 was NOT read
+Jan 25 07:26:07.367: DEBUG: Error! Register #4273 at conn #247 was NOT read
+Jan 25 07:26:07.367: DEBUG: Error! Register #4274 at conn #247 was NOT read
+Jan 25 07:26:07.368: DEBUG: Error! Register #4275 at conn #247 was NOT read
+Jan 25 07:26:07.368: DEBUG: Error! Register #4276 at conn #247 was NOT read
+Jan 25 07:26:07.368: DEBUG: Error! Register #4277 at conn #247 was NOT read
+Jan 25 07:26:07.369: DEBUG: Error! Register #4278 at conn #247 was NOT read
+Jan 25 07:26:07.369: DEBUG: Error! Register #4279 at conn #247 was NOT read
+Jan 25 07:26:07.370: DEBUG: Error! Register #4280 at conn #247 was NOT read
+Jan 25 07:26:07.370: DEBUG: Error! Register #4281 at conn #247 was NOT read
+Jan 25 07:26:07.370: DEBUG: Error! Register #4282 at conn #247 was NOT read
+Jan 25 07:26:07.371: DEBUG: Error! Register #4283 at conn #247 was NOT read
+Jan 25 07:26:07.371: DEBUG: Error! Register #4284 at conn #247 was NOT read
+Jan 25 07:26:07.371: DEBUG: Error! Register #4285 at conn #247 was NOT read
+Jan 25 07:26:07.372: DEBUG: Error! Register #4286 at conn #247 was NOT read
+Jan 25 07:26:07.372: DEBUG: Error! Register #4287 at conn #247 was NOT read
+Jan 25 07:26:07.372: DEBUG: Error! Register #4288 at conn #247 was NOT read
+Jan 25 07:26:07.373: DEBUG: Error! Register #4289 at conn #247 was NOT read
+Jan 25 07:26:07.373: DEBUG: Error! Register #4290 at conn #247 was NOT read
+Jan 25 07:26:07.373: DEBUG: Error! Register #4291 at conn #247 was NOT read
+Jan 25 07:26:07.374: DEBUG: Error! Register #4292 at conn #247 was NOT read
+Jan 25 07:26:07.374: DEBUG: Error! Register #4293 at conn #247 was NOT read
+Jan 25 07:26:07.375: DEBUG: Error! Register #4294 at conn #247 was NOT read
+Jan 25 07:26:07.375: DEBUG: Error! Register #4295 at conn #247 was NOT read
+Jan 25 07:26:07.376: DEBUG: Error! Register #4296 at conn #247 was NOT read
+Jan 25 07:26:07.376: DEBUG: Error! Register #4297 at conn #247 was NOT read
+Jan 25 07:26:07.376: DEBUG: Error! Register #4298 at conn #247 was NOT read
+Jan 25 07:26:07.377: DEBUG: Error! Register #4299 at conn #247 was NOT read
+Jan 25 07:26:07.377: DEBUG: Error! Register #4300 at conn #247 was NOT read
+Jan 25 07:26:07.377: DEBUG: Error! Register #4301 at conn #247 was NOT read
+Jan 25 07:26:07.378: DEBUG: Error! Register #4302 at conn #247 was NOT read
+Jan 25 07:26:07.378: DEBUG: Error! Register #4303 at conn #247 was NOT read
+Jan 25 07:26:07.378: DEBUG: Error! Register #4304 at conn #247 was NOT read
+Jan 25 07:26:07.379: DEBUG: Error! Register #4305 at conn #247 was NOT read
+Jan 25 07:26:07.379: DEBUG: Error! Register #4306 at conn #247 was NOT read
+Jan 25 07:26:07.379: DEBUG: Error! Register #4307 at conn #247 was NOT read
+Jan 25 07:26:07.380: DEBUG: Error! Register #4308 at conn #247 was NOT read
+Jan 25 07:26:07.380: DEBUG: Error! Register #4309 at conn #247 was NOT read
+Jan 25 07:26:07.380: DEBUG: Error! Register #4310 at conn #247 was NOT read
+Jan 25 07:26:07.381: DEBUG: Error! Register #4311 at conn #247 was NOT read
+Jan 25 07:26:07.381: DEBUG: Error! Register #4312 at conn #247 was NOT read
+Jan 25 07:26:07.381: DEBUG: Error! Register #4313 at conn #247 was NOT read
+Jan 25 07:26:07.382: DEBUG: Error! Register #4314 at conn #247 was NOT read
+Jan 25 07:26:07.382: DEBUG: Error! Register #4315 at conn #247 was NOT read
+Jan 25 07:26:07.382: DEBUG: Error! Register #4316 at conn #247 was NOT read
+Jan 25 07:26:07.383: DEBUG: Error! Register #4317 at conn #247 was NOT read
+Jan 25 07:26:07.383: DEBUG: Error! Register #4318 at conn #247 was NOT read
+Jan 25 07:26:07.383: DEBUG: Error! Register #4319 at conn #247 was NOT read
+Jan 25 07:26:07.384: DEBUG: Error! Register #4320 at conn #247 was NOT read
+Jan 25 07:26:07.384: DEBUG: Error! Register #4321 at conn #247 was NOT read
+Jan 25 07:26:07.384: DEBUG: Error! Register #4322 at conn #247 was NOT read
+Jan 25 07:26:07.385: DEBUG: Error! Register #4323 at conn #247 was NOT read
+Jan 25 07:26:07.385: DEBUG: Error! Register #4324 at conn #247 was NOT read
+Jan 25 07:26:07.385: DEBUG: Error! Register #4325 at conn #247 was NOT read
+Jan 25 07:26:07.386: DEBUG: Error! Register #4326 at conn #247 was NOT read
+Jan 25 07:26:07.386: DEBUG: Error! Register #4327 at conn #247 was NOT read
+Jan 25 07:26:07.387: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.388: DEBUG: ModBus: Retry
+Jan 25 07:26:07.389: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:07.390: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:07.390: DEBUG: Error! Register #4146 at conn #248 was NOT read
+Jan 25 07:26:07.391: DEBUG: Error! Register #4147 at conn #248 was NOT read
+Jan 25 07:26:07.391: DEBUG: Error! Register #4148 at conn #248 was NOT read
+Jan 25 07:26:07.392: DEBUG: Error! Register #4149 at conn #248 was NOT read
+Jan 25 07:26:07.392: DEBUG: Error! Register #4150 at conn #248 was NOT read
+Jan 25 07:26:07.392: DEBUG: Error! Register #4151 at conn #248 was NOT read
+Jan 25 07:26:07.393: DEBUG: Error! Register #4152 at conn #248 was NOT read
+Jan 25 07:26:07.393: DEBUG: Error! Register #4153 at conn #248 was NOT read
+Jan 25 07:26:07.393: DEBUG: Error! Register #4154 at conn #248 was NOT read
+Jan 25 07:26:07.394: DEBUG: Error! Register #4155 at conn #248 was NOT read
+Jan 25 07:26:07.394: DEBUG: Error! Register #4156 at conn #248 was NOT read
+Jan 25 07:26:07.394: DEBUG: Error! Register #4157 at conn #248 was NOT read
+Jan 25 07:26:07.394: DEBUG: Error! Register #4158 at conn #248 was NOT read
+Jan 25 07:26:07.395: DEBUG: Error! Register #4159 at conn #248 was NOT read
+Jan 25 07:26:08.053: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.053: DEBUG: ModBus: Retry
+Jan 25 07:26:08.055: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.056: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.056: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.057: DEBUG: ModBus: Retry
+Jan 25 07:26:08.059: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.059: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.060: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.060: DEBUG: ModBus: Retry
+Jan 25 07:26:08.062: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.062: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.063: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.063: DEBUG: ModBus: Retry
+Jan 25 07:26:08.065: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.066: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.066: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.067: DEBUG: ModBus: Retry
+Jan 25 07:26:08.069: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.069: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.070: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.070: DEBUG: ModBus: Retry
+Jan 25 07:26:08.072: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.072: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.073: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.073: DEBUG: ModBus: Retry
+Jan 25 07:26:08.075: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.075: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.076: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.076: DEBUG: ModBus: Retry
+Jan 25 07:26:08.078: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.078: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.079: DEBUG: Error! Register #4180 at conn #252 was NOT read
+Jan 25 07:26:08.080: DEBUG: Error! Register #4181 at conn #252 was NOT read
+Jan 25 07:26:08.080: DEBUG: Error! Register #4182 at conn #252 was NOT read
+Jan 25 07:26:08.080: DEBUG: Error! Register #4183 at conn #252 was NOT read
+Jan 25 07:26:08.081: DEBUG: Error! Register #4184 at conn #252 was NOT read
+Jan 25 07:26:08.081: DEBUG: Error! Register #4185 at conn #252 was NOT read
+Jan 25 07:26:08.081: DEBUG: Error! Register #4329 at conn #252 was NOT read
+Jan 25 07:26:08.082: DEBUG: Error! Register #4335 at conn #252 was NOT read
+Jan 25 07:26:08.082: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.083: DEBUG: ModBus: Retry
+Jan 25 07:26:08.085: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.085: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.086: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.086: DEBUG: ModBus: Retry
+Jan 25 07:26:08.088: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.089: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.089: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.090: DEBUG: ModBus: Retry
+Jan 25 07:26:08.092: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.092: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.092: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.093: DEBUG: ModBus: Retry
+Jan 25 07:26:08.095: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.095: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.095: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.096: DEBUG: ModBus: Retry
+Jan 25 07:26:08.098: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.098: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.099: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.099: DEBUG: ModBus: Retry
+Jan 25 07:26:08.101: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.101: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.102: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.102: DEBUG: ModBus: Retry
+Jan 25 07:26:08.104: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.105: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.105: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.105: DEBUG: ModBus: Retry
+Jan 25 07:26:08.107: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.108: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.108: DEBUG: Error! Register #4186 at conn #253 was NOT read
+Jan 25 07:26:08.109: DEBUG: Error! Register #4187 at conn #253 was NOT read
+Jan 25 07:26:08.109: DEBUG: Error! Register #4188 at conn #253 was NOT read
+Jan 25 07:26:08.109: DEBUG: Error! Register #4189 at conn #253 was NOT read
+Jan 25 07:26:08.110: DEBUG: Error! Register #4190 at conn #253 was NOT read
+Jan 25 07:26:08.110: DEBUG: Error! Register #4191 at conn #253 was NOT read
+Jan 25 07:26:08.110: DEBUG: Error! Register #4330 at conn #253 was NOT read
+Jan 25 07:26:08.111: DEBUG: Error! Register #4336 at conn #253 was NOT read
+Jan 25 07:26:08.112: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.112: DEBUG: ModBus: Retry
+Jan 25 07:26:08.114: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.115: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.115: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.116: DEBUG: ModBus: Retry
+Jan 25 07:26:08.118: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.118: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.119: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.119: DEBUG: ModBus: Retry
+Jan 25 07:26:08.125: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.125: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.126: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.131: DEBUG: ModBus: Retry
+Jan 25 07:26:08.133: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.133: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.134: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.134: DEBUG: ModBus: Retry
+Jan 25 07:26:08.136: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.137: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.137: DEBUG: ModBus: Skipping reading connection #254 due to read errors.
+Jan 25 07:26:08.138: DEBUG: Error! Register #4192 at conn #254 was NOT read
+Jan 25 07:26:08.138: DEBUG: Error! Register #4193 at conn #254 was NOT read
+Jan 25 07:26:08.139: DEBUG: Error! Register #4194 at conn #254 was NOT read
+Jan 25 07:26:08.139: DEBUG: Error! Register #4195 at conn #254 was NOT read
+Jan 25 07:26:08.139: DEBUG: Error! Register #4196 at conn #254 was NOT read
+Jan 25 07:26:08.140: DEBUG: Error! Register #4197 at conn #254 was NOT read
+Jan 25 07:26:08.140: DEBUG: Error! Register #4331 at conn #254 was NOT read
+Jan 25 07:26:08.140: DEBUG: Error! Register #4337 at conn #254 was NOT read
+Jan 25 07:26:08.141: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.145: DEBUG: ModBus: Retry
+Jan 25 07:26:08.151: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.151: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.152: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.152: DEBUG: ModBus: Retry
+Jan 25 07:26:08.154: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.155: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.155: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.155: DEBUG: ModBus: Retry
+Jan 25 07:26:08.157: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.158: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.158: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.159: DEBUG: ModBus: Retry
+Jan 25 07:26:08.161: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.161: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.162: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.162: DEBUG: ModBus: Retry
+Jan 25 07:26:08.164: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.164: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.167: DEBUG: ModBus: Skipping reading connection #255 due to read errors.
+Jan 25 07:26:08.171: DEBUG: Error! Register #4198 at conn #255 was NOT read
+Jan 25 07:26:08.171: DEBUG: Error! Register #4199 at conn #255 was NOT read
+Jan 25 07:26:08.171: DEBUG: Error! Register #4200 at conn #255 was NOT read
+Jan 25 07:26:08.172: DEBUG: Error! Register #4201 at conn #255 was NOT read
+Jan 25 07:26:08.172: DEBUG: Error! Register #4202 at conn #255 was NOT read
+Jan 25 07:26:08.172: DEBUG: Error! Register #4203 at conn #255 was NOT read
+Jan 25 07:26:08.173: DEBUG: Error! Register #4332 at conn #255 was NOT read
+Jan 25 07:26:08.173: DEBUG: Error! Register #4338 at conn #255 was NOT read
+Jan 25 07:26:08.174: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.174: DEBUG: ModBus: Retry
+Jan 25 07:26:08.176: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.177: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.177: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.177: DEBUG: ModBus: Retry
+Jan 25 07:26:08.179: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.180: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.180: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.181: DEBUG: ModBus: Retry
+Jan 25 07:26:08.183: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.183: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.183: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.184: DEBUG: ModBus: Retry
+Jan 25 07:26:08.186: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.186: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.187: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.187: DEBUG: ModBus: Retry
+Jan 25 07:26:08.189: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:08.190: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:08.190: DEBUG: ModBus: Skipping reading connection #256 due to read errors.
+Jan 25 07:26:08.190: DEBUG: Error! Register #4204 at conn #256 was NOT read
+Jan 25 07:26:08.191: DEBUG: Error! Register #4205 at conn #256 was NOT read
+Jan 25 07:26:08.191: DEBUG: Error! Register #4206 at conn #256 was NOT read
+Jan 25 07:26:08.199: DEBUG: Error! Register #4207 at conn #256 was NOT read
+Jan 25 07:26:08.199: DEBUG: Error! Register #4208 at conn #256 was NOT read
+Jan 25 07:26:08.200: DEBUG: Error! Register #4209 at conn #256 was NOT read
+Jan 25 07:26:08.200: DEBUG: Error! Register #4333 at conn #256 was NOT read
+Jan 25 07:26:08.201: DEBUG: Error! Register #4339 at conn #256 was NOT read
+Jan 25 07:26:08.208: DEBUG: LUA scripts: GetReg: Register #2180(IR6) was not read
+Jan 25 07:26:08.209: DEBUG: LUA scripts: GetReg: Register #2247(IR6) was not read
+Jan 25 07:26:08.211: DEBUG: LUA scripts: GetReg: Register #2381(IR6) was not read
+Jan 25 07:26:08.213: DEBUG: LUA scripts: GetReg: Register #2515(IR6) was not read
+Jan 25 07:26:08.216: DEBUG: LUA scripts: GetReg: Register #3849(IR6) was not read
+Jan 25 07:26:08.218: DEBUG: LUA scripts: GetReg: Register #2181(IR8) was not read
+Jan 25 07:26:08.219: DEBUG: LUA scripts: GetReg: Register #2248(IR8) was not read
+Jan 25 07:26:08.221: DEBUG: LUA scripts: GetReg: Register #2382(IR8) was not read
+Jan 25 07:26:08.223: DEBUG: LUA scripts: GetReg: Register #2516(IR8) was not read
+Jan 25 07:26:08.227: DEBUG: LUA scripts: GetReg: Register #2182(IR10) was not read
+Jan 25 07:26:08.228: DEBUG: LUA scripts: GetReg: Register #2249(IR10) was not read
+Jan 25 07:26:08.230: DEBUG: LUA scripts: GetReg: Register #2383(IR10) was not read
+Jan 25 07:26:08.232: DEBUG: LUA scripts: GetReg: Register #2517(IR10) was not read
+Jan 25 07:26:08.235: DEBUG: LUA scripts: GetReg: Register #2177(IR0) was not read
+Jan 25 07:26:08.236: DEBUG: LUA scripts: GetReg: Register #2244(IR0) was not read
+Jan 25 07:26:08.239: DEBUG: LUA scripts: GetReg: Register #2378(IR0) was not read
+Jan 25 07:26:08.240: DEBUG: LUA scripts: GetReg: Register #2512(IR0) was not read
+Jan 25 07:26:08.245: DEBUG: LUA scripts: GetReg: Register #3848(IR0) was not read
+Jan 25 07:26:08.247: DEBUG: LUA scripts: GetReg: Register #2178(IR2) was not read
+Jan 25 07:26:08.248: DEBUG: LUA scripts: GetReg: Register #2245(IR2) was not read
+Jan 25 07:26:08.250: DEBUG: LUA scripts: GetReg: Register #2379(IR2) was not read
+Jan 25 07:26:08.252: DEBUG: LUA scripts: GetReg: Register #2513(IR2) was not read
+Jan 25 07:26:08.255: DEBUG: LUA scripts: GetReg: Register #2179(IR4) was not read
+Jan 25 07:26:08.256: DEBUG: LUA scripts: GetReg: Register #2246(IR4) was not read
+Jan 25 07:26:08.258: DEBUG: LUA scripts: GetReg: Register #2380(IR4) was not read
+Jan 25 07:26:08.260: DEBUG: LUA scripts: GetReg: Register #2514(IR4) was not read
+Jan 25 07:26:08.263: DEBUG: LUA scripts: GetReg: Register #2183(IR12) was not read
+Jan 25 07:26:08.264: DEBUG: LUA scripts: GetReg: Register #2250(IR12) was not read
+Jan 25 07:26:08.267: DEBUG: LUA scripts: GetReg: Register #2384(IR12) was not read
+Jan 25 07:26:08.269: DEBUG: LUA scripts: GetReg: Register #2518(IR12) was not read
+Jan 25 07:26:08.272: DEBUG: LUA scripts: GetReg: Register #3850(IR12) was not read
+Jan 25 07:26:08.274: DEBUG: LUA scripts: GetReg: Register #2184(IR14) was not read
+Jan 25 07:26:08.275: DEBUG: LUA scripts: GetReg: Register #2251(IR14) was not read
+Jan 25 07:26:08.277: DEBUG: LUA scripts: GetReg: Register #2385(IR14) was not read
+Jan 25 07:26:08.279: DEBUG: LUA scripts: GetReg: Register #2519(IR14) was not read
+Jan 25 07:26:08.282: DEBUG: LUA scripts: GetReg: Register #2185(IR16) was not read
+Jan 25 07:26:08.284: DEBUG: LUA scripts: GetReg: Register #2252(IR16) was not read
+Jan 25 07:26:08.285: DEBUG: LUA scripts: GetReg: Register #2386(IR16) was not read
+Jan 25 07:26:08.287: DEBUG: LUA scripts: GetReg: Register #2520(IR16) was not read
+Jan 25 07:26:08.291: DEBUG: LUA scripts: GetReg: Register #2186(IR18) was not read
+Jan 25 07:26:08.292: DEBUG: LUA scripts: GetReg: Register #2253(IR18) was not read
+Jan 25 07:26:08.294: DEBUG: LUA scripts: GetReg: Register #2387(IR18) was not read
+Jan 25 07:26:08.296: DEBUG: LUA scripts: GetReg: Register #2521(IR18) was not read
+Jan 25 07:26:08.299: DEBUG: LUA scripts: GetReg: Register #3851(IR18) was not read
+Jan 25 07:26:08.301: DEBUG: LUA scripts: GetReg: Register #2187(IR20) was not read
+Jan 25 07:26:08.302: DEBUG: LUA scripts: GetReg: Register #2254(IR20) was not read
+Jan 25 07:26:08.304: DEBUG: LUA scripts: GetReg: Register #2388(IR20) was not read
+Jan 25 07:26:08.306: DEBUG: LUA scripts: GetReg: Register #2522(IR20) was not read
+Jan 25 07:26:08.309: DEBUG: LUA scripts: GetReg: Register #2188(IR22) was not read
+Jan 25 07:26:08.311: DEBUG: LUA scripts: GetReg: Register #2255(IR22) was not read
+Jan 25 07:26:08.312: DEBUG: LUA scripts: GetReg: Register #2389(IR22) was not read
+Jan 25 07:26:08.314: DEBUG: LUA scripts: GetReg: Register #2523(IR22) was not read
+Jan 25 07:26:08.318: DEBUG: LUA scripts: GetReg: Register #2189(IR24) was not read
+Jan 25 07:26:08.320: DEBUG: LUA scripts: GetReg: Register #2256(IR24) was not read
+Jan 25 07:26:08.322: DEBUG: LUA scripts: GetReg: Register #2390(IR24) was not read
+Jan 25 07:26:08.324: DEBUG: LUA scripts: GetReg: Register #2524(IR24) was not read
+Jan 25 07:26:08.327: DEBUG: LUA scripts: GetReg: Register #3852(IR24) was not read
+Jan 25 07:26:08.329: DEBUG: LUA scripts: GetReg: Register #2190(IR26) was not read
+Jan 25 07:26:08.330: DEBUG: LUA scripts: GetReg: Register #2257(IR26) was not read
+Jan 25 07:26:08.332: DEBUG: LUA scripts: GetReg: Register #2391(IR26) was not read
+Jan 25 07:26:08.333: DEBUG: LUA scripts: GetReg: Register #2525(IR26) was not read
+Jan 25 07:26:08.337: DEBUG: LUA scripts: GetReg: Register #2191(IR28) was not read
+Jan 25 07:26:08.338: DEBUG: LUA scripts: GetReg: Register #2258(IR28) was not read
+Jan 25 07:26:08.340: DEBUG: LUA scripts: GetReg: Register #2392(IR28) was not read
+Jan 25 07:26:08.342: DEBUG: LUA scripts: GetReg: Register #2526(IR28) was not read
+Jan 25 07:26:08.346: DEBUG: LUA scripts: GetReg: Register #2201(IR52) was not read
+Jan 25 07:26:08.348: DEBUG: LUA scripts: GetReg: Register #2268(IR52) was not read
+Jan 25 07:26:08.349: DEBUG: LUA scripts: GetReg: Register #2402(IR52) was not read
+Jan 25 07:26:08.351: DEBUG: LUA scripts: GetReg: Register #2536(IR52) was not read
+Jan 25 07:26:08.354: DEBUG: LUA scripts: GetReg: Register #3850(IR12) was not read
+Jan 25 07:26:08.356: DEBUG: LUA scripts: GetReg: Register #2202(IR56) was not read
+Jan 25 07:26:08.357: DEBUG: LUA scripts: GetReg: Register #2269(IR56) was not read
+Jan 25 07:26:08.359: DEBUG: LUA scripts: GetReg: Register #2403(IR56) was not read
+Jan 25 07:26:08.361: DEBUG: LUA scripts: GetReg: Register #2537(IR56) was not read
+Jan 25 07:26:08.364: DEBUG: LUA scripts: GetReg: Register #3851(IR18) was not read
+Jan 25 07:26:08.366: DEBUG: LUA scripts: GetReg: Register #2203(IR60) was not read
+Jan 25 07:26:08.367: DEBUG: LUA scripts: GetReg: Register #2270(IR60) was not read
+Jan 25 07:26:08.369: DEBUG: LUA scripts: GetReg: Register #2404(IR60) was not read
+Jan 25 07:26:08.371: DEBUG: LUA scripts: GetReg: Register #2538(IR60) was not read
+Jan 25 07:26:08.374: DEBUG: LUA scripts: GetReg: Register #3852(IR24) was not read
+Jan 25 07:26:08.377: DEBUG: LUA scripts: GetReg: Register #2242(IR342) was not read
+Jan 25 07:26:08.378: DEBUG: LUA scripts: GetReg: Register #2309(IR342) was not read
+Jan 25 07:26:08.379: DEBUG: LUA scripts: GetReg: Register #2443(IR342) was not read
+Jan 25 07:26:08.381: DEBUG: LUA scripts: GetReg: Register #2577(IR342) was not read
+Jan 25 07:26:08.384: DEBUG: LUA scripts: GetReg: Register #3860(IR342) was not read
+Jan 25 07:26:08.386: DEBUG: LUA scripts: GetReg: Register #2243(IR344) was not read
+Jan 25 07:26:08.388: DEBUG: LUA scripts: GetReg: Register #2310(IR344) was not read
+Jan 25 07:26:08.389: DEBUG: LUA scripts: GetReg: Register #2444(IR344) was not read
+Jan 25 07:26:08.391: DEBUG: LUA scripts: GetReg: Register #2578(IR344) was not read
+Jan 25 07:26:08.394: DEBUG: LUA scripts: GetReg: Register #3861(IR344) was not read
+Jan 25 07:26:15.922: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:15.922: DEBUG: ModBus: Retry
+Jan 25 07:26:15.925: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:15.926: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:15.926: DEBUG: Error! Register #1 at conn #1 was NOT read
+Jan 25 07:26:15.926: DEBUG: Error! Register #2 at conn #1 was NOT read
+Jan 25 07:26:15.927: DEBUG: Error! Register #3 at conn #1 was NOT read
+Jan 25 07:26:15.927: DEBUG: Error! Register #4 at conn #1 was NOT read
+Jan 25 07:26:15.928: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:15.929: DEBUG: ModBus: Retry
+Jan 25 07:26:15.930: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:15.931: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:15.931: DEBUG: Error! Register #5 at conn #2 was NOT read
+Jan 25 07:26:15.932: DEBUG: Error! Register #6 at conn #2 was NOT read
+Jan 25 07:26:15.932: DEBUG: Error! Register #7 at conn #2 was NOT read
+Jan 25 07:26:15.932: DEBUG: Error! Register #8 at conn #2 was NOT read
+Jan 25 07:26:15.992: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:15.993: DEBUG: ModBus: Retry
+Jan 25 07:26:15.995: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:15.995: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:15.995: DEBUG: Error! Register #13 at conn #4 was NOT read
+Jan 25 07:26:15.996: DEBUG: Error! Register #14 at conn #4 was NOT read
+Jan 25 07:26:15.997: DEBUG: Error! Register #15 at conn #4 was NOT read
+Jan 25 07:26:15.997: DEBUG: Error! Register #16 at conn #4 was NOT read
+Jan 25 07:26:15.998: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:15.998: DEBUG: ModBus: Retry
+Jan 25 07:26:16.000: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:16.001: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:16.001: DEBUG: Error! Register #17 at conn #5 was NOT read
+Jan 25 07:26:16.001: DEBUG: Error! Register #18 at conn #5 was NOT read
+Jan 25 07:26:16.002: DEBUG: Error! Register #19 at conn #5 was NOT read
+Jan 25 07:26:16.002: DEBUG: Error! Register #20 at conn #5 was NOT read
+Jan 25 07:26:22.837: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:22.838: DEBUG: ModBus: Retry
+Jan 25 07:26:22.840: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:22.840: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:22.841: DEBUG: Error! Register #648 at conn #158 was NOT read
+Jan 25 07:26:22.841: DEBUG: Error! Register #649 at conn #158 was NOT read
+Jan 25 07:26:32.048: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.048: DEBUG: ModBus: Retry
+Jan 25 07:26:32.051: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.052: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:32.052: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.053: DEBUG: ModBus: Retry
+Jan 25 07:26:32.056: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.056: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:32.057: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.057: DEBUG: ModBus: Retry
+Jan 25 07:26:32.060: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.060: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:32.061: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.061: DEBUG: ModBus: Retry
+Jan 25 07:26:32.064: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.065: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:32.065: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.065: DEBUG: ModBus: Retry
+Jan 25 07:26:32.068: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.069: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:32.069: DEBUG: ModBus: Skipping reading connection #211 due to read errors.
+Jan 25 07:26:32.070: DEBUG: Error! Register #2177 at conn #211 was NOT read
+Jan 25 07:26:32.070: DEBUG: Error! Register #2178 at conn #211 was NOT read
+Jan 25 07:26:32.070: DEBUG: Error! Register #2179 at conn #211 was NOT read
+Jan 25 07:26:32.071: DEBUG: Error! Register #2180 at conn #211 was NOT read
+Jan 25 07:26:32.071: DEBUG: Error! Register #2181 at conn #211 was NOT read
+Jan 25 07:26:32.071: DEBUG: Error! Register #2182 at conn #211 was NOT read
+Jan 25 07:26:32.072: DEBUG: Error! Register #2183 at conn #211 was NOT read
+Jan 25 07:26:32.072: DEBUG: Error! Register #2184 at conn #211 was NOT read
+Jan 25 07:26:32.072: DEBUG: Error! Register #2185 at conn #211 was NOT read
+Jan 25 07:26:32.073: DEBUG: Error! Register #2186 at conn #211 was NOT read
+Jan 25 07:26:32.073: DEBUG: Error! Register #2187 at conn #211 was NOT read
+Jan 25 07:26:32.073: DEBUG: Error! Register #2188 at conn #211 was NOT read
+Jan 25 07:26:32.074: DEBUG: Error! Register #2189 at conn #211 was NOT read
+Jan 25 07:26:32.074: DEBUG: Error! Register #2190 at conn #211 was NOT read
+Jan 25 07:26:32.074: DEBUG: Error! Register #2191 at conn #211 was NOT read
+Jan 25 07:26:32.075: DEBUG: Error! Register #2192 at conn #211 was NOT read
+Jan 25 07:26:32.075: DEBUG: Error! Register #2193 at conn #211 was NOT read
+Jan 25 07:26:32.075: DEBUG: Error! Register #2194 at conn #211 was NOT read
+Jan 25 07:26:32.076: DEBUG: Error! Register #2195 at conn #211 was NOT read
+Jan 25 07:26:32.076: DEBUG: Error! Register #2196 at conn #211 was NOT read
+Jan 25 07:26:32.077: DEBUG: Error! Register #2197 at conn #211 was NOT read
+Jan 25 07:26:32.077: DEBUG: Error! Register #2198 at conn #211 was NOT read
+Jan 25 07:26:32.077: DEBUG: Error! Register #2199 at conn #211 was NOT read
+Jan 25 07:26:32.078: DEBUG: Error! Register #2200 at conn #211 was NOT read
+Jan 25 07:26:32.078: DEBUG: Error! Register #2201 at conn #211 was NOT read
+Jan 25 07:26:32.078: DEBUG: Error! Register #2202 at conn #211 was NOT read
+Jan 25 07:26:32.079: DEBUG: Error! Register #2203 at conn #211 was NOT read
+Jan 25 07:26:32.079: DEBUG: Error! Register #2204 at conn #211 was NOT read
+Jan 25 07:26:32.079: DEBUG: Error! Register #2205 at conn #211 was NOT read
+Jan 25 07:26:32.080: DEBUG: Error! Register #2206 at conn #211 was NOT read
+Jan 25 07:26:32.080: DEBUG: Error! Register #2207 at conn #211 was NOT read
+Jan 25 07:26:32.080: DEBUG: Error! Register #2208 at conn #211 was NOT read
+Jan 25 07:26:32.081: DEBUG: Error! Register #2209 at conn #211 was NOT read
+Jan 25 07:26:32.081: DEBUG: Error! Register #2210 at conn #211 was NOT read
+Jan 25 07:26:32.081: DEBUG: Error! Register #2211 at conn #211 was NOT read
+Jan 25 07:26:32.082: DEBUG: Error! Register #2212 at conn #211 was NOT read
+Jan 25 07:26:32.082: DEBUG: Error! Register #2242 at conn #211 was NOT read
+Jan 25 07:26:32.082: DEBUG: Error! Register #2243 at conn #211 was NOT read
+Jan 25 07:26:32.084: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.084: DEBUG: ModBus: Retry
+Jan 25 07:26:32.087: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.088: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:32.089: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.089: DEBUG: ModBus: Retry
+Jan 25 07:26:32.092: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.092: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:32.093: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.093: DEBUG: ModBus: Retry
+Jan 25 07:26:32.096: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.097: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:32.097: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.097: DEBUG: ModBus: Retry
+Jan 25 07:26:32.100: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.101: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:32.101: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.102: DEBUG: ModBus: Retry
+Jan 25 07:26:32.104: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.105: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:32.105: DEBUG: ModBus: Skipping reading connection #212 due to read errors.
+Jan 25 07:26:32.106: DEBUG: Error! Register #2244 at conn #212 was NOT read
+Jan 25 07:26:32.106: DEBUG: Error! Register #2245 at conn #212 was NOT read
+Jan 25 07:26:32.107: DEBUG: Error! Register #2246 at conn #212 was NOT read
+Jan 25 07:26:32.107: DEBUG: Error! Register #2247 at conn #212 was NOT read
+Jan 25 07:26:32.107: DEBUG: Error! Register #2248 at conn #212 was NOT read
+Jan 25 07:26:32.108: DEBUG: Error! Register #2249 at conn #212 was NOT read
+Jan 25 07:26:32.108: DEBUG: Error! Register #2250 at conn #212 was NOT read
+Jan 25 07:26:32.108: DEBUG: Error! Register #2251 at conn #212 was NOT read
+Jan 25 07:26:32.109: DEBUG: Error! Register #2252 at conn #212 was NOT read
+Jan 25 07:26:32.109: DEBUG: Error! Register #2253 at conn #212 was NOT read
+Jan 25 07:26:32.109: DEBUG: Error! Register #2254 at conn #212 was NOT read
+Jan 25 07:26:32.110: DEBUG: Error! Register #2255 at conn #212 was NOT read
+Jan 25 07:26:32.110: DEBUG: Error! Register #2256 at conn #212 was NOT read
+Jan 25 07:26:32.110: DEBUG: Error! Register #2257 at conn #212 was NOT read
+Jan 25 07:26:32.111: DEBUG: Error! Register #2258 at conn #212 was NOT read
+Jan 25 07:26:32.111: DEBUG: Error! Register #2259 at conn #212 was NOT read
+Jan 25 07:26:32.111: DEBUG: Error! Register #2260 at conn #212 was NOT read
+Jan 25 07:26:32.112: DEBUG: Error! Register #2261 at conn #212 was NOT read
+Jan 25 07:26:32.112: DEBUG: Error! Register #2262 at conn #212 was NOT read
+Jan 25 07:26:32.112: DEBUG: Error! Register #2263 at conn #212 was NOT read
+Jan 25 07:26:32.113: DEBUG: Error! Register #2264 at conn #212 was NOT read
+Jan 25 07:26:32.114: DEBUG: Error! Register #2265 at conn #212 was NOT read
+Jan 25 07:26:32.114: DEBUG: Error! Register #2266 at conn #212 was NOT read
+Jan 25 07:26:32.114: DEBUG: Error! Register #2267 at conn #212 was NOT read
+Jan 25 07:26:32.115: DEBUG: Error! Register #2268 at conn #212 was NOT read
+Jan 25 07:26:32.115: DEBUG: Error! Register #2269 at conn #212 was NOT read
+Jan 25 07:26:32.115: DEBUG: Error! Register #2270 at conn #212 was NOT read
+Jan 25 07:26:32.116: DEBUG: Error! Register #2271 at conn #212 was NOT read
+Jan 25 07:26:32.116: DEBUG: Error! Register #2272 at conn #212 was NOT read
+Jan 25 07:26:32.116: DEBUG: Error! Register #2273 at conn #212 was NOT read
+Jan 25 07:26:32.117: DEBUG: Error! Register #2274 at conn #212 was NOT read
+Jan 25 07:26:32.117: DEBUG: Error! Register #2275 at conn #212 was NOT read
+Jan 25 07:26:32.118: DEBUG: Error! Register #2276 at conn #212 was NOT read
+Jan 25 07:26:32.118: DEBUG: Error! Register #2277 at conn #212 was NOT read
+Jan 25 07:26:32.118: DEBUG: Error! Register #2278 at conn #212 was NOT read
+Jan 25 07:26:32.119: DEBUG: Error! Register #2279 at conn #212 was NOT read
+Jan 25 07:26:32.119: DEBUG: Error! Register #2309 at conn #212 was NOT read
+Jan 25 07:26:32.119: DEBUG: Error! Register #2310 at conn #212 was NOT read
+Jan 25 07:26:32.752: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.753: DEBUG: ModBus: Retry
+Jan 25 07:26:32.756: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.756: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:32.757: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.757: DEBUG: ModBus: Retry
+Jan 25 07:26:32.760: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.761: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:32.761: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.761: DEBUG: ModBus: Retry
+Jan 25 07:26:32.764: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.765: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:32.765: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.766: DEBUG: ModBus: Retry
+Jan 25 07:26:32.769: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.769: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:32.769: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.770: DEBUG: ModBus: Retry
+Jan 25 07:26:32.773: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:32.773: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:32.774: DEBUG: ModBus: Skipping reading connection #214 due to read errors.
+Jan 25 07:26:32.774: DEBUG: Error! Register #2378 at conn #214 was NOT read
+Jan 25 07:26:32.775: DEBUG: Error! Register #2379 at conn #214 was NOT read
+Jan 25 07:26:32.775: DEBUG: Error! Register #2380 at conn #214 was NOT read
+Jan 25 07:26:32.775: DEBUG: Error! Register #2381 at conn #214 was NOT read
+Jan 25 07:26:32.776: DEBUG: Error! Register #2382 at conn #214 was NOT read
+Jan 25 07:26:32.776: DEBUG: Error! Register #2383 at conn #214 was NOT read
+Jan 25 07:26:32.776: DEBUG: Error! Register #2384 at conn #214 was NOT read
+Jan 25 07:26:32.777: DEBUG: Error! Register #2385 at conn #214 was NOT read
+Jan 25 07:26:32.777: DEBUG: Error! Register #2386 at conn #214 was NOT read
+Jan 25 07:26:32.777: DEBUG: Error! Register #2387 at conn #214 was NOT read
+Jan 25 07:26:32.778: DEBUG: Error! Register #2388 at conn #214 was NOT read
+Jan 25 07:26:32.778: DEBUG: Error! Register #2389 at conn #214 was NOT read
+Jan 25 07:26:32.779: DEBUG: Error! Register #2390 at conn #214 was NOT read
+Jan 25 07:26:32.779: DEBUG: Error! Register #2391 at conn #214 was NOT read
+Jan 25 07:26:32.780: DEBUG: Error! Register #2392 at conn #214 was NOT read
+Jan 25 07:26:32.780: DEBUG: Error! Register #2393 at conn #214 was NOT read
+Jan 25 07:26:32.780: DEBUG: Error! Register #2394 at conn #214 was NOT read
+Jan 25 07:26:32.781: DEBUG: Error! Register #2395 at conn #214 was NOT read
+Jan 25 07:26:32.781: DEBUG: Error! Register #2396 at conn #214 was NOT read
+Jan 25 07:26:32.781: DEBUG: Error! Register #2397 at conn #214 was NOT read
+Jan 25 07:26:32.782: DEBUG: Error! Register #2398 at conn #214 was NOT read
+Jan 25 07:26:32.782: DEBUG: Error! Register #2399 at conn #214 was NOT read
+Jan 25 07:26:32.782: DEBUG: Error! Register #2400 at conn #214 was NOT read
+Jan 25 07:26:32.783: DEBUG: Error! Register #2401 at conn #214 was NOT read
+Jan 25 07:26:32.783: DEBUG: Error! Register #2402 at conn #214 was NOT read
+Jan 25 07:26:32.783: DEBUG: Error! Register #2403 at conn #214 was NOT read
+Jan 25 07:26:32.784: DEBUG: Error! Register #2404 at conn #214 was NOT read
+Jan 25 07:26:32.784: DEBUG: Error! Register #2405 at conn #214 was NOT read
+Jan 25 07:26:32.784: DEBUG: Error! Register #2406 at conn #214 was NOT read
+Jan 25 07:26:32.785: DEBUG: Error! Register #2407 at conn #214 was NOT read
+Jan 25 07:26:32.785: DEBUG: Error! Register #2408 at conn #214 was NOT read
+Jan 25 07:26:32.786: DEBUG: Error! Register #2409 at conn #214 was NOT read
+Jan 25 07:26:32.786: DEBUG: Error! Register #2410 at conn #214 was NOT read
+Jan 25 07:26:32.786: DEBUG: Error! Register #2411 at conn #214 was NOT read
+Jan 25 07:26:32.787: DEBUG: Error! Register #2412 at conn #214 was NOT read
+Jan 25 07:26:32.787: DEBUG: Error! Register #2413 at conn #214 was NOT read
+Jan 25 07:26:32.788: DEBUG: Error! Register #2443 at conn #214 was NOT read
+Jan 25 07:26:32.788: DEBUG: Error! Register #2444 at conn #214 was NOT read
+Jan 25 07:26:33.472: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:33.473: DEBUG: ModBus: Retry
+Jan 25 07:26:33.476: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:33.476: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:33.477: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:33.477: DEBUG: ModBus: Retry
+Jan 25 07:26:33.480: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:33.481: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:33.481: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:33.481: DEBUG: ModBus: Retry
+Jan 25 07:26:33.484: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:33.485: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:33.485: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:33.486: DEBUG: ModBus: Retry
+Jan 25 07:26:33.489: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:33.489: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:33.489: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:33.490: DEBUG: ModBus: Retry
+Jan 25 07:26:33.493: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:33.493: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:33.493: DEBUG: ModBus: Skipping reading connection #216 due to read errors.
+Jan 25 07:26:33.494: DEBUG: Error! Register #2512 at conn #216 was NOT read
+Jan 25 07:26:33.494: DEBUG: Error! Register #2513 at conn #216 was NOT read
+Jan 25 07:26:33.495: DEBUG: Error! Register #2514 at conn #216 was NOT read
+Jan 25 07:26:33.495: DEBUG: Error! Register #2515 at conn #216 was NOT read
+Jan 25 07:26:33.495: DEBUG: Error! Register #2516 at conn #216 was NOT read
+Jan 25 07:26:33.496: DEBUG: Error! Register #2517 at conn #216 was NOT read
+Jan 25 07:26:33.496: DEBUG: Error! Register #2518 at conn #216 was NOT read
+Jan 25 07:26:33.496: DEBUG: Error! Register #2519 at conn #216 was NOT read
+Jan 25 07:26:33.497: DEBUG: Error! Register #2520 at conn #216 was NOT read
+Jan 25 07:26:33.497: DEBUG: Error! Register #2521 at conn #216 was NOT read
+Jan 25 07:26:33.497: DEBUG: Error! Register #2522 at conn #216 was NOT read
+Jan 25 07:26:33.498: DEBUG: Error! Register #2523 at conn #216 was NOT read
+Jan 25 07:26:33.498: DEBUG: Error! Register #2524 at conn #216 was NOT read
+Jan 25 07:26:33.498: DEBUG: Error! Register #2525 at conn #216 was NOT read
+Jan 25 07:26:33.499: DEBUG: Error! Register #2526 at conn #216 was NOT read
+Jan 25 07:26:33.499: DEBUG: Error! Register #2527 at conn #216 was NOT read
+Jan 25 07:26:33.500: DEBUG: Error! Register #2528 at conn #216 was NOT read
+Jan 25 07:26:33.500: DEBUG: Error! Register #2529 at conn #216 was NOT read
+Jan 25 07:26:33.500: DEBUG: Error! Register #2530 at conn #216 was NOT read
+Jan 25 07:26:33.501: DEBUG: Error! Register #2531 at conn #216 was NOT read
+Jan 25 07:26:33.501: DEBUG: Error! Register #2532 at conn #216 was NOT read
+Jan 25 07:26:33.502: DEBUG: Error! Register #2533 at conn #216 was NOT read
+Jan 25 07:26:33.502: DEBUG: Error! Register #2534 at conn #216 was NOT read
+Jan 25 07:26:33.502: DEBUG: Error! Register #2535 at conn #216 was NOT read
+Jan 25 07:26:33.503: DEBUG: Error! Register #2536 at conn #216 was NOT read
+Jan 25 07:26:33.503: DEBUG: Error! Register #2537 at conn #216 was NOT read
+Jan 25 07:26:33.503: DEBUG: Error! Register #2538 at conn #216 was NOT read
+Jan 25 07:26:33.504: DEBUG: Error! Register #2539 at conn #216 was NOT read
+Jan 25 07:26:33.504: DEBUG: Error! Register #2540 at conn #216 was NOT read
+Jan 25 07:26:33.504: DEBUG: Error! Register #2541 at conn #216 was NOT read
+Jan 25 07:26:33.505: DEBUG: Error! Register #2542 at conn #216 was NOT read
+Jan 25 07:26:33.505: DEBUG: Error! Register #2543 at conn #216 was NOT read
+Jan 25 07:26:33.505: DEBUG: Error! Register #2544 at conn #216 was NOT read
+Jan 25 07:26:33.506: DEBUG: Error! Register #2545 at conn #216 was NOT read
+Jan 25 07:26:33.506: DEBUG: Error! Register #2546 at conn #216 was NOT read
+Jan 25 07:26:33.507: DEBUG: Error! Register #2547 at conn #216 was NOT read
+Jan 25 07:26:33.507: DEBUG: Error! Register #2577 at conn #216 was NOT read
+Jan 25 07:26:33.508: DEBUG: Error! Register #2578 at conn #216 was NOT read
+Jan 25 07:26:34.833: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:34.833: DEBUG: ModBus: Retry
+Jan 25 07:26:34.835: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:34.835: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:34.836: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:34.838: DEBUG: ModBus: Retry
+Jan 25 07:26:34.840: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:34.841: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:34.841: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:34.841: DEBUG: ModBus: Retry
+Jan 25 07:26:34.843: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:34.844: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:34.844: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:34.845: DEBUG: ModBus: Retry
+Jan 25 07:26:34.847: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:34.847: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:34.847: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:34.848: DEBUG: ModBus: Retry
+Jan 25 07:26:34.850: DEBUG: Can't write to socket (192.168.10.10:503): Bad file descriptor
+Jan 25 07:26:34.850: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:34.851: DEBUG: ModBus: Skipping reading connection #225 due to read errors.
+Jan 25 07:26:34.852: DEBUG: Error! Register #4174 at conn #225 was NOT read
+Jan 25 07:26:34.852: DEBUG: Error! Register #4175 at conn #225 was NOT read
+Jan 25 07:26:34.852: DEBUG: Error! Register #4176 at conn #225 was NOT read
+Jan 25 07:26:34.853: DEBUG: Error! Register #4177 at conn #225 was NOT read
+Jan 25 07:26:34.853: DEBUG: Error! Register #4178 at conn #225 was NOT read
+Jan 25 07:26:34.853: DEBUG: Error! Register #4179 at conn #225 was NOT read
+Jan 25 07:26:34.854: DEBUG: Error! Register #4328 at conn #225 was NOT read
+Jan 25 07:26:34.854: DEBUG: Error! Register #4334 at conn #225 was NOT read
+Jan 25 07:26:35.102: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:35.103: DEBUG: ModBus: Retry
+Jan 25 07:26:35.106: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:35.106: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:35.107: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:35.107: DEBUG: ModBus: Retry
+Jan 25 07:26:35.110: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:35.111: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:35.111: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:35.112: DEBUG: ModBus: Retry
+Jan 25 07:26:35.115: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:35.116: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:35.116: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:35.117: DEBUG: ModBus: Retry
+Jan 25 07:26:35.119: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:35.120: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:35.120: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:35.121: DEBUG: ModBus: Retry
+Jan 25 07:26:35.124: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:35.124: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:35.124: DEBUG: ModBus: Skipping reading connection #236 due to read errors.
+Jan 25 07:26:35.125: DEBUG: Error! Register #3848 at conn #236 was NOT read
+Jan 25 07:26:35.125: DEBUG: Error! Register #3849 at conn #236 was NOT read
+Jan 25 07:26:35.126: DEBUG: Error! Register #3850 at conn #236 was NOT read
+Jan 25 07:26:35.126: DEBUG: Error! Register #3851 at conn #236 was NOT read
+Jan 25 07:26:35.127: DEBUG: Error! Register #3852 at conn #236 was NOT read
+Jan 25 07:26:35.127: DEBUG: Error! Register #3853 at conn #236 was NOT read
+Jan 25 07:26:35.127: DEBUG: Error! Register #3854 at conn #236 was NOT read
+Jan 25 07:26:35.128: DEBUG: Error! Register #3855 at conn #236 was NOT read
+Jan 25 07:26:35.128: DEBUG: Error! Register #3856 at conn #236 was NOT read
+Jan 25 07:26:35.128: DEBUG: Error! Register #3857 at conn #236 was NOT read
+Jan 25 07:26:35.129: DEBUG: Error! Register #3858 at conn #236 was NOT read
+Jan 25 07:26:35.129: DEBUG: Error! Register #3859 at conn #236 was NOT read
+Jan 25 07:26:35.129: DEBUG: Error! Register #3860 at conn #236 was NOT read
+Jan 25 07:26:35.130: DEBUG: Error! Register #3861 at conn #236 was NOT read
+Jan 25 07:26:35.130: DEBUG: Opening tcp/ip connection (192.168.10.10:503).
+Jan 25 07:26:35.132: DEBUG: Error! Register #3862 at conn #237 was NOT read
+Jan 25 07:26:35.133: DEBUG: Error! Register #3863 at conn #237 was NOT read
+Jan 25 07:26:35.232: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:35.232: DEBUG: ModBus: Retry
+Jan 25 07:26:35.233: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:35.234: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:35.234: DEBUG: Error! Register #3868 at conn #240 was NOT read
+Jan 25 07:26:35.235: DEBUG: Error! Register #3869 at conn #240 was NOT read
+Jan 25 07:26:35.236: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:35.236: DEBUG: ModBus: Retry
+Jan 25 07:26:35.238: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:35.239: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:35.239: DEBUG: Error! Register #4340 at conn #242 was NOT read
+Jan 25 07:26:35.240: DEBUG: Error! Register #4341 at conn #242 was NOT read
+Jan 25 07:26:35.240: DEBUG: Error! Register #4342 at conn #242 was NOT read
+Jan 25 07:26:35.240: DEBUG: Error! Register #4343 at conn #242 was NOT read
+Jan 25 07:26:35.241: DEBUG: Error! Register #4344 at conn #242 was NOT read
+Jan 25 07:26:35.241: DEBUG: Error! Register #4345 at conn #242 was NOT read
+Jan 25 07:26:35.242: DEBUG: Error! Register #4346 at conn #242 was NOT read
+Jan 25 07:26:35.242: DEBUG: Error! Register #4347 at conn #242 was NOT read
+Jan 25 07:26:35.243: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:35.243: DEBUG: ModBus: Retry
+Jan 25 07:26:35.244: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:35.244: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:35.245: DEBUG: Error! Register #4348 at conn #243 was NOT read
+Jan 25 07:26:35.245: DEBUG: Error! Register #4349 at conn #243 was NOT read
+Jan 25 07:26:35.246: DEBUG: Error! Register #4350 at conn #243 was NOT read
+Jan 25 07:26:35.246: DEBUG: Error! Register #4351 at conn #243 was NOT read
+Jan 25 07:26:35.247: DEBUG: Error! Register #4352 at conn #243 was NOT read
+Jan 25 07:26:35.247: DEBUG: Error! Register #4353 at conn #243 was NOT read
+Jan 25 07:26:35.247: DEBUG: Error! Register #4354 at conn #243 was NOT read
+Jan 25 07:26:35.248: DEBUG: Error! Register #4355 at conn #243 was NOT read
+Jan 25 07:26:35.249: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:35.249: DEBUG: ModBus: Retry
+Jan 25 07:26:35.251: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:35.251: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:35.252: DEBUG: Error! Register #4356 at conn #244 was NOT read
+Jan 25 07:26:35.252: DEBUG: Error! Register #4357 at conn #244 was NOT read
+Jan 25 07:26:35.253: DEBUG: Error! Register #4358 at conn #244 was NOT read
+Jan 25 07:26:35.253: DEBUG: Error! Register #4359 at conn #244 was NOT read
+Jan 25 07:26:35.253: DEBUG: Error! Register #4360 at conn #244 was NOT read
+Jan 25 07:26:35.254: DEBUG: Error! Register #4361 at conn #244 was NOT read
+Jan 25 07:26:35.254: DEBUG: Error! Register #4362 at conn #244 was NOT read
+Jan 25 07:26:35.254: DEBUG: Error! Register #4363 at conn #244 was NOT read
+Jan 25 07:26:35.255: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:35.256: DEBUG: ModBus: Retry
+Jan 25 07:26:35.258: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:35.258: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:35.259: DEBUG: Error! Register #4364 at conn #245 was NOT read
+Jan 25 07:26:35.259: DEBUG: Error! Register #4365 at conn #245 was NOT read
+Jan 25 07:26:35.259: DEBUG: Error! Register #4366 at conn #245 was NOT read
+Jan 25 07:26:35.260: DEBUG: Error! Register #4367 at conn #245 was NOT read
+Jan 25 07:26:35.260: DEBUG: Error! Register #4368 at conn #245 was NOT read
+Jan 25 07:26:35.261: DEBUG: Error! Register #4369 at conn #245 was NOT read
+Jan 25 07:26:35.261: DEBUG: Error! Register #4370 at conn #245 was NOT read
+Jan 25 07:26:35.261: DEBUG: Error! Register #4371 at conn #245 was NOT read
+Jan 25 07:26:39.739: DEBUG: LUA scripts: GetReg: Register #2180(IR6) was not read
+Jan 25 07:26:39.740: DEBUG: LUA scripts: GetReg: Register #2247(IR6) was not read
+Jan 25 07:26:39.742: DEBUG: LUA scripts: GetReg: Register #2381(IR6) was not read
+Jan 25 07:26:39.744: DEBUG: LUA scripts: GetReg: Register #2515(IR6) was not read
+Jan 25 07:26:39.757: DEBUG: LUA scripts: GetReg: Register #3849(IR6) was not read
+Jan 25 07:26:39.760: DEBUG: LUA scripts: GetReg: Register #2181(IR8) was not read
+Jan 25 07:26:39.761: DEBUG: LUA scripts: GetReg: Register #2248(IR8) was not read
+Jan 25 07:26:39.762: DEBUG: LUA scripts: GetReg: Register #2382(IR8) was not read
+Jan 25 07:26:39.764: DEBUG: LUA scripts: GetReg: Register #2516(IR8) was not read
+Jan 25 07:26:39.773: DEBUG: LUA scripts: GetReg: Register #2182(IR10) was not read
+Jan 25 07:26:39.774: DEBUG: LUA scripts: GetReg: Register #2249(IR10) was not read
+Jan 25 07:26:39.776: DEBUG: LUA scripts: GetReg: Register #2383(IR10) was not read
+Jan 25 07:26:39.789: DEBUG: LUA scripts: GetReg: Register #2517(IR10) was not read
+Jan 25 07:26:39.792: DEBUG: LUA scripts: GetReg: Register #2177(IR0) was not read
+Jan 25 07:26:39.793: DEBUG: LUA scripts: GetReg: Register #2244(IR0) was not read
+Jan 25 07:26:39.795: DEBUG: LUA scripts: GetReg: Register #2378(IR0) was not read
+Jan 25 07:26:39.807: DEBUG: LUA scripts: GetReg: Register #2512(IR0) was not read
+Jan 25 07:26:39.811: DEBUG: LUA scripts: GetReg: Register #3848(IR0) was not read
+Jan 25 07:26:39.813: DEBUG: LUA scripts: GetReg: Register #2178(IR2) was not read
+Jan 25 07:26:39.814: DEBUG: LUA scripts: GetReg: Register #2245(IR2) was not read
+Jan 25 07:26:39.816: DEBUG: LUA scripts: GetReg: Register #2379(IR2) was not read
+Jan 25 07:26:39.828: DEBUG: LUA scripts: GetReg: Register #2513(IR2) was not read
+Jan 25 07:26:39.832: DEBUG: LUA scripts: GetReg: Register #2179(IR4) was not read
+Jan 25 07:26:39.833: DEBUG: LUA scripts: GetReg: Register #2246(IR4) was not read
+Jan 25 07:26:39.834: DEBUG: LUA scripts: GetReg: Register #2380(IR4) was not read
+Jan 25 07:26:39.846: DEBUG: LUA scripts: GetReg: Register #2514(IR4) was not read
+Jan 25 07:26:39.850: DEBUG: LUA scripts: GetReg: Register #2183(IR12) was not read
+Jan 25 07:26:39.851: DEBUG: LUA scripts: GetReg: Register #2250(IR12) was not read
+Jan 25 07:26:39.853: DEBUG: LUA scripts: GetReg: Register #2384(IR12) was not read
+Jan 25 07:26:39.855: DEBUG: LUA scripts: GetReg: Register #2518(IR12) was not read
+Jan 25 07:26:39.861: DEBUG: LUA scripts: GetReg: Register #3850(IR12) was not read
+Jan 25 07:26:39.864: DEBUG: LUA scripts: GetReg: Register #2184(IR14) was not read
+Jan 25 07:26:39.877: DEBUG: LUA scripts: GetReg: Register #2251(IR14) was not read
+Jan 25 07:26:39.878: DEBUG: LUA scripts: GetReg: Register #2385(IR14) was not read
+Jan 25 07:26:39.880: DEBUG: LUA scripts: GetReg: Register #2519(IR14) was not read
+Jan 25 07:26:39.884: DEBUG: LUA scripts: GetReg: Register #2185(IR16) was not read
+Jan 25 07:26:39.885: DEBUG: LUA scripts: GetReg: Register #2252(IR16) was not read
+Jan 25 07:26:39.891: DEBUG: LUA scripts: GetReg: Register #2386(IR16) was not read
+Jan 25 07:26:39.893: DEBUG: LUA scripts: GetReg: Register #2520(IR16) was not read
+Jan 25 07:26:39.907: DEBUG: LUA scripts: GetReg: Register #2186(IR18) was not read
+Jan 25 07:26:39.908: DEBUG: LUA scripts: GetReg: Register #2253(IR18) was not read
+Jan 25 07:26:39.910: DEBUG: LUA scripts: GetReg: Register #2387(IR18) was not read
+Jan 25 07:26:39.912: DEBUG: LUA scripts: GetReg: Register #2521(IR18) was not read
+Jan 25 07:26:39.915: DEBUG: LUA scripts: GetReg: Register #3851(IR18) was not read
+Jan 25 07:26:39.928: DEBUG: LUA scripts: GetReg: Register #2187(IR20) was not read
+Jan 25 07:26:39.929: DEBUG: LUA scripts: GetReg: Register #2254(IR20) was not read
+Jan 25 07:26:39.930: DEBUG: LUA scripts: GetReg: Register #2388(IR20) was not read
+Jan 25 07:26:39.932: DEBUG: LUA scripts: GetReg: Register #2522(IR20) was not read
+Jan 25 07:26:39.936: DEBUG: LUA scripts: GetReg: Register #2188(IR22) was not read
+Jan 25 07:26:39.947: DEBUG: LUA scripts: GetReg: Register #2255(IR22) was not read
+Jan 25 07:26:39.949: DEBUG: LUA scripts: GetReg: Register #2389(IR22) was not read
+Jan 25 07:26:39.951: DEBUG: LUA scripts: GetReg: Register #2523(IR22) was not read
+Jan 25 07:26:39.954: DEBUG: LUA scripts: GetReg: Register #2189(IR24) was not read
+Jan 25 07:26:39.956: DEBUG: LUA scripts: GetReg: Register #2256(IR24) was not read
+Jan 25 07:26:39.962: DEBUG: LUA scripts: GetReg: Register #2390(IR24) was not read
+Jan 25 07:26:39.964: DEBUG: LUA scripts: GetReg: Register #2524(IR24) was not read
+Jan 25 07:26:39.977: DEBUG: LUA scripts: GetReg: Register #3852(IR24) was not read
+Jan 25 07:26:39.979: DEBUG: LUA scripts: GetReg: Register #2190(IR26) was not read
+Jan 25 07:26:39.980: DEBUG: LUA scripts: GetReg: Register #2257(IR26) was not read
+Jan 25 07:26:39.982: DEBUG: LUA scripts: GetReg: Register #2391(IR26) was not read
+Jan 25 07:26:39.984: DEBUG: LUA scripts: GetReg: Register #2525(IR26) was not read
+Jan 25 07:26:39.994: DEBUG: LUA scripts: GetReg: Register #2191(IR28) was not read
+Jan 25 07:26:39.995: DEBUG: LUA scripts: GetReg: Register #2258(IR28) was not read
+Jan 25 07:26:40.007: DEBUG: LUA scripts: GetReg: Register #2392(IR28) was not read
+Jan 25 07:26:40.009: DEBUG: LUA scripts: GetReg: Register #2526(IR28) was not read
+Jan 25 07:26:40.013: DEBUG: LUA scripts: GetReg: Register #2201(IR52) was not read
+Jan 25 07:26:40.014: DEBUG: LUA scripts: GetReg: Register #2268(IR52) was not read
+Jan 25 07:26:40.019: DEBUG: LUA scripts: GetReg: Register #2402(IR52) was not read
+Jan 25 07:26:40.021: DEBUG: LUA scripts: GetReg: Register #2536(IR52) was not read
+Jan 25 07:26:40.024: DEBUG: LUA scripts: GetReg: Register #3850(IR12) was not read
+Jan 25 07:26:40.026: DEBUG: LUA scripts: GetReg: Register #2202(IR56) was not read
+Jan 25 07:26:40.038: DEBUG: LUA scripts: GetReg: Register #2269(IR56) was not read
+Jan 25 07:26:40.040: DEBUG: LUA scripts: GetReg: Register #2403(IR56) was not read
+Jan 25 07:26:40.042: DEBUG: LUA scripts: GetReg: Register #2537(IR56) was not read
+Jan 25 07:26:40.044: DEBUG: LUA scripts: GetReg: Register #3851(IR18) was not read
+Jan 25 07:26:40.056: DEBUG: LUA scripts: GetReg: Register #2203(IR60) was not read
+Jan 25 07:26:40.058: DEBUG: LUA scripts: GetReg: Register #2270(IR60) was not read
+Jan 25 07:26:40.059: DEBUG: LUA scripts: GetReg: Register #2404(IR60) was not read
+Jan 25 07:26:40.061: DEBUG: LUA scripts: GetReg: Register #2538(IR60) was not read
+Jan 25 07:26:40.069: DEBUG: LUA scripts: GetReg: Register #3852(IR24) was not read
+Jan 25 07:26:40.078: DEBUG: LUA scripts: GetReg: Register #2242(IR342) was not read
+Jan 25 07:26:40.080: DEBUG: LUA scripts: GetReg: Register #2309(IR342) was not read
+Jan 25 07:26:40.081: DEBUG: LUA scripts: GetReg: Register #2443(IR342) was not read
+Jan 25 07:26:40.083: DEBUG: LUA scripts: GetReg: Register #2577(IR342) was not read
+Jan 25 07:26:40.086: DEBUG: LUA scripts: GetReg: Register #3860(IR342) was not read
+Jan 25 07:26:40.098: DEBUG: LUA scripts: GetReg: Register #2243(IR344) was not read
+Jan 25 07:26:40.099: DEBUG: LUA scripts: GetReg: Register #2310(IR344) was not read
+Jan 25 07:26:40.101: DEBUG: LUA scripts: GetReg: Register #2444(IR344) was not read
+Jan 25 07:26:40.103: DEBUG: LUA scripts: GetReg: Register #2578(IR344) was not read
+Jan 25 07:26:40.105: DEBUG: LUA scripts: GetReg: Register #3861(IR344) was not read
+Jan 25 07:26:43.012: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:43.013: DEBUG: ModBus: Retry
+Jan 25 07:26:43.015: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:43.015: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:43.016: DEBUG: Error! Register #13 at conn #4 was NOT read
+Jan 25 07:26:43.016: DEBUG: Error! Register #14 at conn #4 was NOT read
+Jan 25 07:26:43.017: DEBUG: Error! Register #15 at conn #4 was NOT read
+Jan 25 07:26:43.017: DEBUG: Error! Register #16 at conn #4 was NOT read
+Jan 25 07:26:43.018: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:43.018: DEBUG: ModBus: Retry
+Jan 25 07:26:43.026: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:26:43.027: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:43.027: DEBUG: Error! Register #17 at conn #5 was NOT read
+Jan 25 07:26:43.028: DEBUG: Error! Register #18 at conn #5 was NOT read
+Jan 25 07:26:43.028: DEBUG: Error! Register #19 at conn #5 was NOT read
+Jan 25 07:26:43.028: DEBUG: Error! Register #20 at conn #5 was NOT read
+Jan 25 07:26:49.868: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:49.868: DEBUG: ModBus: Retry
+Jan 25 07:26:49.870: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:49.871: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:49.871: DEBUG: Error! Register #648 at conn #158 was NOT read
+Jan 25 07:26:49.872: DEBUG: Error! Register #649 at conn #158 was NOT read
+Jan 25 07:26:59.028: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.028: DEBUG: ModBus: Retry
+Jan 25 07:26:59.031: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.031: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:59.032: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.032: DEBUG: ModBus: Retry
+Jan 25 07:26:59.035: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.035: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:59.036: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.036: DEBUG: ModBus: Retry
+Jan 25 07:26:59.040: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.040: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:59.040: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.041: DEBUG: ModBus: Retry
+Jan 25 07:26:59.044: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.045: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:59.045: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.046: DEBUG: ModBus: Retry
+Jan 25 07:26:59.049: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.049: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:59.050: DEBUG: ModBus: Skipping reading connection #211 due to read errors.
+Jan 25 07:26:59.050: DEBUG: Error! Register #2177 at conn #211 was NOT read
+Jan 25 07:26:59.051: DEBUG: Error! Register #2178 at conn #211 was NOT read
+Jan 25 07:26:59.051: DEBUG: Error! Register #2179 at conn #211 was NOT read
+Jan 25 07:26:59.051: DEBUG: Error! Register #2180 at conn #211 was NOT read
+Jan 25 07:26:59.052: DEBUG: Error! Register #2181 at conn #211 was NOT read
+Jan 25 07:26:59.052: DEBUG: Error! Register #2182 at conn #211 was NOT read
+Jan 25 07:26:59.052: DEBUG: Error! Register #2183 at conn #211 was NOT read
+Jan 25 07:26:59.053: DEBUG: Error! Register #2184 at conn #211 was NOT read
+Jan 25 07:26:59.054: DEBUG: Error! Register #2185 at conn #211 was NOT read
+Jan 25 07:26:59.054: DEBUG: Error! Register #2186 at conn #211 was NOT read
+Jan 25 07:26:59.054: DEBUG: Error! Register #2187 at conn #211 was NOT read
+Jan 25 07:26:59.055: DEBUG: Error! Register #2188 at conn #211 was NOT read
+Jan 25 07:26:59.055: DEBUG: Error! Register #2189 at conn #211 was NOT read
+Jan 25 07:26:59.055: DEBUG: Error! Register #2190 at conn #211 was NOT read
+Jan 25 07:26:59.055: DEBUG: Error! Register #2191 at conn #211 was NOT read
+Jan 25 07:26:59.056: DEBUG: Error! Register #2192 at conn #211 was NOT read
+Jan 25 07:26:59.056: DEBUG: Error! Register #2193 at conn #211 was NOT read
+Jan 25 07:26:59.057: DEBUG: Error! Register #2194 at conn #211 was NOT read
+Jan 25 07:26:59.057: DEBUG: Error! Register #2195 at conn #211 was NOT read
+Jan 25 07:26:59.058: DEBUG: Error! Register #2196 at conn #211 was NOT read
+Jan 25 07:26:59.058: DEBUG: Error! Register #2197 at conn #211 was NOT read
+Jan 25 07:26:59.058: DEBUG: Error! Register #2198 at conn #211 was NOT read
+Jan 25 07:26:59.059: DEBUG: Error! Register #2199 at conn #211 was NOT read
+Jan 25 07:26:59.059: DEBUG: Error! Register #2200 at conn #211 was NOT read
+Jan 25 07:26:59.059: DEBUG: Error! Register #2201 at conn #211 was NOT read
+Jan 25 07:26:59.060: DEBUG: Error! Register #2202 at conn #211 was NOT read
+Jan 25 07:26:59.060: DEBUG: Error! Register #2203 at conn #211 was NOT read
+Jan 25 07:26:59.060: DEBUG: Error! Register #2204 at conn #211 was NOT read
+Jan 25 07:26:59.061: DEBUG: Error! Register #2205 at conn #211 was NOT read
+Jan 25 07:26:59.061: DEBUG: Error! Register #2206 at conn #211 was NOT read
+Jan 25 07:26:59.061: DEBUG: Error! Register #2207 at conn #211 was NOT read
+Jan 25 07:26:59.062: DEBUG: Error! Register #2208 at conn #211 was NOT read
+Jan 25 07:26:59.062: DEBUG: Error! Register #2209 at conn #211 was NOT read
+Jan 25 07:26:59.062: DEBUG: Error! Register #2210 at conn #211 was NOT read
+Jan 25 07:26:59.063: DEBUG: Error! Register #2211 at conn #211 was NOT read
+Jan 25 07:26:59.063: DEBUG: Error! Register #2212 at conn #211 was NOT read
+Jan 25 07:26:59.063: DEBUG: Error! Register #2242 at conn #211 was NOT read
+Jan 25 07:26:59.064: DEBUG: Error! Register #2243 at conn #211 was NOT read
+Jan 25 07:26:59.065: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.065: DEBUG: ModBus: Retry
+Jan 25 07:26:59.068: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.069: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:59.069: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.069: DEBUG: ModBus: Retry
+Jan 25 07:26:59.072: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.073: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:59.073: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.073: DEBUG: ModBus: Retry
+Jan 25 07:26:59.076: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.077: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:59.077: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.078: DEBUG: ModBus: Retry
+Jan 25 07:26:59.081: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.082: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:59.082: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.083: DEBUG: ModBus: Retry
+Jan 25 07:26:59.085: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.086: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:59.086: DEBUG: ModBus: Skipping reading connection #212 due to read errors.
+Jan 25 07:26:59.087: DEBUG: Error! Register #2244 at conn #212 was NOT read
+Jan 25 07:26:59.087: DEBUG: Error! Register #2245 at conn #212 was NOT read
+Jan 25 07:26:59.088: DEBUG: Error! Register #2246 at conn #212 was NOT read
+Jan 25 07:26:59.088: DEBUG: Error! Register #2247 at conn #212 was NOT read
+Jan 25 07:26:59.088: DEBUG: Error! Register #2248 at conn #212 was NOT read
+Jan 25 07:26:59.088: DEBUG: Error! Register #2249 at conn #212 was NOT read
+Jan 25 07:26:59.089: DEBUG: Error! Register #2250 at conn #212 was NOT read
+Jan 25 07:26:59.089: DEBUG: Error! Register #2251 at conn #212 was NOT read
+Jan 25 07:26:59.090: DEBUG: Error! Register #2252 at conn #212 was NOT read
+Jan 25 07:26:59.090: DEBUG: Error! Register #2253 at conn #212 was NOT read
+Jan 25 07:26:59.090: DEBUG: Error! Register #2254 at conn #212 was NOT read
+Jan 25 07:26:59.091: DEBUG: Error! Register #2255 at conn #212 was NOT read
+Jan 25 07:26:59.091: DEBUG: Error! Register #2256 at conn #212 was NOT read
+Jan 25 07:26:59.091: DEBUG: Error! Register #2257 at conn #212 was NOT read
+Jan 25 07:26:59.092: DEBUG: Error! Register #2258 at conn #212 was NOT read
+Jan 25 07:26:59.092: DEBUG: Error! Register #2259 at conn #212 was NOT read
+Jan 25 07:26:59.092: DEBUG: Error! Register #2260 at conn #212 was NOT read
+Jan 25 07:26:59.093: DEBUG: Error! Register #2261 at conn #212 was NOT read
+Jan 25 07:26:59.093: DEBUG: Error! Register #2262 at conn #212 was NOT read
+Jan 25 07:26:59.093: DEBUG: Error! Register #2263 at conn #212 was NOT read
+Jan 25 07:26:59.094: DEBUG: Error! Register #2264 at conn #212 was NOT read
+Jan 25 07:26:59.094: DEBUG: Error! Register #2265 at conn #212 was NOT read
+Jan 25 07:26:59.094: DEBUG: Error! Register #2266 at conn #212 was NOT read
+Jan 25 07:26:59.095: DEBUG: Error! Register #2267 at conn #212 was NOT read
+Jan 25 07:26:59.095: DEBUG: Error! Register #2268 at conn #212 was NOT read
+Jan 25 07:26:59.096: DEBUG: Error! Register #2269 at conn #212 was NOT read
+Jan 25 07:26:59.096: DEBUG: Error! Register #2270 at conn #212 was NOT read
+Jan 25 07:26:59.097: DEBUG: Error! Register #2271 at conn #212 was NOT read
+Jan 25 07:26:59.097: DEBUG: Error! Register #2272 at conn #212 was NOT read
+Jan 25 07:26:59.097: DEBUG: Error! Register #2273 at conn #212 was NOT read
+Jan 25 07:26:59.098: DEBUG: Error! Register #2274 at conn #212 was NOT read
+Jan 25 07:26:59.098: DEBUG: Error! Register #2275 at conn #212 was NOT read
+Jan 25 07:26:59.098: DEBUG: Error! Register #2276 at conn #212 was NOT read
+Jan 25 07:26:59.099: DEBUG: Error! Register #2277 at conn #212 was NOT read
+Jan 25 07:26:59.099: DEBUG: Error! Register #2278 at conn #212 was NOT read
+Jan 25 07:26:59.099: DEBUG: Error! Register #2279 at conn #212 was NOT read
+Jan 25 07:26:59.100: DEBUG: Error! Register #2309 at conn #212 was NOT read
+Jan 25 07:26:59.100: DEBUG: Error! Register #2310 at conn #212 was NOT read
+Jan 25 07:26:59.743: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.744: DEBUG: ModBus: Retry
+Jan 25 07:26:59.747: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.747: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:59.748: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.748: DEBUG: ModBus: Retry
+Jan 25 07:26:59.751: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.751: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:59.752: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.752: DEBUG: ModBus: Retry
+Jan 25 07:26:59.755: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.756: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:59.756: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.757: DEBUG: ModBus: Retry
+Jan 25 07:26:59.760: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.760: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:59.760: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.761: DEBUG: ModBus: Retry
+Jan 25 07:26:59.764: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:26:59.764: DEBUG: ModBus: Can't send packet
+Jan 25 07:26:59.765: DEBUG: ModBus: Skipping reading connection #214 due to read errors.
+Jan 25 07:26:59.765: DEBUG: Error! Register #2378 at conn #214 was NOT read
+Jan 25 07:26:59.765: DEBUG: Error! Register #2379 at conn #214 was NOT read
+Jan 25 07:26:59.766: DEBUG: Error! Register #2380 at conn #214 was NOT read
+Jan 25 07:26:59.766: DEBUG: Error! Register #2381 at conn #214 was NOT read
+Jan 25 07:26:59.766: DEBUG: Error! Register #2382 at conn #214 was NOT read
+Jan 25 07:26:59.767: DEBUG: Error! Register #2383 at conn #214 was NOT read
+Jan 25 07:26:59.767: DEBUG: Error! Register #2384 at conn #214 was NOT read
+Jan 25 07:26:59.768: DEBUG: Error! Register #2385 at conn #214 was NOT read
+Jan 25 07:26:59.768: DEBUG: Error! Register #2386 at conn #214 was NOT read
+Jan 25 07:26:59.768: DEBUG: Error! Register #2387 at conn #214 was NOT read
+Jan 25 07:26:59.769: DEBUG: Error! Register #2388 at conn #214 was NOT read
+Jan 25 07:26:59.769: DEBUG: Error! Register #2389 at conn #214 was NOT read
+Jan 25 07:26:59.770: DEBUG: Error! Register #2390 at conn #214 was NOT read
+Jan 25 07:26:59.770: DEBUG: Error! Register #2391 at conn #214 was NOT read
+Jan 25 07:26:59.770: DEBUG: Error! Register #2392 at conn #214 was NOT read
+Jan 25 07:26:59.771: DEBUG: Error! Register #2393 at conn #214 was NOT read
+Jan 25 07:26:59.771: DEBUG: Error! Register #2394 at conn #214 was NOT read
+Jan 25 07:26:59.771: DEBUG: Error! Register #2395 at conn #214 was NOT read
+Jan 25 07:26:59.772: DEBUG: Error! Register #2396 at conn #214 was NOT read
+Jan 25 07:26:59.772: DEBUG: Error! Register #2397 at conn #214 was NOT read
+Jan 25 07:26:59.772: DEBUG: Error! Register #2398 at conn #214 was NOT read
+Jan 25 07:26:59.773: DEBUG: Error! Register #2399 at conn #214 was NOT read
+Jan 25 07:26:59.773: DEBUG: Error! Register #2400 at conn #214 was NOT read
+Jan 25 07:26:59.773: DEBUG: Error! Register #2401 at conn #214 was NOT read
+Jan 25 07:26:59.774: DEBUG: Error! Register #2402 at conn #214 was NOT read
+Jan 25 07:26:59.775: DEBUG: Error! Register #2403 at conn #214 was NOT read
+Jan 25 07:26:59.775: DEBUG: Error! Register #2404 at conn #214 was NOT read
+Jan 25 07:26:59.775: DEBUG: Error! Register #2405 at conn #214 was NOT read
+Jan 25 07:26:59.776: DEBUG: Error! Register #2406 at conn #214 was NOT read
+Jan 25 07:26:59.776: DEBUG: Error! Register #2407 at conn #214 was NOT read
+Jan 25 07:26:59.777: DEBUG: Error! Register #2408 at conn #214 was NOT read
+Jan 25 07:26:59.777: DEBUG: Error! Register #2409 at conn #214 was NOT read
+Jan 25 07:26:59.777: DEBUG: Error! Register #2410 at conn #214 was NOT read
+Jan 25 07:26:59.778: DEBUG: Error! Register #2411 at conn #214 was NOT read
+Jan 25 07:26:59.778: DEBUG: Error! Register #2412 at conn #214 was NOT read
+Jan 25 07:26:59.778: DEBUG: Error! Register #2413 at conn #214 was NOT read
+Jan 25 07:26:59.779: DEBUG: Error! Register #2443 at conn #214 was NOT read
+Jan 25 07:26:59.779: DEBUG: Error! Register #2444 at conn #214 was NOT read
+Jan 25 07:27:00.463: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:00.463: DEBUG: ModBus: Retry
+Jan 25 07:27:00.466: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:00.466: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:00.467: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:00.467: DEBUG: ModBus: Retry
+Jan 25 07:27:00.470: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:00.471: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:00.471: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:00.471: DEBUG: ModBus: Retry
+Jan 25 07:27:00.474: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:00.475: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:00.475: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:00.476: DEBUG: ModBus: Retry
+Jan 25 07:27:00.479: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:00.479: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:00.479: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:00.480: DEBUG: ModBus: Retry
+Jan 25 07:27:00.483: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:00.483: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:00.484: DEBUG: ModBus: Skipping reading connection #216 due to read errors.
+Jan 25 07:27:00.484: DEBUG: Error! Register #2512 at conn #216 was NOT read
+Jan 25 07:27:00.484: DEBUG: Error! Register #2513 at conn #216 was NOT read
+Jan 25 07:27:00.485: DEBUG: Error! Register #2514 at conn #216 was NOT read
+Jan 25 07:27:00.486: DEBUG: Error! Register #2515 at conn #216 was NOT read
+Jan 25 07:27:00.486: DEBUG: Error! Register #2516 at conn #216 was NOT read
+Jan 25 07:27:00.487: DEBUG: Error! Register #2517 at conn #216 was NOT read
+Jan 25 07:27:00.487: DEBUG: Error! Register #2518 at conn #216 was NOT read
+Jan 25 07:27:00.487: DEBUG: Error! Register #2519 at conn #216 was NOT read
+Jan 25 07:27:00.488: DEBUG: Error! Register #2520 at conn #216 was NOT read
+Jan 25 07:27:00.488: DEBUG: Error! Register #2521 at conn #216 was NOT read
+Jan 25 07:27:00.488: DEBUG: Error! Register #2522 at conn #216 was NOT read
+Jan 25 07:27:00.489: DEBUG: Error! Register #2523 at conn #216 was NOT read
+Jan 25 07:27:00.489: DEBUG: Error! Register #2524 at conn #216 was NOT read
+Jan 25 07:27:00.489: DEBUG: Error! Register #2525 at conn #216 was NOT read
+Jan 25 07:27:00.490: DEBUG: Error! Register #2526 at conn #216 was NOT read
+Jan 25 07:27:00.490: DEBUG: Error! Register #2527 at conn #216 was NOT read
+Jan 25 07:27:00.490: DEBUG: Error! Register #2528 at conn #216 was NOT read
+Jan 25 07:27:00.491: DEBUG: Error! Register #2529 at conn #216 was NOT read
+Jan 25 07:27:00.491: DEBUG: Error! Register #2530 at conn #216 was NOT read
+Jan 25 07:27:00.491: DEBUG: Error! Register #2531 at conn #216 was NOT read
+Jan 25 07:27:00.492: DEBUG: Error! Register #2532 at conn #216 was NOT read
+Jan 25 07:27:00.492: DEBUG: Error! Register #2533 at conn #216 was NOT read
+Jan 25 07:27:00.492: DEBUG: Error! Register #2534 at conn #216 was NOT read
+Jan 25 07:27:00.493: DEBUG: Error! Register #2535 at conn #216 was NOT read
+Jan 25 07:27:00.493: DEBUG: Error! Register #2536 at conn #216 was NOT read
+Jan 25 07:27:00.493: DEBUG: Error! Register #2537 at conn #216 was NOT read
+Jan 25 07:27:00.494: DEBUG: Error! Register #2538 at conn #216 was NOT read
+Jan 25 07:27:00.494: DEBUG: Error! Register #2539 at conn #216 was NOT read
+Jan 25 07:27:00.494: DEBUG: Error! Register #2540 at conn #216 was NOT read
+Jan 25 07:27:00.495: DEBUG: Error! Register #2541 at conn #216 was NOT read
+Jan 25 07:27:00.495: DEBUG: Error! Register #2542 at conn #216 was NOT read
+Jan 25 07:27:00.495: DEBUG: Error! Register #2543 at conn #216 was NOT read
+Jan 25 07:27:00.496: DEBUG: Error! Register #2544 at conn #216 was NOT read
+Jan 25 07:27:00.496: DEBUG: Error! Register #2545 at conn #216 was NOT read
+Jan 25 07:27:00.497: DEBUG: Error! Register #2546 at conn #216 was NOT read
+Jan 25 07:27:00.497: DEBUG: Error! Register #2547 at conn #216 was NOT read
+Jan 25 07:27:00.498: DEBUG: Error! Register #2577 at conn #216 was NOT read
+Jan 25 07:27:00.498: DEBUG: Error! Register #2578 at conn #216 was NOT read
+Jan 25 07:27:02.482: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:02.483: DEBUG: ModBus: Retry
+Jan 25 07:27:02.485: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:02.486: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:02.486: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:02.487: DEBUG: ModBus: Retry
+Jan 25 07:27:02.490: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:02.490: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:02.491: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:02.491: DEBUG: ModBus: Retry
+Jan 25 07:27:02.494: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:02.494: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:02.495: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:02.495: DEBUG: ModBus: Retry
+Jan 25 07:27:02.498: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:02.562: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:02.562: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:02.562: DEBUG: ModBus: Retry
+Jan 25 07:27:02.565: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:02.566: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:02.566: DEBUG: ModBus: Skipping reading connection #236 due to read errors.
+Jan 25 07:27:02.567: DEBUG: Error! Register #3848 at conn #236 was NOT read
+Jan 25 07:27:02.567: DEBUG: Error! Register #3849 at conn #236 was NOT read
+Jan 25 07:27:02.567: DEBUG: Error! Register #3850 at conn #236 was NOT read
+Jan 25 07:27:02.568: DEBUG: Error! Register #3851 at conn #236 was NOT read
+Jan 25 07:27:02.568: DEBUG: Error! Register #3852 at conn #236 was NOT read
+Jan 25 07:27:02.568: DEBUG: Error! Register #3853 at conn #236 was NOT read
+Jan 25 07:27:02.569: DEBUG: Error! Register #3854 at conn #236 was NOT read
+Jan 25 07:27:02.569: DEBUG: Error! Register #3855 at conn #236 was NOT read
+Jan 25 07:27:02.569: DEBUG: Error! Register #3856 at conn #236 was NOT read
+Jan 25 07:27:02.570: DEBUG: Error! Register #3857 at conn #236 was NOT read
+Jan 25 07:27:02.570: DEBUG: Error! Register #3858 at conn #236 was NOT read
+Jan 25 07:27:02.571: DEBUG: Error! Register #3859 at conn #236 was NOT read
+Jan 25 07:27:02.571: DEBUG: Error! Register #3860 at conn #236 was NOT read
+Jan 25 07:27:02.571: DEBUG: Error! Register #3861 at conn #236 was NOT read
+Jan 25 07:27:02.731: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:02.732: DEBUG: ModBus: Retry
+Jan 25 07:27:02.733: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:02.733: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:02.734: DEBUG: Error! Register #3868 at conn #240 was NOT read
+Jan 25 07:27:02.734: DEBUG: Error! Register #3869 at conn #240 was NOT read
+Jan 25 07:27:02.735: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:02.735: DEBUG: ModBus: Retry
+Jan 25 07:27:02.737: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:02.738: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:02.738: DEBUG: Error! Register #4340 at conn #242 was NOT read
+Jan 25 07:27:02.739: DEBUG: Error! Register #4341 at conn #242 was NOT read
+Jan 25 07:27:02.739: DEBUG: Error! Register #4342 at conn #242 was NOT read
+Jan 25 07:27:02.739: DEBUG: Error! Register #4343 at conn #242 was NOT read
+Jan 25 07:27:02.740: DEBUG: Error! Register #4344 at conn #242 was NOT read
+Jan 25 07:27:02.740: DEBUG: Error! Register #4345 at conn #242 was NOT read
+Jan 25 07:27:02.740: DEBUG: Error! Register #4346 at conn #242 was NOT read
+Jan 25 07:27:02.741: DEBUG: Error! Register #4347 at conn #242 was NOT read
+Jan 25 07:27:02.742: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:02.742: DEBUG: ModBus: Retry
+Jan 25 07:27:02.743: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:02.743: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:02.744: DEBUG: Error! Register #4348 at conn #243 was NOT read
+Jan 25 07:27:02.744: DEBUG: Error! Register #4349 at conn #243 was NOT read
+Jan 25 07:27:02.745: DEBUG: Error! Register #4350 at conn #243 was NOT read
+Jan 25 07:27:02.745: DEBUG: Error! Register #4351 at conn #243 was NOT read
+Jan 25 07:27:02.745: DEBUG: Error! Register #4352 at conn #243 was NOT read
+Jan 25 07:27:02.746: DEBUG: Error! Register #4353 at conn #243 was NOT read
+Jan 25 07:27:02.746: DEBUG: Error! Register #4354 at conn #243 was NOT read
+Jan 25 07:27:02.747: DEBUG: Error! Register #4355 at conn #243 was NOT read
+Jan 25 07:27:02.747: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:02.748: DEBUG: ModBus: Retry
+Jan 25 07:27:02.750: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:02.750: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:02.751: DEBUG: Error! Register #4356 at conn #244 was NOT read
+Jan 25 07:27:02.751: DEBUG: Error! Register #4357 at conn #244 was NOT read
+Jan 25 07:27:02.751: DEBUG: Error! Register #4358 at conn #244 was NOT read
+Jan 25 07:27:02.752: DEBUG: Error! Register #4359 at conn #244 was NOT read
+Jan 25 07:27:02.752: DEBUG: Error! Register #4360 at conn #244 was NOT read
+Jan 25 07:27:02.753: DEBUG: Error! Register #4361 at conn #244 was NOT read
+Jan 25 07:27:02.753: DEBUG: Error! Register #4362 at conn #244 was NOT read
+Jan 25 07:27:02.753: DEBUG: Error! Register #4363 at conn #244 was NOT read
+Jan 25 07:27:02.754: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:02.755: DEBUG: ModBus: Retry
+Jan 25 07:27:02.756: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:02.757: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:02.758: DEBUG: Error! Register #4364 at conn #245 was NOT read
+Jan 25 07:27:02.758: DEBUG: Error! Register #4365 at conn #245 was NOT read
+Jan 25 07:27:02.758: DEBUG: Error! Register #4366 at conn #245 was NOT read
+Jan 25 07:27:02.759: DEBUG: Error! Register #4367 at conn #245 was NOT read
+Jan 25 07:27:02.759: DEBUG: Error! Register #4368 at conn #245 was NOT read
+Jan 25 07:27:02.760: DEBUG: Error! Register #4369 at conn #245 was NOT read
+Jan 25 07:27:02.760: DEBUG: Error! Register #4370 at conn #245 was NOT read
+Jan 25 07:27:02.760: DEBUG: Error! Register #4371 at conn #245 was NOT read
+Jan 25 07:27:07.228: DEBUG: LUA scripts: GetReg: Register #2180(IR6) was not read
+Jan 25 07:27:07.229: DEBUG: LUA scripts: GetReg: Register #2247(IR6) was not read
+Jan 25 07:27:07.231: DEBUG: LUA scripts: GetReg: Register #2381(IR6) was not read
+Jan 25 07:27:07.233: DEBUG: LUA scripts: GetReg: Register #2515(IR6) was not read
+Jan 25 07:27:07.236: DEBUG: LUA scripts: GetReg: Register #3849(IR6) was not read
+Jan 25 07:27:07.238: DEBUG: LUA scripts: GetReg: Register #2181(IR8) was not read
+Jan 25 07:27:07.240: DEBUG: LUA scripts: GetReg: Register #2248(IR8) was not read
+Jan 25 07:27:07.242: DEBUG: LUA scripts: GetReg: Register #2382(IR8) was not read
+Jan 25 07:27:07.244: DEBUG: LUA scripts: GetReg: Register #2516(IR8) was not read
+Jan 25 07:27:07.247: DEBUG: LUA scripts: GetReg: Register #2182(IR10) was not read
+Jan 25 07:27:07.248: DEBUG: LUA scripts: GetReg: Register #2249(IR10) was not read
+Jan 25 07:27:07.250: DEBUG: LUA scripts: GetReg: Register #2383(IR10) was not read
+Jan 25 07:27:07.252: DEBUG: LUA scripts: GetReg: Register #2517(IR10) was not read
+Jan 25 07:27:07.255: DEBUG: LUA scripts: GetReg: Register #2177(IR0) was not read
+Jan 25 07:27:07.257: DEBUG: LUA scripts: GetReg: Register #2244(IR0) was not read
+Jan 25 07:27:07.259: DEBUG: LUA scripts: GetReg: Register #2378(IR0) was not read
+Jan 25 07:27:07.260: DEBUG: LUA scripts: GetReg: Register #2512(IR0) was not read
+Jan 25 07:27:07.263: DEBUG: LUA scripts: GetReg: Register #3848(IR0) was not read
+Jan 25 07:27:07.266: DEBUG: LUA scripts: GetReg: Register #2178(IR2) was not read
+Jan 25 07:27:07.267: DEBUG: LUA scripts: GetReg: Register #2245(IR2) was not read
+Jan 25 07:27:07.269: DEBUG: LUA scripts: GetReg: Register #2379(IR2) was not read
+Jan 25 07:27:07.271: DEBUG: LUA scripts: GetReg: Register #2513(IR2) was not read
+Jan 25 07:27:07.275: DEBUG: LUA scripts: GetReg: Register #2179(IR4) was not read
+Jan 25 07:27:07.276: DEBUG: LUA scripts: GetReg: Register #2246(IR4) was not read
+Jan 25 07:27:07.278: DEBUG: LUA scripts: GetReg: Register #2380(IR4) was not read
+Jan 25 07:27:07.280: DEBUG: LUA scripts: GetReg: Register #2514(IR4) was not read
+Jan 25 07:27:07.283: DEBUG: LUA scripts: GetReg: Register #2183(IR12) was not read
+Jan 25 07:27:07.284: DEBUG: LUA scripts: GetReg: Register #2250(IR12) was not read
+Jan 25 07:27:07.286: DEBUG: LUA scripts: GetReg: Register #2384(IR12) was not read
+Jan 25 07:27:07.288: DEBUG: LUA scripts: GetReg: Register #2518(IR12) was not read
+Jan 25 07:27:07.291: DEBUG: LUA scripts: GetReg: Register #3850(IR12) was not read
+Jan 25 07:27:07.293: DEBUG: LUA scripts: GetReg: Register #2184(IR14) was not read
+Jan 25 07:27:07.294: DEBUG: LUA scripts: GetReg: Register #2251(IR14) was not read
+Jan 25 07:27:07.296: DEBUG: LUA scripts: GetReg: Register #2385(IR14) was not read
+Jan 25 07:27:07.298: DEBUG: LUA scripts: GetReg: Register #2519(IR14) was not read
+Jan 25 07:27:07.301: DEBUG: LUA scripts: GetReg: Register #2185(IR16) was not read
+Jan 25 07:27:07.303: DEBUG: LUA scripts: GetReg: Register #2252(IR16) was not read
+Jan 25 07:27:07.304: DEBUG: LUA scripts: GetReg: Register #2386(IR16) was not read
+Jan 25 07:27:07.307: DEBUG: LUA scripts: GetReg: Register #2520(IR16) was not read
+Jan 25 07:27:07.310: DEBUG: LUA scripts: GetReg: Register #2186(IR18) was not read
+Jan 25 07:27:07.311: DEBUG: LUA scripts: GetReg: Register #2253(IR18) was not read
+Jan 25 07:27:07.313: DEBUG: LUA scripts: GetReg: Register #2387(IR18) was not read
+Jan 25 07:27:07.315: DEBUG: LUA scripts: GetReg: Register #2521(IR18) was not read
+Jan 25 07:27:07.318: DEBUG: LUA scripts: GetReg: Register #3851(IR18) was not read
+Jan 25 07:27:07.321: DEBUG: LUA scripts: GetReg: Register #2187(IR20) was not read
+Jan 25 07:27:07.322: DEBUG: LUA scripts: GetReg: Register #2254(IR20) was not read
+Jan 25 07:27:07.323: DEBUG: LUA scripts: GetReg: Register #2388(IR20) was not read
+Jan 25 07:27:07.325: DEBUG: LUA scripts: GetReg: Register #2522(IR20) was not read
+Jan 25 07:27:07.329: DEBUG: LUA scripts: GetReg: Register #2188(IR22) was not read
+Jan 25 07:27:07.330: DEBUG: LUA scripts: GetReg: Register #2255(IR22) was not read
+Jan 25 07:27:07.332: DEBUG: LUA scripts: GetReg: Register #2389(IR22) was not read
+Jan 25 07:27:07.334: DEBUG: LUA scripts: GetReg: Register #2523(IR22) was not read
+Jan 25 07:27:07.338: DEBUG: LUA scripts: GetReg: Register #2189(IR24) was not read
+Jan 25 07:27:07.339: DEBUG: LUA scripts: GetReg: Register #2256(IR24) was not read
+Jan 25 07:27:07.341: DEBUG: LUA scripts: GetReg: Register #2390(IR24) was not read
+Jan 25 07:27:07.343: DEBUG: LUA scripts: GetReg: Register #2524(IR24) was not read
+Jan 25 07:27:07.346: DEBUG: LUA scripts: GetReg: Register #3852(IR24) was not read
+Jan 25 07:27:07.348: DEBUG: LUA scripts: GetReg: Register #2190(IR26) was not read
+Jan 25 07:27:07.349: DEBUG: LUA scripts: GetReg: Register #2257(IR26) was not read
+Jan 25 07:27:07.351: DEBUG: LUA scripts: GetReg: Register #2391(IR26) was not read
+Jan 25 07:27:07.353: DEBUG: LUA scripts: GetReg: Register #2525(IR26) was not read
+Jan 25 07:27:07.356: DEBUG: LUA scripts: GetReg: Register #2191(IR28) was not read
+Jan 25 07:27:07.358: DEBUG: LUA scripts: GetReg: Register #2258(IR28) was not read
+Jan 25 07:27:07.359: DEBUG: LUA scripts: GetReg: Register #2392(IR28) was not read
+Jan 25 07:27:07.361: DEBUG: LUA scripts: GetReg: Register #2526(IR28) was not read
+Jan 25 07:27:07.365: DEBUG: LUA scripts: GetReg: Register #2201(IR52) was not read
+Jan 25 07:27:07.366: DEBUG: LUA scripts: GetReg: Register #2268(IR52) was not read
+Jan 25 07:27:07.368: DEBUG: LUA scripts: GetReg: Register #2402(IR52) was not read
+Jan 25 07:27:07.371: DEBUG: LUA scripts: GetReg: Register #2536(IR52) was not read
+Jan 25 07:27:07.374: DEBUG: LUA scripts: GetReg: Register #3850(IR12) was not read
+Jan 25 07:27:07.376: DEBUG: LUA scripts: GetReg: Register #2202(IR56) was not read
+Jan 25 07:27:07.377: DEBUG: LUA scripts: GetReg: Register #2269(IR56) was not read
+Jan 25 07:27:07.379: DEBUG: LUA scripts: GetReg: Register #2403(IR56) was not read
+Jan 25 07:27:07.381: DEBUG: LUA scripts: GetReg: Register #2537(IR56) was not read
+Jan 25 07:27:07.383: DEBUG: LUA scripts: GetReg: Register #3851(IR18) was not read
+Jan 25 07:27:07.385: DEBUG: LUA scripts: GetReg: Register #2203(IR60) was not read
+Jan 25 07:27:07.387: DEBUG: LUA scripts: GetReg: Register #2270(IR60) was not read
+Jan 25 07:27:07.389: DEBUG: LUA scripts: GetReg: Register #2404(IR60) was not read
+Jan 25 07:27:07.390: DEBUG: LUA scripts: GetReg: Register #2538(IR60) was not read
+Jan 25 07:27:07.394: DEBUG: LUA scripts: GetReg: Register #3852(IR24) was not read
+Jan 25 07:27:07.396: DEBUG: LUA scripts: GetReg: Register #2242(IR342) was not read
+Jan 25 07:27:07.397: DEBUG: LUA scripts: GetReg: Register #2309(IR342) was not read
+Jan 25 07:27:07.399: DEBUG: LUA scripts: GetReg: Register #2443(IR342) was not read
+Jan 25 07:27:07.401: DEBUG: LUA scripts: GetReg: Register #2577(IR342) was not read
+Jan 25 07:27:07.404: DEBUG: LUA scripts: GetReg: Register #3860(IR342) was not read
+Jan 25 07:27:07.406: DEBUG: LUA scripts: GetReg: Register #2243(IR344) was not read
+Jan 25 07:27:07.407: DEBUG: LUA scripts: GetReg: Register #2310(IR344) was not read
+Jan 25 07:27:07.409: DEBUG: LUA scripts: GetReg: Register #2444(IR344) was not read
+Jan 25 07:27:07.410: DEBUG: LUA scripts: GetReg: Register #2578(IR344) was not read
+Jan 25 07:27:07.413: DEBUG: LUA scripts: GetReg: Register #3861(IR344) was not read
+Jan 25 07:27:12.112: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:12.112: DEBUG: ModBus: Retry
+Jan 25 07:27:12.114: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:12.114: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:12.115: DEBUG: Error! Register #13 at conn #4 was NOT read
+Jan 25 07:27:12.115: DEBUG: Error! Register #14 at conn #4 was NOT read
+Jan 25 07:27:12.116: DEBUG: Error! Register #15 at conn #4 was NOT read
+Jan 25 07:27:12.116: DEBUG: Error! Register #16 at conn #4 was NOT read
+Jan 25 07:27:12.118: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:12.118: DEBUG: ModBus: Retry
+Jan 25 07:27:12.120: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:12.120: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:12.121: DEBUG: Error! Register #17 at conn #5 was NOT read
+Jan 25 07:27:12.121: DEBUG: Error! Register #18 at conn #5 was NOT read
+Jan 25 07:27:12.121: DEBUG: Error! Register #19 at conn #5 was NOT read
+Jan 25 07:27:12.122: DEBUG: Error! Register #20 at conn #5 was NOT read
+Jan 25 07:27:19.057: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:19.057: DEBUG: ModBus: Retry
+Jan 25 07:27:19.059: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:19.060: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:19.060: DEBUG: Error! Register #648 at conn #158 was NOT read
+Jan 25 07:27:19.060: DEBUG: Error! Register #649 at conn #158 was NOT read
+Jan 25 07:27:28.228: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.228: DEBUG: ModBus: Retry
+Jan 25 07:27:28.231: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.232: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:28.232: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.232: DEBUG: ModBus: Retry
+Jan 25 07:27:28.235: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.236: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:28.237: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.237: DEBUG: ModBus: Retry
+Jan 25 07:27:28.240: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.240: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:28.241: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.241: DEBUG: ModBus: Retry
+Jan 25 07:27:28.244: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.245: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:28.245: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.245: DEBUG: ModBus: Retry
+Jan 25 07:27:28.248: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.249: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:28.249: DEBUG: ModBus: Skipping reading connection #211 due to read errors.
+Jan 25 07:27:28.250: DEBUG: Error! Register #2177 at conn #211 was NOT read
+Jan 25 07:27:28.250: DEBUG: Error! Register #2178 at conn #211 was NOT read
+Jan 25 07:27:28.250: DEBUG: Error! Register #2179 at conn #211 was NOT read
+Jan 25 07:27:28.251: DEBUG: Error! Register #2180 at conn #211 was NOT read
+Jan 25 07:27:28.251: DEBUG: Error! Register #2181 at conn #211 was NOT read
+Jan 25 07:27:28.251: DEBUG: Error! Register #2182 at conn #211 was NOT read
+Jan 25 07:27:28.252: DEBUG: Error! Register #2183 at conn #211 was NOT read
+Jan 25 07:27:28.252: DEBUG: Error! Register #2184 at conn #211 was NOT read
+Jan 25 07:27:28.252: DEBUG: Error! Register #2185 at conn #211 was NOT read
+Jan 25 07:27:28.253: DEBUG: Error! Register #2186 at conn #211 was NOT read
+Jan 25 07:27:28.253: DEBUG: Error! Register #2187 at conn #211 was NOT read
+Jan 25 07:27:28.253: DEBUG: Error! Register #2188 at conn #211 was NOT read
+Jan 25 07:27:28.254: DEBUG: Error! Register #2189 at conn #211 was NOT read
+Jan 25 07:27:28.254: DEBUG: Error! Register #2190 at conn #211 was NOT read
+Jan 25 07:27:28.254: DEBUG: Error! Register #2191 at conn #211 was NOT read
+Jan 25 07:27:28.255: DEBUG: Error! Register #2192 at conn #211 was NOT read
+Jan 25 07:27:28.255: DEBUG: Error! Register #2193 at conn #211 was NOT read
+Jan 25 07:27:28.255: DEBUG: Error! Register #2194 at conn #211 was NOT read
+Jan 25 07:27:28.256: DEBUG: Error! Register #2195 at conn #211 was NOT read
+Jan 25 07:27:28.257: DEBUG: Error! Register #2196 at conn #211 was NOT read
+Jan 25 07:27:28.257: DEBUG: Error! Register #2197 at conn #211 was NOT read
+Jan 25 07:27:28.257: DEBUG: Error! Register #2198 at conn #211 was NOT read
+Jan 25 07:27:28.258: DEBUG: Error! Register #2199 at conn #211 was NOT read
+Jan 25 07:27:28.258: DEBUG: Error! Register #2200 at conn #211 was NOT read
+Jan 25 07:27:28.258: DEBUG: Error! Register #2201 at conn #211 was NOT read
+Jan 25 07:27:28.259: DEBUG: Error! Register #2202 at conn #211 was NOT read
+Jan 25 07:27:28.259: DEBUG: Error! Register #2203 at conn #211 was NOT read
+Jan 25 07:27:28.259: DEBUG: Error! Register #2204 at conn #211 was NOT read
+Jan 25 07:27:28.260: DEBUG: Error! Register #2205 at conn #211 was NOT read
+Jan 25 07:27:28.260: DEBUG: Error! Register #2206 at conn #211 was NOT read
+Jan 25 07:27:28.260: DEBUG: Error! Register #2207 at conn #211 was NOT read
+Jan 25 07:27:28.261: DEBUG: Error! Register #2208 at conn #211 was NOT read
+Jan 25 07:27:28.261: DEBUG: Error! Register #2209 at conn #211 was NOT read
+Jan 25 07:27:28.261: DEBUG: Error! Register #2210 at conn #211 was NOT read
+Jan 25 07:27:28.262: DEBUG: Error! Register #2211 at conn #211 was NOT read
+Jan 25 07:27:28.262: DEBUG: Error! Register #2212 at conn #211 was NOT read
+Jan 25 07:27:28.262: DEBUG: Error! Register #2242 at conn #211 was NOT read
+Jan 25 07:27:28.263: DEBUG: Error! Register #2243 at conn #211 was NOT read
+Jan 25 07:27:28.264: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.264: DEBUG: ModBus: Retry
+Jan 25 07:27:28.267: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.268: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:28.268: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.269: DEBUG: ModBus: Retry
+Jan 25 07:27:28.272: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.273: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:28.273: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.274: DEBUG: ModBus: Retry
+Jan 25 07:27:28.277: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.277: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:28.278: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.278: DEBUG: ModBus: Retry
+Jan 25 07:27:28.281: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.282: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:28.282: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.282: DEBUG: ModBus: Retry
+Jan 25 07:27:28.285: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.286: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:28.286: DEBUG: ModBus: Skipping reading connection #212 due to read errors.
+Jan 25 07:27:28.287: DEBUG: Error! Register #2244 at conn #212 was NOT read
+Jan 25 07:27:28.287: DEBUG: Error! Register #2245 at conn #212 was NOT read
+Jan 25 07:27:28.288: DEBUG: Error! Register #2246 at conn #212 was NOT read
+Jan 25 07:27:28.288: DEBUG: Error! Register #2247 at conn #212 was NOT read
+Jan 25 07:27:28.288: DEBUG: Error! Register #2248 at conn #212 was NOT read
+Jan 25 07:27:28.289: DEBUG: Error! Register #2249 at conn #212 was NOT read
+Jan 25 07:27:28.289: DEBUG: Error! Register #2250 at conn #212 was NOT read
+Jan 25 07:27:28.289: DEBUG: Error! Register #2251 at conn #212 was NOT read
+Jan 25 07:27:28.290: DEBUG: Error! Register #2252 at conn #212 was NOT read
+Jan 25 07:27:28.290: DEBUG: Error! Register #2253 at conn #212 was NOT read
+Jan 25 07:27:28.290: DEBUG: Error! Register #2254 at conn #212 was NOT read
+Jan 25 07:27:28.291: DEBUG: Error! Register #2255 at conn #212 was NOT read
+Jan 25 07:27:28.291: DEBUG: Error! Register #2256 at conn #212 was NOT read
+Jan 25 07:27:28.291: DEBUG: Error! Register #2257 at conn #212 was NOT read
+Jan 25 07:27:28.291: DEBUG: Error! Register #2258 at conn #212 was NOT read
+Jan 25 07:27:28.292: DEBUG: Error! Register #2259 at conn #212 was NOT read
+Jan 25 07:27:28.292: DEBUG: Error! Register #2260 at conn #212 was NOT read
+Jan 25 07:27:28.293: DEBUG: Error! Register #2261 at conn #212 was NOT read
+Jan 25 07:27:28.293: DEBUG: Error! Register #2262 at conn #212 was NOT read
+Jan 25 07:27:28.293: DEBUG: Error! Register #2263 at conn #212 was NOT read
+Jan 25 07:27:28.294: DEBUG: Error! Register #2264 at conn #212 was NOT read
+Jan 25 07:27:28.294: DEBUG: Error! Register #2265 at conn #212 was NOT read
+Jan 25 07:27:28.295: DEBUG: Error! Register #2266 at conn #212 was NOT read
+Jan 25 07:27:28.296: DEBUG: Error! Register #2267 at conn #212 was NOT read
+Jan 25 07:27:28.296: DEBUG: Error! Register #2268 at conn #212 was NOT read
+Jan 25 07:27:28.296: DEBUG: Error! Register #2269 at conn #212 was NOT read
+Jan 25 07:27:28.297: DEBUG: Error! Register #2270 at conn #212 was NOT read
+Jan 25 07:27:28.297: DEBUG: Error! Register #2271 at conn #212 was NOT read
+Jan 25 07:27:28.297: DEBUG: Error! Register #2272 at conn #212 was NOT read
+Jan 25 07:27:28.298: DEBUG: Error! Register #2273 at conn #212 was NOT read
+Jan 25 07:27:28.298: DEBUG: Error! Register #2274 at conn #212 was NOT read
+Jan 25 07:27:28.299: DEBUG: Error! Register #2275 at conn #212 was NOT read
+Jan 25 07:27:28.299: DEBUG: Error! Register #2276 at conn #212 was NOT read
+Jan 25 07:27:28.299: DEBUG: Error! Register #2277 at conn #212 was NOT read
+Jan 25 07:27:28.300: DEBUG: Error! Register #2278 at conn #212 was NOT read
+Jan 25 07:27:28.300: DEBUG: Error! Register #2279 at conn #212 was NOT read
+Jan 25 07:27:28.300: DEBUG: Error! Register #2309 at conn #212 was NOT read
+Jan 25 07:27:28.301: DEBUG: Error! Register #2310 at conn #212 was NOT read
+Jan 25 07:27:28.932: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.933: DEBUG: ModBus: Retry
+Jan 25 07:27:28.936: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.936: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:28.937: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.937: DEBUG: ModBus: Retry
+Jan 25 07:27:28.940: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.941: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:28.941: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.941: DEBUG: ModBus: Retry
+Jan 25 07:27:28.944: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.945: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:28.945: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.946: DEBUG: ModBus: Retry
+Jan 25 07:27:28.948: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.949: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:28.950: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.950: DEBUG: ModBus: Retry
+Jan 25 07:27:28.953: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:28.953: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:28.954: DEBUG: ModBus: Skipping reading connection #214 due to read errors.
+Jan 25 07:27:28.954: DEBUG: Error! Register #2378 at conn #214 was NOT read
+Jan 25 07:27:28.955: DEBUG: Error! Register #2379 at conn #214 was NOT read
+Jan 25 07:27:28.955: DEBUG: Error! Register #2380 at conn #214 was NOT read
+Jan 25 07:27:28.955: DEBUG: Error! Register #2381 at conn #214 was NOT read
+Jan 25 07:27:28.956: DEBUG: Error! Register #2382 at conn #214 was NOT read
+Jan 25 07:27:28.956: DEBUG: Error! Register #2383 at conn #214 was NOT read
+Jan 25 07:27:28.957: DEBUG: Error! Register #2384 at conn #214 was NOT read
+Jan 25 07:27:28.957: DEBUG: Error! Register #2385 at conn #214 was NOT read
+Jan 25 07:27:28.957: DEBUG: Error! Register #2386 at conn #214 was NOT read
+Jan 25 07:27:28.958: DEBUG: Error! Register #2387 at conn #214 was NOT read
+Jan 25 07:27:28.958: DEBUG: Error! Register #2388 at conn #214 was NOT read
+Jan 25 07:27:28.958: DEBUG: Error! Register #2389 at conn #214 was NOT read
+Jan 25 07:27:28.959: DEBUG: Error! Register #2390 at conn #214 was NOT read
+Jan 25 07:27:28.959: DEBUG: Error! Register #2391 at conn #214 was NOT read
+Jan 25 07:27:28.960: DEBUG: Error! Register #2392 at conn #214 was NOT read
+Jan 25 07:27:28.960: DEBUG: Error! Register #2393 at conn #214 was NOT read
+Jan 25 07:27:28.961: DEBUG: Error! Register #2394 at conn #214 was NOT read
+Jan 25 07:27:28.961: DEBUG: Error! Register #2395 at conn #214 was NOT read
+Jan 25 07:27:28.961: DEBUG: Error! Register #2396 at conn #214 was NOT read
+Jan 25 07:27:28.962: DEBUG: Error! Register #2397 at conn #214 was NOT read
+Jan 25 07:27:28.962: DEBUG: Error! Register #2398 at conn #214 was NOT read
+Jan 25 07:27:28.962: DEBUG: Error! Register #2399 at conn #214 was NOT read
+Jan 25 07:27:28.963: DEBUG: Error! Register #2400 at conn #214 was NOT read
+Jan 25 07:27:28.963: DEBUG: Error! Register #2401 at conn #214 was NOT read
+Jan 25 07:27:28.963: DEBUG: Error! Register #2402 at conn #214 was NOT read
+Jan 25 07:27:28.964: DEBUG: Error! Register #2403 at conn #214 was NOT read
+Jan 25 07:27:28.964: DEBUG: Error! Register #2404 at conn #214 was NOT read
+Jan 25 07:27:28.964: DEBUG: Error! Register #2405 at conn #214 was NOT read
+Jan 25 07:27:28.965: DEBUG: Error! Register #2406 at conn #214 was NOT read
+Jan 25 07:27:28.965: DEBUG: Error! Register #2407 at conn #214 was NOT read
+Jan 25 07:27:28.965: DEBUG: Error! Register #2408 at conn #214 was NOT read
+Jan 25 07:27:28.966: DEBUG: Error! Register #2409 at conn #214 was NOT read
+Jan 25 07:27:28.966: DEBUG: Error! Register #2410 at conn #214 was NOT read
+Jan 25 07:27:28.967: DEBUG: Error! Register #2411 at conn #214 was NOT read
+Jan 25 07:27:28.967: DEBUG: Error! Register #2412 at conn #214 was NOT read
+Jan 25 07:27:28.968: DEBUG: Error! Register #2413 at conn #214 was NOT read
+Jan 25 07:27:28.968: DEBUG: Error! Register #2443 at conn #214 was NOT read
+Jan 25 07:27:28.968: DEBUG: Error! Register #2444 at conn #214 was NOT read
+Jan 25 07:27:29.653: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:29.653: DEBUG: ModBus: Retry
+Jan 25 07:27:29.656: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:29.657: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:29.657: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:29.657: DEBUG: ModBus: Retry
+Jan 25 07:27:29.660: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:29.661: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:29.661: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:29.662: DEBUG: ModBus: Retry
+Jan 25 07:27:29.665: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:29.665: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:29.665: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:29.666: DEBUG: ModBus: Retry
+Jan 25 07:27:29.669: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:29.669: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:29.670: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:29.670: DEBUG: ModBus: Retry
+Jan 25 07:27:29.673: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:29.673: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:29.674: DEBUG: ModBus: Skipping reading connection #216 due to read errors.
+Jan 25 07:27:29.674: DEBUG: Error! Register #2512 at conn #216 was NOT read
+Jan 25 07:27:29.674: DEBUG: Error! Register #2513 at conn #216 was NOT read
+Jan 25 07:27:29.675: DEBUG: Error! Register #2514 at conn #216 was NOT read
+Jan 25 07:27:29.676: DEBUG: Error! Register #2515 at conn #216 was NOT read
+Jan 25 07:27:29.676: DEBUG: Error! Register #2516 at conn #216 was NOT read
+Jan 25 07:27:29.677: DEBUG: Error! Register #2517 at conn #216 was NOT read
+Jan 25 07:27:29.677: DEBUG: Error! Register #2518 at conn #216 was NOT read
+Jan 25 07:27:29.677: DEBUG: Error! Register #2519 at conn #216 was NOT read
+Jan 25 07:27:29.678: DEBUG: Error! Register #2520 at conn #216 was NOT read
+Jan 25 07:27:29.678: DEBUG: Error! Register #2521 at conn #216 was NOT read
+Jan 25 07:27:29.678: DEBUG: Error! Register #2522 at conn #216 was NOT read
+Jan 25 07:27:29.679: DEBUG: Error! Register #2523 at conn #216 was NOT read
+Jan 25 07:27:29.679: DEBUG: Error! Register #2524 at conn #216 was NOT read
+Jan 25 07:27:29.679: DEBUG: Error! Register #2525 at conn #216 was NOT read
+Jan 25 07:27:29.680: DEBUG: Error! Register #2526 at conn #216 was NOT read
+Jan 25 07:27:29.680: DEBUG: Error! Register #2527 at conn #216 was NOT read
+Jan 25 07:27:29.680: DEBUG: Error! Register #2528 at conn #216 was NOT read
+Jan 25 07:27:29.681: DEBUG: Error! Register #2529 at conn #216 was NOT read
+Jan 25 07:27:29.681: DEBUG: Error! Register #2530 at conn #216 was NOT read
+Jan 25 07:27:29.681: DEBUG: Error! Register #2531 at conn #216 was NOT read
+Jan 25 07:27:29.682: DEBUG: Error! Register #2532 at conn #216 was NOT read
+Jan 25 07:27:29.682: DEBUG: Error! Register #2533 at conn #216 was NOT read
+Jan 25 07:27:29.682: DEBUG: Error! Register #2534 at conn #216 was NOT read
+Jan 25 07:27:29.683: DEBUG: Error! Register #2535 at conn #216 was NOT read
+Jan 25 07:27:29.683: DEBUG: Error! Register #2536 at conn #216 was NOT read
+Jan 25 07:27:29.683: DEBUG: Error! Register #2537 at conn #216 was NOT read
+Jan 25 07:27:29.684: DEBUG: Error! Register #2538 at conn #216 was NOT read
+Jan 25 07:27:29.684: DEBUG: Error! Register #2539 at conn #216 was NOT read
+Jan 25 07:27:29.684: DEBUG: Error! Register #2540 at conn #216 was NOT read
+Jan 25 07:27:29.685: DEBUG: Error! Register #2541 at conn #216 was NOT read
+Jan 25 07:27:29.685: DEBUG: Error! Register #2542 at conn #216 was NOT read
+Jan 25 07:27:29.685: DEBUG: Error! Register #2543 at conn #216 was NOT read
+Jan 25 07:27:29.686: DEBUG: Error! Register #2544 at conn #216 was NOT read
+Jan 25 07:27:29.686: DEBUG: Error! Register #2545 at conn #216 was NOT read
+Jan 25 07:27:29.687: DEBUG: Error! Register #2546 at conn #216 was NOT read
+Jan 25 07:27:29.687: DEBUG: Error! Register #2547 at conn #216 was NOT read
+Jan 25 07:27:29.688: DEBUG: Error! Register #2577 at conn #216 was NOT read
+Jan 25 07:27:29.688: DEBUG: Error! Register #2578 at conn #216 was NOT read
+Jan 25 07:27:31.681: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:31.682: DEBUG: ModBus: Retry
+Jan 25 07:27:31.685: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:31.685: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:31.686: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:31.686: DEBUG: ModBus: Retry
+Jan 25 07:27:31.689: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:31.690: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:31.690: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:31.691: DEBUG: ModBus: Retry
+Jan 25 07:27:31.693: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:31.694: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:31.694: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:31.695: DEBUG: ModBus: Retry
+Jan 25 07:27:31.698: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:31.698: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:31.698: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:31.699: DEBUG: ModBus: Retry
+Jan 25 07:27:31.702: DEBUG: Can't write to socket (192.168.10.10:502): Not a socket
+Jan 25 07:27:31.702: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:31.702: DEBUG: ModBus: Skipping reading connection #236 due to read errors.
+Jan 25 07:27:31.703: DEBUG: Error! Register #3848 at conn #236 was NOT read
+Jan 25 07:27:31.703: DEBUG: Error! Register #3849 at conn #236 was NOT read
+Jan 25 07:27:31.704: DEBUG: Error! Register #3850 at conn #236 was NOT read
+Jan 25 07:27:31.704: DEBUG: Error! Register #3851 at conn #236 was NOT read
+Jan 25 07:27:31.705: DEBUG: Error! Register #3852 at conn #236 was NOT read
+Jan 25 07:27:31.705: DEBUG: Error! Register #3853 at conn #236 was NOT read
+Jan 25 07:27:31.706: DEBUG: Error! Register #3854 at conn #236 was NOT read
+Jan 25 07:27:31.706: DEBUG: Error! Register #3855 at conn #236 was NOT read
+Jan 25 07:27:31.706: DEBUG: Error! Register #3856 at conn #236 was NOT read
+Jan 25 07:27:31.707: DEBUG: Error! Register #3857 at conn #236 was NOT read
+Jan 25 07:27:31.707: DEBUG: Error! Register #3858 at conn #236 was NOT read
+Jan 25 07:27:31.707: DEBUG: Error! Register #3859 at conn #236 was NOT read
+Jan 25 07:27:31.708: DEBUG: Error! Register #3860 at conn #236 was NOT read
+Jan 25 07:27:31.708: DEBUG: Error! Register #3861 at conn #236 was NOT read
+Jan 25 07:27:31.861: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:31.861: DEBUG: ModBus: Retry
+Jan 25 07:27:31.862: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:31.863: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:31.863: DEBUG: Error! Register #3868 at conn #240 was NOT read
+Jan 25 07:27:31.864: DEBUG: Error! Register #3869 at conn #240 was NOT read
+Jan 25 07:27:31.865: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:31.865: DEBUG: ModBus: Retry
+Jan 25 07:27:31.867: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:31.867: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:31.868: DEBUG: Error! Register #4340 at conn #242 was NOT read
+Jan 25 07:27:31.868: DEBUG: Error! Register #4341 at conn #242 was NOT read
+Jan 25 07:27:31.869: DEBUG: Error! Register #4342 at conn #242 was NOT read
+Jan 25 07:27:31.869: DEBUG: Error! Register #4343 at conn #242 was NOT read
+Jan 25 07:27:31.869: DEBUG: Error! Register #4344 at conn #242 was NOT read
+Jan 25 07:27:31.870: DEBUG: Error! Register #4345 at conn #242 was NOT read
+Jan 25 07:27:31.870: DEBUG: Error! Register #4346 at conn #242 was NOT read
+Jan 25 07:27:31.870: DEBUG: Error! Register #4347 at conn #242 was NOT read
+Jan 25 07:27:31.871: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:31.872: DEBUG: ModBus: Retry
+Jan 25 07:27:31.873: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:31.873: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:31.874: DEBUG: Error! Register #4348 at conn #243 was NOT read
+Jan 25 07:27:31.874: DEBUG: Error! Register #4349 at conn #243 was NOT read
+Jan 25 07:27:31.874: DEBUG: Error! Register #4350 at conn #243 was NOT read
+Jan 25 07:27:31.875: DEBUG: Error! Register #4351 at conn #243 was NOT read
+Jan 25 07:27:31.875: DEBUG: Error! Register #4352 at conn #243 was NOT read
+Jan 25 07:27:31.875: DEBUG: Error! Register #4353 at conn #243 was NOT read
+Jan 25 07:27:31.876: DEBUG: Error! Register #4354 at conn #243 was NOT read
+Jan 25 07:27:31.877: DEBUG: Error! Register #4355 at conn #243 was NOT read
+Jan 25 07:27:31.877: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:31.878: DEBUG: ModBus: Retry
+Jan 25 07:27:31.880: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:31.880: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:31.881: DEBUG: Error! Register #4356 at conn #244 was NOT read
+Jan 25 07:27:31.881: DEBUG: Error! Register #4357 at conn #244 was NOT read
+Jan 25 07:27:31.882: DEBUG: Error! Register #4358 at conn #244 was NOT read
+Jan 25 07:27:31.882: DEBUG: Error! Register #4359 at conn #244 was NOT read
+Jan 25 07:27:31.882: DEBUG: Error! Register #4360 at conn #244 was NOT read
+Jan 25 07:27:31.883: DEBUG: Error! Register #4361 at conn #244 was NOT read
+Jan 25 07:27:31.883: DEBUG: Error! Register #4362 at conn #244 was NOT read
+Jan 25 07:27:31.883: DEBUG: Error! Register #4363 at conn #244 was NOT read
+Jan 25 07:27:31.884: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:31.884: DEBUG: ModBus: Retry
+Jan 25 07:27:31.886: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:31.887: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:31.888: DEBUG: Error! Register #4364 at conn #245 was NOT read
+Jan 25 07:27:31.888: DEBUG: Error! Register #4365 at conn #245 was NOT read
+Jan 25 07:27:31.888: DEBUG: Error! Register #4366 at conn #245 was NOT read
+Jan 25 07:27:31.889: DEBUG: Error! Register #4367 at conn #245 was NOT read
+Jan 25 07:27:31.889: DEBUG: Error! Register #4368 at conn #245 was NOT read
+Jan 25 07:27:31.889: DEBUG: Error! Register #4369 at conn #245 was NOT read
+Jan 25 07:27:31.890: DEBUG: Error! Register #4370 at conn #245 was NOT read
+Jan 25 07:27:31.890: DEBUG: Error! Register #4371 at conn #245 was NOT read
+Jan 25 07:27:36.378: DEBUG: LUA scripts: GetReg: Register #2180(IR6) was not read
+Jan 25 07:27:36.380: DEBUG: LUA scripts: GetReg: Register #2247(IR6) was not read
+Jan 25 07:27:36.381: DEBUG: LUA scripts: GetReg: Register #2381(IR6) was not read
+Jan 25 07:27:36.383: DEBUG: LUA scripts: GetReg: Register #2515(IR6) was not read
+Jan 25 07:27:36.386: DEBUG: LUA scripts: GetReg: Register #3849(IR6) was not read
+Jan 25 07:27:36.388: DEBUG: LUA scripts: GetReg: Register #2181(IR8) was not read
+Jan 25 07:27:36.390: DEBUG: LUA scripts: GetReg: Register #2248(IR8) was not read
+Jan 25 07:27:36.392: DEBUG: LUA scripts: GetReg: Register #2382(IR8) was not read
+Jan 25 07:27:36.393: DEBUG: LUA scripts: GetReg: Register #2516(IR8) was not read
+Jan 25 07:27:36.397: DEBUG: LUA scripts: GetReg: Register #2182(IR10) was not read
+Jan 25 07:27:36.399: DEBUG: LUA scripts: GetReg: Register #2249(IR10) was not read
+Jan 25 07:27:36.400: DEBUG: LUA scripts: GetReg: Register #2383(IR10) was not read
+Jan 25 07:27:36.402: DEBUG: LUA scripts: GetReg: Register #2517(IR10) was not read
+Jan 25 07:27:36.406: DEBUG: LUA scripts: GetReg: Register #2177(IR0) was not read
+Jan 25 07:27:36.407: DEBUG: LUA scripts: GetReg: Register #2244(IR0) was not read
+Jan 25 07:27:36.409: DEBUG: LUA scripts: GetReg: Register #2378(IR0) was not read
+Jan 25 07:27:36.411: DEBUG: LUA scripts: GetReg: Register #2512(IR0) was not read
+Jan 25 07:27:36.414: DEBUG: LUA scripts: GetReg: Register #3848(IR0) was not read
+Jan 25 07:27:36.416: DEBUG: LUA scripts: GetReg: Register #2178(IR2) was not read
+Jan 25 07:27:36.417: DEBUG: LUA scripts: GetReg: Register #2245(IR2) was not read
+Jan 25 07:27:36.419: DEBUG: LUA scripts: GetReg: Register #2379(IR2) was not read
+Jan 25 07:27:36.421: DEBUG: LUA scripts: GetReg: Register #2513(IR2) was not read
+Jan 25 07:27:36.425: DEBUG: LUA scripts: GetReg: Register #2179(IR4) was not read
+Jan 25 07:27:36.426: DEBUG: LUA scripts: GetReg: Register #2246(IR4) was not read
+Jan 25 07:27:36.428: DEBUG: LUA scripts: GetReg: Register #2380(IR4) was not read
+Jan 25 07:27:36.430: DEBUG: LUA scripts: GetReg: Register #2514(IR4) was not read
+Jan 25 07:27:36.434: DEBUG: LUA scripts: GetReg: Register #2183(IR12) was not read
+Jan 25 07:27:36.435: DEBUG: LUA scripts: GetReg: Register #2250(IR12) was not read
+Jan 25 07:27:36.436: DEBUG: LUA scripts: GetReg: Register #2384(IR12) was not read
+Jan 25 07:27:36.438: DEBUG: LUA scripts: GetReg: Register #2518(IR12) was not read
+Jan 25 07:27:36.441: DEBUG: LUA scripts: GetReg: Register #3850(IR12) was not read
+Jan 25 07:27:36.443: DEBUG: LUA scripts: GetReg: Register #2184(IR14) was not read
+Jan 25 07:27:36.444: DEBUG: LUA scripts: GetReg: Register #2251(IR14) was not read
+Jan 25 07:27:36.446: DEBUG: LUA scripts: GetReg: Register #2385(IR14) was not read
+Jan 25 07:27:36.449: DEBUG: LUA scripts: GetReg: Register #2519(IR14) was not read
+Jan 25 07:27:36.452: DEBUG: LUA scripts: GetReg: Register #2185(IR16) was not read
+Jan 25 07:27:36.453: DEBUG: LUA scripts: GetReg: Register #2252(IR16) was not read
+Jan 25 07:27:36.456: DEBUG: LUA scripts: GetReg: Register #2386(IR16) was not read
+Jan 25 07:27:36.458: DEBUG: LUA scripts: GetReg: Register #2520(IR16) was not read
+Jan 25 07:27:36.461: DEBUG: LUA scripts: GetReg: Register #2186(IR18) was not read
+Jan 25 07:27:36.462: DEBUG: LUA scripts: GetReg: Register #2253(IR18) was not read
+Jan 25 07:27:36.464: DEBUG: LUA scripts: GetReg: Register #2387(IR18) was not read
+Jan 25 07:27:36.466: DEBUG: LUA scripts: GetReg: Register #2521(IR18) was not read
+Jan 25 07:27:36.469: DEBUG: LUA scripts: GetReg: Register #3851(IR18) was not read
+Jan 25 07:27:36.471: DEBUG: LUA scripts: GetReg: Register #2187(IR20) was not read
+Jan 25 07:27:36.472: DEBUG: LUA scripts: GetReg: Register #2254(IR20) was not read
+Jan 25 07:27:36.474: DEBUG: LUA scripts: GetReg: Register #2388(IR20) was not read
+Jan 25 07:27:36.476: DEBUG: LUA scripts: GetReg: Register #2522(IR20) was not read
+Jan 25 07:27:36.480: DEBUG: LUA scripts: GetReg: Register #2188(IR22) was not read
+Jan 25 07:27:36.481: DEBUG: LUA scripts: GetReg: Register #2255(IR22) was not read
+Jan 25 07:27:36.483: DEBUG: LUA scripts: GetReg: Register #2389(IR22) was not read
+Jan 25 07:27:36.485: DEBUG: LUA scripts: GetReg: Register #2523(IR22) was not read
+Jan 25 07:27:36.489: DEBUG: LUA scripts: GetReg: Register #2189(IR24) was not read
+Jan 25 07:27:36.490: DEBUG: LUA scripts: GetReg: Register #2256(IR24) was not read
+Jan 25 07:27:36.492: DEBUG: LUA scripts: GetReg: Register #2390(IR24) was not read
+Jan 25 07:27:36.493: DEBUG: LUA scripts: GetReg: Register #2524(IR24) was not read
+Jan 25 07:27:36.496: DEBUG: LUA scripts: GetReg: Register #3852(IR24) was not read
+Jan 25 07:27:36.499: DEBUG: LUA scripts: GetReg: Register #2190(IR26) was not read
+Jan 25 07:27:36.500: DEBUG: LUA scripts: GetReg: Register #2257(IR26) was not read
+Jan 25 07:27:36.502: DEBUG: LUA scripts: GetReg: Register #2391(IR26) was not read
+Jan 25 07:27:36.504: DEBUG: LUA scripts: GetReg: Register #2525(IR26) was not read
+Jan 25 07:27:36.508: DEBUG: LUA scripts: GetReg: Register #2191(IR28) was not read
+Jan 25 07:27:36.509: DEBUG: LUA scripts: GetReg: Register #2258(IR28) was not read
+Jan 25 07:27:36.511: DEBUG: LUA scripts: GetReg: Register #2392(IR28) was not read
+Jan 25 07:27:36.512: DEBUG: LUA scripts: GetReg: Register #2526(IR28) was not read
+Jan 25 07:27:36.516: DEBUG: LUA scripts: GetReg: Register #2201(IR52) was not read
+Jan 25 07:27:36.517: DEBUG: LUA scripts: GetReg: Register #2268(IR52) was not read
+Jan 25 07:27:36.519: DEBUG: LUA scripts: GetReg: Register #2402(IR52) was not read
+Jan 25 07:27:36.521: DEBUG: LUA scripts: GetReg: Register #2536(IR52) was not read
+Jan 25 07:27:36.523: DEBUG: LUA scripts: GetReg: Register #3850(IR12) was not read
+Jan 25 07:27:36.526: DEBUG: LUA scripts: GetReg: Register #2202(IR56) was not read
+Jan 25 07:27:36.527: DEBUG: LUA scripts: GetReg: Register #2269(IR56) was not read
+Jan 25 07:27:36.529: DEBUG: LUA scripts: GetReg: Register #2403(IR56) was not read
+Jan 25 07:27:36.531: DEBUG: LUA scripts: GetReg: Register #2537(IR56) was not read
+Jan 25 07:27:36.534: DEBUG: LUA scripts: GetReg: Register #3851(IR18) was not read
+Jan 25 07:27:36.536: DEBUG: LUA scripts: GetReg: Register #2203(IR60) was not read
+Jan 25 07:27:36.537: DEBUG: LUA scripts: GetReg: Register #2270(IR60) was not read
+Jan 25 07:27:36.539: DEBUG: LUA scripts: GetReg: Register #2404(IR60) was not read
+Jan 25 07:27:36.541: DEBUG: LUA scripts: GetReg: Register #2538(IR60) was not read
+Jan 25 07:27:36.544: DEBUG: LUA scripts: GetReg: Register #3852(IR24) was not read
+Jan 25 07:27:36.546: DEBUG: LUA scripts: GetReg: Register #2242(IR342) was not read
+Jan 25 07:27:36.547: DEBUG: LUA scripts: GetReg: Register #2309(IR342) was not read
+Jan 25 07:27:36.549: DEBUG: LUA scripts: GetReg: Register #2443(IR342) was not read
+Jan 25 07:27:36.551: DEBUG: LUA scripts: GetReg: Register #2577(IR342) was not read
+Jan 25 07:27:36.554: DEBUG: LUA scripts: GetReg: Register #3860(IR342) was not read
+Jan 25 07:27:36.557: DEBUG: LUA scripts: GetReg: Register #2243(IR344) was not read
+Jan 25 07:27:36.558: DEBUG: LUA scripts: GetReg: Register #2310(IR344) was not read
+Jan 25 07:27:36.560: DEBUG: LUA scripts: GetReg: Register #2444(IR344) was not read
+Jan 25 07:27:36.562: DEBUG: LUA scripts: GetReg: Register #2578(IR344) was not read
+Jan 25 07:27:36.565: DEBUG: LUA scripts: GetReg: Register #3861(IR344) was not read
+Jan 25 07:27:38.002: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:38.002: DEBUG: ModBus: Retry
+Jan 25 07:27:38.004: DEBUG: Can't write to socket (192.168.10.10:503): Not a socket
+Jan 25 07:27:38.005: DEBUG: ModBus: Can't send packet
+Jan 25 07:27:38.005: DEBUG: Error! Register #13 at conn #4 was NOT read
+Jan 25 07:27:38.005: DEBUG: Error! Register #14 at conn #4 was NOT read
+Jan 25 07:27:38.006: DEBUG: Error! Register #15 at conn #4 was NOT read
+Jan 25 07:27:38.006: DEBUG: Error! Register #16 at conn #4 was NOT read
+=======
 Jan 21 09:19:33.481: DEBUG: Error! Register #416 at conn #100 was NOT read
 Jan 21 09:19:33.481: DEBUG: Error! Register #417 at conn #100 was NOT read
 Jan 21 09:19:33.482: DEBUG: Error! Register #418 at conn #100 was NOT read
@@ -2650,4 +5036,5 @@ Jan 21 21:50:10.097: DEBUG: Error! Register #2585 at conn #217 was NOT read
 Jan 21 21:50:10.097: DEBUG: Error! Register #2586 at conn #217 was NOT read
 Jan 21 21:50:10.097: DEBUG: Error! Register #2587 at conn #217 was NOT read
 Jan 21 21:50:10.098: DEBUG: Error! Register #2588 at conn #217 was NOT read
+>>>>>>> 41367590e3c97d1ca0edd317028ba36359674bca
 

@@ -1,24 +1,23 @@
-filepath_open = 'setup.json'
+import json
 
-def open_file(path):
-    lista = []
-    with open(path) as fp:
-        line = fp.readline()
-        while line:
-            line = fp.readline()
-            lista.append(line)
-    return lista
+filepath = 'setup.json'
 
-print(open_file(filepath_open))
+def json_save(path,data):
+    with open(path, 'w') as f:
+        json.dump(data,f)
 
+def json_read(path):
+    with open(path,'r') as f:
+        data=json.load(f)
+    return data
 
+data=json_read(filepath)
 
-APIKEY='D606230FEB2CCF4A3520B334BE0E5A29C1311EB0'
+APIKEY=data["properties"]['APIKEY']
 # USER = 'admin'
 # PASS = 'elam4321'
 # device_adress = 'http://80.50.4.62:60043'
-device_adress = 'http://192.168.10.229'
-
+device_adress = data["properties"]['device_adress']
 
 headers = {'X-WH-APIKEY': APIKEY,
            'Accept': 'application/json',
@@ -31,3 +30,13 @@ headers = {'X-WH-APIKEY': APIKEY,
            'X-WH-REGS': '',
 
            }
+
+if __name__=="__main__":
+    print(data)
+    print(APIKEY)
+    print(device_adress)
+    print(data['comment'])
+
+
+
+

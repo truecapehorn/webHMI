@@ -13,7 +13,8 @@ def data_change(graphData):
             for key in regList.keys():
                 # zamiana klucza na bardziej przyjazna wersje:)
                 if key in i.keys():
-                    i[regList[key]['plcname']] = i[key]
+                    # i[regList[key]['plcname']] = i[key]
+                    i['{} {}'.format(regList[key]['plcname'], regList[key]['regtitle'])] = i[key]
                     i.pop(key)
             # Zmniejsznie ilosci danych wynikowych. Zostawienie tylko wartosci sredniej z próbki.
             graph = {key: val.split(';')[2] for (key, val) in i.items() if isinstance(val, str) and key != 'x'}
