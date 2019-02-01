@@ -7,17 +7,17 @@ from defs import csv_writer
 
 def save_data(unixtime, graphDatas):
     day = datetime.fromtimestamp(unixtime).strftime('%Y-%m-%d')
-    log_dir = 'logi\dane_{}'.format(day)
-    log_dir.replace('\\', os.sep)
+    log_dir = 'logi/dane_{}'.format(day)
+    log_dir=log_dir.replace('/', os.sep)
     try:
         os.makedirs(log_dir)
     except FileExistsError:
         pass
 
     for key, val in graphDatas.items():
-        file_path = '{}\{}_wykres_{}_{}.csv'.format(log_dir, key, graphsDict[key]['apartment'],
+        file_path = '{}/{}_wykres_{}_{}.csv'.format(log_dir, key, graphsDict[key]['apartment'],
                                                     graphsDict[key]['category'])
-        file_path.replace('\\', os.sep)
+        file_path=file_path.replace('/', os.sep)
         print('Zapis danych dla Wykresu {}'.format(key))
         csv_writer(file_path, val)
 
