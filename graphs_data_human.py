@@ -11,9 +11,8 @@ def data_change(graphData):
                 if key == 'x':
                     i[key] = datetime.utcfromtimestamp(int(i[key]) / 1000).strftime('%Y-%m-%d--%H:%M:%S')
             for key in regList.keys():
-                # zamiana klucza na bardziej przyjazna wersje:)
+                # zamiana klucza na bardziej przyjazna wersje:) tzn. zmiana nazywy kolumny
                 if key in i.keys():
-                    # i[regList[key]['plcname']] = i[key]
                     i['{} {}'.format(regList[key]['plcname'], regList[key]['regtitle'])] = i[key]
                     i.pop(key)
             # Zmniejsznie ilosci danych wynikowych. Zostawienie tylko wartosci sredniej z próbki.
@@ -31,4 +30,7 @@ if __name__ == "__main__":
     # # data=data_change(graphData)
     # # for k,v in data.items():
     # #     print(k,v)
+
+    # todo : dodanie testow
+    # todo: trzeba dodac porawake na czas z utc . ?
     pass

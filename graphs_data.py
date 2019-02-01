@@ -33,7 +33,7 @@ def datas(wh_start=1547078400, wh_slices=4, lenght=60 * 60 * 23):
         graphData[k] = graphDataReq(headers,k)  # odczytanie danych z wykresow
         # print(graphData[k])
         print('-------------\n')
-    graphData = data_change(graphData)
+    graphData = data_change(graphData)  # obrobienie zebranych danych
     return graphData
 
 
