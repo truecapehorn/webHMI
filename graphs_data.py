@@ -31,7 +31,7 @@ def datas(wh_start=1547078400, wh_slices=4, lenght=60 * 60 * 23):
         print('Pobranie wykresu {} : {} w {}'.format(k, graphsDict[k]['category'], graphsDict[k]['apartment']))
         time.sleep(1)
         graphData[k] = graphDataReq(headers,k)  # odczytanie danych z wykresow
-        print(graphData[k])
+        # print(graphData[k])
         print('-------------\n')
     graphData = data_change(graphData)
     return graphData
