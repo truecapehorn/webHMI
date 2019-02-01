@@ -3,7 +3,7 @@ import time,json
 # import pytz
 import sys
 
-filepath = 'setup.json'
+filepath = 'setup.json' # link do pliku z ustawieniami !!
 def json_read(path):
     with open(path,'r') as f:
         data=json.load(f)
@@ -11,7 +11,7 @@ def json_read(path):
 
 
 def range():
-    data=json_read(filepath)
+    data=json_read(filepath) # pobranie potrzbnych danych z pliku z ustawieniami
     wh_slices = data["properties"]["samples"]
     wh_start = ''
     print('Pobierz dane dla dnia: rrrr-mm-dd: ', end='>> ')
@@ -20,8 +20,8 @@ def range():
             wh_start = input()
             wh_start = [int(i) for i in wh_start.split('-')]
             dt = datetime(wh_start[0], wh_start[1], wh_start[2])
-            unixtime = time.mktime(dt.timetuple()) - time.timezone
-            date = datetime.fromtimestamp(unixtime).strftime('%Y-%m-%d')
+            unixtime = time.mktime(dt.timetuple()) #- time.timezone
+            date = datetime.fromtimestamp(unixtime).strftime('%Y-%m-%d  %H:%M:%S')
             break
         except:
             if wh_start != 'q':

@@ -35,7 +35,7 @@ def csv_writer(file_path, dictionary):
     for dic in dictionary:
         key_set.update(dic.keys())
         dict_list.append(dic)
-    keys = list(sorted(list(key_set),reverse=True))
+    keys = list(sorted(list(key_set),reverse=True)) # reverse aby zaczynalo od daty.
     # keys = list(list(key_set))
     print("Zapis do: ",file_path)
     try:
