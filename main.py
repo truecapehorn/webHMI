@@ -4,8 +4,8 @@ from reg_stat import graphs_all, all_graphs_humidity, all_graphs_temperature, fi
     fif_graphs_temperature, \
     apar_graphs_humidity, apar_graphs_temperature
 import graph_range
-import graphs_data
-import graphs_save
+import graphsData
+import dataSave
 
 '''
 Obsluga danych z wykresow na webHMI. Dane połaczenia w pliku head.py
@@ -59,11 +59,9 @@ wh_start, wh_slices, date = graph_range.range()
 
 print('Pobranie wykresow w dniu {} ({}) ilość próbek {}'.format(date, wh_start, wh_slices))
 
-graphDatas = graphs_data.datas(wh_start, wh_slices)
-
-# for k, v in graphDatas.items():
-#     print(k, '>', v)
+graphDatas = graphsData.datas(wh_start, wh_slices)[1]
 
 print('Zapisanie danych:')
-graphs_save.save_data(wh_start, graphDatas)
+
+dataSave.save_data(wh_start, graphDatas)
 

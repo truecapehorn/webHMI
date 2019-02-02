@@ -1,7 +1,7 @@
 from API_webHMI import *
 from head import headers, device_adress
-from graphs_list import graphsDict
-from graphs_data_human import data_change
+from graphsList import graphsDict
+from changeRawData import data_change
 
 def head(wh_start=1547078400, wh_slices=4, lenght=60 * 60 * 23):
 
@@ -24,21 +24,22 @@ def graphDataReq(headers,k):
 def datas(wh_start=1547078400, wh_slices=4, lenght=60 * 60 * 23):
     # Pobranie zapisanych w webhmi wykresow
     print('\nDane z wykresow')
-    graphData = {}
+    rawData = {}
     headers = head(wh_start,wh_slices,lenght)
     # stworzenie slownika z danymi wykresow
     for k in graphsDict.keys():
         print('Pobranie wykresu {} : {} w {}'.format(k, graphsDict[k]['category'], graphsDict[k]['apartment']))
         time.sleep(1)
-        graphData[k] = graphDataReq(headers,k)  # odczytanie danych z wykresow
-        # print(graphData[k])
+        rawData[k] = graphDataReq(headers,k)  # odczytanie danych z wykresow
+        # print(rawData[k])
         print('-------------\n')
-    graphData = data_change(graphData)  # obrobienie zebranych danych
-    return graphData
+    data = data_change(rawData)  # obrobienie zebranych danych
+    return rawData,data
 
 
 if __name__ == "__main__":
-    [print(key, '-', val) for key, val in datas().items()]
+    raw_data,data=datas()
+    [print(key, '-', val) for key, val in data.items()]
 
 
     pass

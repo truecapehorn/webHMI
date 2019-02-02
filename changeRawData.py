@@ -23,13 +23,12 @@ def data_change(graphData):
 
 if __name__ == "__main__":
     # import graphs_data
-    # #
-    # # graphData=graphs_data.datas()
-    # # for k,v in graphData.items():
-    # #     print(k,v)
-    # # data=data_change(graphData)
-    # # for k,v in data.items():
-    # #     print(k,v)
+    # raw_data=graphs_data.datas()[1]
+    # for k,v in raw_data.items():
+    #     print(k,v)
+    # data=data_change(raw_data)
+    # for k,v in data.items():
+    #     print(k,v)
 
     # todo : dodanie testow
     # todo: trzeba dodac porawake na czas z utc . ?
