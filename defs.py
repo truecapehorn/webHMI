@@ -34,13 +34,8 @@ def csv_writer(file_path, dictionary):
         pass
 
     for dic in dictionary:
-        # key_set.update(dic.keys())
-        key_set=set(dic.keys())
         dict_list.append(dic)
-
-    #keys = list(sorted(list(key_set), reverse=True))  # reverse aby zaczynalo od daty.
     keys = list(dictionary[0].keys())
-    print(keys)
     print("Zapis do: ", file_path)
     try:
         with open(file_path, 'w', encoding='utf-8') as f:

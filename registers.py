@@ -2,7 +2,6 @@ from API_webHMI import *
 from defs import csv_writer
 from head import headers, device_adress
 from connections import connection
-import csv
 
 import os
 
@@ -27,8 +26,6 @@ for r in registers:
                             'category': connection[r['plcid']]['category']}
 
 if __name__ == '__main__':
-    # # key_set = set()
-    # dict_list = list()
 
     file_path = 'rejestry/reg.csv'
     file_path=file_path.replace('/', os.sep)
