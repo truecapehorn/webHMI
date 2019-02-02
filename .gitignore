@@ -13,6 +13,5 @@ startup.txt
 /build/*
 /dist/*
 *.spec
-/debuging/errory.txt
-/debuging/errory.txt
+/debuging/*
 
