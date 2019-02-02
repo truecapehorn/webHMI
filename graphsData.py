@@ -3,10 +3,10 @@ from head import headers, device_adress
 from graphsList import graphsDict
 from changeRawData import data_change
 
-def head(wh_start=1547078400, wh_slices=4, lenght=60 * 60 * 23):
+def head(wh_start=1547078400, wh_slices=4, lenght=1):
 
     # Ustalenie nagłowka dla wykresu
-    wh_stop = wh_start + lenght
+    wh_stop = wh_start + lenght*60*60*24
     headers['X-WH-CONNS'] = ''
     headers['X-WH-REGS'] = ''
     headers['X-WH-START'] = str(wh_start)
@@ -21,7 +21,7 @@ def graphDataReq(headers,k):
     return req4
 
 
-def datas(wh_start=1547078400, wh_slices=4, lenght=60 * 60 * 23):
+def datas(wh_start=1547078400, wh_slices=4, lenght=60 * 60 * 24):
     # Pobranie zapisanych w webhmi wykresow
     print('\nDane z wykresow')
     rawData = {}

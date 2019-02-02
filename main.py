@@ -55,11 +55,11 @@ print('Ilosc rejestrow apar temperatury wykresami: {}'.format(len(apar_graphs_te
 print(40 * '-')
 print("\nWybierz zakres danych do pobrania")
 
-wh_start, wh_slices, date = dataRange.range()
+wh_start, wh_slices, date, lenght = dataRange.range()
 
-print('Pobranie wykresow w dniu {} ({}) ilość próbek {}'.format(date, wh_start, wh_slices))
+print('Pobranie wykresow w dniu {} ({}) ilość próbek {} ilosc dni {}'.format(date, wh_start, wh_slices, lenght))
 
-graphDatas = graphsData.datas(wh_start, wh_slices)[1]
+graphDatas = graphsData.datas(wh_start, wh_slices,lenght)[1]
 
 print('Zapisanie danych:')
 
