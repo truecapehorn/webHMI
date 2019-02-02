@@ -3,7 +3,7 @@ from registers import regList
 from reg_stat import graphs_all, all_graphs_humidity, all_graphs_temperature, fif_graphs_humidity, \
     fif_graphs_temperature, \
     apar_graphs_humidity, apar_graphs_temperature
-import graph_range
+import graphRange
 import graphsData
 import dataSave
 
@@ -55,7 +55,7 @@ print('Ilosc rejestrow apar temperatury wykresami: {}'.format(len(apar_graphs_te
 print(40 * '-')
 print("\nWybierz zakres danych do pobrania")
 
-wh_start, wh_slices, date = graph_range.range()
+wh_start, wh_slices, date = graphRange.range()
 
 print('Pobranie wykresow w dniu {} ({}) ilość próbek {}'.format(date, wh_start, wh_slices))
 
