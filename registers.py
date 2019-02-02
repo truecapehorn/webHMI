@@ -27,20 +27,20 @@ for r in registers:
                             'category': connection[r['plcid']]['category']}
 
 if __name__ == '__main__':
-    key_set = set()
-    dict_list = list()
+    # # key_set = set()
+    # dict_list = list()
 
     file_path = 'rejestry/reg.csv'
-    file_path.replace('/', os.sep)
+    file_path=file_path.replace('/', os.sep)
 
     try:
         os.makedirs('rejestry')
     except FileExistsError:
         pass
 
-    print('Lista rejestrów : {}'.format(len(regList)))
+    print('Ilosc  rejestrów : {}'.format(len(regList)))
 
-    for i in registers:
+    for i in registers[0:10]:
         print(i)
 
     csv_writer(file_path, registers)
