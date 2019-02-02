@@ -59,9 +59,8 @@ wh_start, wh_slices, date, lenght = dataRange.range()
 
 print('Pobranie wykresow w dniu {} ({}) ilość próbek {} ilosc dni {}'.format(date, wh_start, wh_slices, lenght))
 
-graphDatas = graphsData.datas(wh_start, wh_slices,lenght)[1]
+graphDatas = graphsData.datas(wh_start, wh_slices, lenght)[1]
 
 print('Zapisanie danych:')
 
 dataSave.save_data(wh_start, graphDatas)
-

@@ -2,18 +2,21 @@ import json
 
 filepath = 'setup.json'
 
-def json_save(path,data):
+
+def json_save(path, data):
     with open(path, 'w') as f:
-        json.dump(data,f)
+        json.dump(data, f)
+
 
 def json_read(path):
-    with open(path,'r') as f:
-        data=json.load(f)
+    with open(path, 'r') as f:
+        data = json.load(f)
     return data
 
-data=json_read(filepath)
 
-APIKEY=data["properties"]['APIKEY']
+data = json_read(filepath)
+
+APIKEY = data["properties"]['APIKEY']
 # USER = 'admin'
 # PASS = 'elam4321'
 # device_adress = 'http://80.50.4.62:60043'
@@ -31,12 +34,8 @@ headers = {'X-WH-APIKEY': APIKEY,
 
            }
 
-if __name__=="__main__":
+if __name__ == "__main__":
     print(data)
     print(APIKEY)
     print(device_adress)
     print(data['comment'])
-
-
-
-

@@ -35,13 +35,13 @@ def csv_writer(file_path, dictionary):
     for dic in dictionary:
         key_set.update(dic.keys())
         dict_list.append(dic)
-    keys = list(sorted(list(key_set),reverse=True)) # reverse aby zaczynalo od daty.
+    keys = list(sorted(list(key_set), reverse=True))  # reverse aby zaczynalo od daty.
     # keys = list(list(key_set))
-    print("Zapis do: ",file_path)
+    print("Zapis do: ", file_path)
     try:
         with open(file_path, 'w', encoding='utf-8') as f:
             w = csv.DictWriter(f, keys, delimiter=',', lineterminator='\n')
             w.writeheader()
             w.writerows(dict_list)
-    except IOError as e :
-        print('Nie mozna zapisac pliku csv',e)
+    except IOError as e:
+        print('Nie mozna zapisac pliku csv', e)

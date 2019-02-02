@@ -1,6 +1,5 @@
 import os
 
-
 '''
 Analiza polaczen z błedem odczytu.
 logi ze strony wkliec do pliku logi
