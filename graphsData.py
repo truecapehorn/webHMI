@@ -21,7 +21,7 @@ def graphDataReq(headers,k):
     return req4
 
 
-def datas(wh_start=1547078400, wh_slices=4, lenght=60 * 60 * 24):
+def datas(wh_start=1547078400, wh_slices=4, lenght=1):
     # Pobranie zapisanych w webhmi wykresow
     print('\nDane z wykresow')
     rawData = {}

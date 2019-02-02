@@ -2,6 +2,7 @@ from datetime import datetime
 from graphsList import graphsDict
 import graphsData
 import os
+import shutil
 from defs import csv_writer
 
 
@@ -12,7 +13,11 @@ def save_data(unixtime, graphDatas):
     try:
         os.makedirs(log_dir)
     except FileExistsError:
+        print('Usuniecie istniejacego folderu: ',log_dir)
+        shutil.rmtree(log_dir) # usuniecie folderu kotory juz istnieje
+        os.makedirs(log_dir)
         pass
+
 
     for key, val in graphDatas.items():
         file_path = '{}/{}_wykres_{}_{}.csv'.format(log_dir, key, graphsDict[key]['apartment'],
