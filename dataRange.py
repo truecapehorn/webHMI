@@ -12,10 +12,11 @@ def json_read(path):
     return data
 
 
+
 def range():
     data = json_read(filepath)  # pobranie potrzbnych danych z pliku z ustawieniami
     wh_slices = data["properties"]["samples"]
-    lenght = data["properties"]["lenght"]
+    length = data["properties"]["length"]
     wh_start = ''
     print('Pobierz dane dla dnia: rrrr-mm-dd: ', end='>> ')
     while True:
@@ -32,7 +33,7 @@ def range():
             else:
                 sys.exit(0)
 
-    return int(unixtime), wh_slices, date, lenght
+    return int(unixtime), wh_slices, date, length
 
 
 if __name__ == "__main__":
