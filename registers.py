@@ -22,7 +22,8 @@ registers.head()
 
 regList = pd.merge(registers,connections[['title','plcid']],on='plcid')
 regList.index=regList['id']
-print(regList['title_y'].head(30))
 
 if __name__ == '__main__':
+    print(regList['title_y'].head(30))
+
     pass

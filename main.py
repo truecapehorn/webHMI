@@ -28,10 +28,8 @@ wh_start, wh_slices, date, lenght = dataRange.range()
 print('Pobranie wykresow w dniu {} ({}) ilość próbek {} ilosc dni {}'.format(date, wh_start, wh_slices, lenght))
 
 rawData = graphsData.datas(wh_start, wh_slices)
-print(rawData.keys())
-
 data = graphsData.changeData(rawData)
-print(data.keys())
+
 
 print('Zapisanie danych:')
 

@@ -60,9 +60,11 @@ def changeData(rawData):
             if i != 'x':
                 vals = ['min', 'avg', 'max']
                 devs = wiatr[i].str.split(';', expand=True).rename(columns=lambda x: vals[x])
-                dfp = pd.DataFrame(dict([((i, 'min'), devs['min']),
-                                         ((i, 'avg'), devs['avg']),
-                                         ((i, 'max'), devs['max']), ]))
+                dfp = pd.DataFrame(dict([
+                    # ((i,'min'), devs['min'].astype('float')),
+                    ((i, 'avg'), devs['avg'].astype('float')),
+                    # ((i,'max'), devs['max'].astype('float')),
+                ]))
                 dd.append(dfp)
         df = pd.concat(dd, axis=1)
         data[k]=df
