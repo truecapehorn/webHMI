@@ -21,6 +21,8 @@ def connectionList(device_adress, headers):
     url = device_adress + api_adress
     # GET
     r = requests.get(url, headers=headers)
+    #response
+    # response_status('connextion', r)
 
     return r.json()
 
@@ -126,54 +128,4 @@ if __name__ == "__main__":
                'X-WH-REGS': '1,2,3,4',
                }
 
-    a = 1
-
-    l = []
-
-    dict1 = registerList(device_adress, headers)
-    print(len(dict1))
-    for i in dict1:
-        print(i)
-        pass
-
-    while True:
-        dict2 = getCurValue(device_adress, headers)
-        print('pomiar ', a)
-        # print(getLocTime()['timestamp'])
-        timestamp = getLocTime(device_adress, headers)['timestamp']
-
-        for i in range(len(dict1)):
-            ids = dict1[i]['id']
-            print(dict1[i]['title'], dict2[str(ids)]['v'])
-            l.append(dict2[str(ids)]['v'])
-
-        log = open('log.txt', 'a')
-        print(timestamp, ',', l, file=log)
-        log.close()
-        l = []
-
-        time.sleep(0)
-        a += 1
-        break
-    # print(getRegLog())
-
-    dict3 = getRegLog(device_adress, headers)
-    print(dict3)
-    for i in dict3:
-        if i['r'] == 2:
-            logi = open('logi.txt', 'a')
-            print(i['r'], ',', i['t'], ',', i['v'], file=logi)
-            logi.close()
-
-    dict4 = graphList(device_adress, headers)
-    for i in dict4:
-        print(i)
-
-    dict5 = getGraphData(device_adress, headers)
-    print(len(dict5))
-    for i in dict5:
-        print(i)
-    print('\nconnection')
-    dict6 = connectionList(device_adress, headers)
-    for i in dict6:
-        print(i)
+    conn=connectionList(device_adress,headers)
