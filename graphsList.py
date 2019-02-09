@@ -19,7 +19,7 @@ graphList = graphListReq()
 # todo: wywalic rejetry w nie używancyh połączeniach, które sa w graphDict
 
 
-for i in graphList[22:25]:  # OKRESLIC ILE WYKRESOW DO POBRANIA
+for i in graphList: #[22:25]:  # OKRESLIC ILE WYKRESOW DO POBRANIA
     graphsDict[i['id']] = {'apartment': i['category'], 'category': i['title']}
 [print(key, 'Miejsce: {}, Czujniki: {}'.format(val['apartment'], val['category'])) for key, val in graphsDict.items()]
 
