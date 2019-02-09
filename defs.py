@@ -1,5 +1,6 @@
 import csv, os
 
+import pandas as pd
 
 def displayHeader(dic):
     print('\nHeader')
@@ -23,7 +24,7 @@ def makeRegIDs(ids):
     return regs
 
 
-def csv_writer(file_path, dictionary):
+def csv_writer(file_path, df):
     # key_set = set()
     dict_list = list()
 
@@ -33,14 +34,10 @@ def csv_writer(file_path, dictionary):
     except FileNotFoundError:
         pass
 
-    for dic in dictionary:
-        dict_list.append(dic)
-    keys = list(dictionary[0].keys())
     print("Zapis do: ", file_path)
     try:
-        with open(file_path, 'w', encoding='utf-8') as f:
-            w = csv.DictWriter(f, keys, delimiter=',', lineterminator='\n')
-            w.writeheader()
-            w.writerows(dict_list)
-    except IOError as e:
+        df.to_csv(file_path)
+    except Exception as e:
         print('Nie mozna zapisac pliku csv', e)
+
+

@@ -5,6 +5,8 @@ import os
 import shutil
 from defs import csv_writer
 
+import pandas as pd
+
 
 def save_data(unixtime, graphDatas):
     day = datetime.fromtimestamp(unixtime).strftime('%Y-%m-%d')
@@ -31,10 +33,13 @@ if __name__ == '__main__':
     wh_slices = 4
     # print('Pobranie wykresow w dniu {} ilość próbek {}'.format(wh_start, wh_slices))
 
-    graphDatas = graphsData.datas(wh_start, wh_slices)[1]
+    rawData = graphsData.datas(wh_start, wh_slices)
+    print(rawData.keys())
+    data = graphsData.changeData(rawData)
+    print(data.keys())
 
-    for k, v in graphDatas.items():
+    for k, v in data.items():
         print(k, ' : ', v)
     for k, v in graphsDict.items():
         print(k, ' > ', v)
-    save_data(1547078400, graphDatas)
+    save_data(1547078400, data)
