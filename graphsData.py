@@ -2,6 +2,8 @@ from API_webHMI import *
 from head import headers, device_adress
 from graphsList import graphsDict
 from changeRawData import data_change
+import pandas as pd
+from registers import regList
 
 
 def head(wh_start=1547078400, wh_slices=4, lenght=1):
@@ -31,15 +33,54 @@ def datas(wh_start=1547078400, wh_slices=4, lenght=1):
     for k in graphsDict.keys():
         print('Pobranie wykresu {} : {} w {}'.format(k, graphsDict[k]['category'], graphsDict[k]['apartment']))
         time.sleep(1)
-        rawData[k] = graphDataReq(headers, k)  # odczytanie danych z wykresow
-        # print(rawData[k])
+        raw=graphDataReq(headers, k)
+        raw_pd = pd.DataFrame(raw)
+        rawData[k]=raw_pd
         print('-------------\n')
-    data = data_change(rawData)  # obrobienie zebranych danych
-    return rawData, data
+    return rawData
+
+
+def changeData(rawData):
+    data={}
+    for k,v in rawData.items():
+        wiatr=v
+        wiatr['x'] = pd.to_datetime(wiatr['x'], unit='ms')
+
+        old_names = wiatr.columns.tolist()
+        new_names = ['{}_{}'.format(i, regList['title_y'].loc[i]) for i in old_names if i != 'x']
+        wiatr.rename(columns=dict(zip(old_names, new_names)), inplace=True)
+        wiatr.head()
+
+
+        wind = pd.DataFrame(dict([(('Time', ''), wiatr['x'])]))
+        dd = [wind]
+        # dd=[]
+        print(wiatr.keys().tolist())
+        for i in wiatr.keys().tolist():
+            if i != 'x':
+                vals = ['min', 'avg', 'max']
+                devs = wiatr[i].str.split(';', expand=True).rename(columns=lambda x: vals[x])
+                dfp = pd.DataFrame(dict([
+                    # ((i,'min'), devs['min'].astype('float')),
+                    ((i, 'avg'), devs['avg'].astype('float')),
+                    # ((i,'max'), devs['max'].astype('float')),
+                ]))
+                dd.append(dfp)
+        df = pd.concat(dd, axis=1)
+        data[k]=df
+
+
+    return data
+
+
+
 
 
 if __name__ == "__main__":
-    raw_data, data = datas()
-    [print(key, '-', val) for key, val in data.items()]
+    rawData = datas()
+    print(rawData.keys())
+    data = changeData(rawData)
+
+    print(data.keys())
 
     pass

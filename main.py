@@ -1,8 +1,4 @@
-from connections import connection, fifs, appars
-from registers import regList
-from reg_stat import graphs_all, all_graphs_humidity, all_graphs_temperature, fif_graphs_humidity, \
-    fif_graphs_temperature, \
-    apar_graphs_humidity, apar_graphs_temperature
+
 import dataRange
 import graphsData
 import dataSave
@@ -22,35 +18,7 @@ Obsluga danych z wykresow na webHMI. Dane połaczenia w pliku head.py
 
 '''
 
-print('Ilość połaczen : {}'.format(len(connection.keys())))
-# print(connection)
-print('Ilosc Aparow: {}'.format(len(appars)))
-# print(appars)
-print('Ilosc Fifow: {}'.format(len(fifs)))
-# print(fifs)
-print('Lista rejestrów : {}'.format(len(regList.keys())))
-# print(regList)
 
-print('Ilosc rejestrow z wykresami: {}'.format(len(graphs_all)))
-# print(graphs_all)
-
-print('Ilosc rejestrow wilgotnosci z wykresami: {}'.format(len(all_graphs_humidity)))
-# print(all_graphs_humidity)
-
-print('Ilosc rejestrow temperatury wykresami: {}'.format(len(all_graphs_temperature)))
-# print(all_graphs_temperature)
-
-print('Ilosc rejestrow fif wilgotnosci z wykresami: {}'.format(len(fif_graphs_humidity)))
-# print(fif_graphs_humidity)
-
-print('Ilosc rejestrow fif temperatury wykresami: {}'.format(len(fif_graphs_temperature)))
-# print(fif_graphs_temperature)
-
-print('Ilosc rejestrow apar wilgotnosci z wykresami: {}'.format(len(apar_graphs_humidity)))
-# print(apar_graphs_humidity)
-
-print('Ilosc rejestrow apar temperatury wykresami: {}'.format(len(apar_graphs_temperature)))
-# print(apar_graphs_temperature)
 
 print(40 * '-')
 print("\nWybierz zakres danych do pobrania")
@@ -59,8 +27,10 @@ wh_start, wh_slices, date, lenght = dataRange.range()
 
 print('Pobranie wykresow w dniu {} ({}) ilość próbek {} ilosc dni {}'.format(date, wh_start, wh_slices, lenght))
 
-graphDatas = graphsData.datas(wh_start, wh_slices, lenght)[1]
+rawData = graphsData.datas(wh_start, wh_slices)
+data = graphsData.changeData(rawData)
+
 
 print('Zapisanie danych:')
 
-dataSave.save_data(wh_start, graphDatas)
+dataSave.save_data(wh_start, data)
