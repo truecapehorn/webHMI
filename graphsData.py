@@ -1,9 +1,11 @@
 from API_webHMI import *
 from head import headers, device_adress
 from graphsList import graphsDict
-from changeRawData import data_change
 import pandas as pd
 from registers import regList
+# %matplotlib inline
+import matplotlib.pyplot as plt
+from matplotlib.pyplot import figure
 
 
 def head(wh_start=1547078400, wh_slices=4, lenght=1):
@@ -24,7 +26,7 @@ def graphDataReq(headers, k):
     return req4
 
 
-def datas(wh_start=1547078400, wh_slices=4, lenght=1):
+def datas(wh_start=1547078400, wh_slices=200, lenght=1):
     # Pobranie zapisanych w webhmi wykresow
     print('\nDane z wykresow')
     rawData = {}
@@ -56,18 +58,23 @@ def changeData(rawData):
         dd = [wind]
         # dd=[]
         print(wiatr.keys().tolist())
-        for i in wiatr.keys().tolist():
+        for i in wiatr.keys():
             if i != 'x':
                 vals = ['min', 'avg', 'max']
                 devs = wiatr[i].str.split(';', expand=True).rename(columns=lambda x: vals[x])
                 dfp = pd.DataFrame(dict([
-                    # ((i,'min'), devs['min'].astype('float')),
+                    ((i, 'min'), devs['min'].astype('float')),
                     ((i, 'avg'), devs['avg'].astype('float')),
-                    # ((i,'max'), devs['max'].astype('float')),
+                    ((i, 'max'), devs['max'].astype('float')),
                 ]))
                 dd.append(dfp)
         df = pd.concat(dd, axis=1)
-        data[k]=df
+        df.set_index('Time', inplace=True)
+
+        lista = [x for x in df.columns.tolist() if x[1] == 'avg']
+        mask = df[lista]
+
+        data[k]=mask
 
 
     return data
@@ -81,6 +88,18 @@ if __name__ == "__main__":
     print(rawData.keys())
     data = changeData(rawData)
 
-    print(data.keys())
+    tabele_list=list(data.keys())
+
+    wykres=data[tabele_list[1]]
+
+    wykres.plot(figsize=(15, 5))
+    plt.title("Title")
+    plt.xlabel("Data")
+    plt.ylabel("C")
+    plt.grid(True)
+    plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+    plt.show()
+
+
 
     pass
