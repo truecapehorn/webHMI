@@ -26,6 +26,7 @@ def save_data(unixtime, graphDatas):
         file_path = file_path.replace('/', os.sep)
         print('Zapis danych dla Wykresu {}'.format(key))
         csv_writer(file_path, val)
+    graphDatas={}
 
 
 if __name__ == '__main__':

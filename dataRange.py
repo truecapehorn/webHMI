@@ -26,9 +26,11 @@ def range():
             wh_start = [int(i) for i in wh_start.split('-')]
             print('Ile dni mają dotyczyc dane : ', end='>> ')
             dni=input()
+            if int(dni)>7:
+                dni='7'
             dt = datetime(wh_start[0], wh_start[1], wh_start[2])
             unixtime = time.mktime(dt.timetuple())  # - time.timezone
-            date = datetime.fromtimestamp(unixtime).strftime('%Y-%m-%d  %H:%M:%S')
+
             break
         except:
             if wh_start != 'q':
@@ -36,7 +38,7 @@ def range():
             else:
                 sys.exit(0)
 
-    return int(unixtime), wh_slices, date, length, dni
+    return int(unixtime), wh_slices, length, dni
 
 
 if __name__ == "__main__":

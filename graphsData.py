@@ -1,6 +1,6 @@
 from API_webHMI import *
 from head import headers, device_adress
-from graphsList import graphsDict
+# from graphsList import graphsDict
 import pandas as pd
 from registers import regList
 # %matplotlib inline
@@ -25,7 +25,7 @@ def graphDataReq(headers, k):
     return req4
 
 
-def datas(wh_start=1547078400, wh_slices=200, lenght=1):
+def datas(graphsDict,wh_start=1547078400, wh_slices=200, lenght=1):
     # Pobranie zapisanych w webhmi wykresow
     print('\nDane z wykresow')
     rawData = {}
@@ -44,23 +44,21 @@ def datas(wh_start=1547078400, wh_slices=200, lenght=1):
 def changeData(rawData):
     data={}
     for k,v in rawData.items():
-        wiatr=v
-        wiatr['x'] = pd.to_datetime(wiatr['x'], unit='ms')
+        wykres=v
+        wykres['x'] = pd.to_datetime(wykres['x'], unit='ms')
 
-        old_names = wiatr.columns.tolist()
+        old_names = wykres.columns.tolist()
         new_names = ['{}_{}'.format(i, regList['title_y'].loc[i]) for i in old_names if i != 'x']
-        wiatr.rename(columns=dict(zip(old_names, new_names)), inplace=True)
-        wiatr.head()
-
-
-        wind = pd.DataFrame(dict([(('Time', ''), wiatr['x'])]))
+        wykres.rename(columns=dict(zip(old_names, new_names)), inplace=True)
+        wykres.head()
+        wind = pd.DataFrame(dict([(('Time', ''), wykres['x'])]))
         dd = [wind]
         # dd=[]
-        print(wiatr.keys().tolist())
-        for i in wiatr.keys():
+        # print(wykres.keys().tolist())
+        for i in wykres.keys():
             if i != 'x':
                 vals = ['min', 'avg', 'max']
-                devs = wiatr[i].str.split(';', expand=True).rename(columns=lambda x: vals[x])
+                devs = wykres[i].str.split(';', expand=True).rename(columns=lambda x: vals[x])
                 dfp = pd.DataFrame(dict([
                     ((i, 'min'), devs['min'].astype('float')),
                     ((i, 'avg'), devs['avg'].astype('float')),
@@ -69,13 +67,10 @@ def changeData(rawData):
                 dd.append(dfp)
         df = pd.concat(dd, axis=1)
         df.set_index('Time', inplace=True)
-
+        # ogranicznie tylko do kolumn z avg
         lista = [x for x in df.columns.tolist() if x[1] == 'avg']
         mask = df[lista]
-
         data[k]=mask
-
-
     return data
 
 
