@@ -18,11 +18,14 @@ def range():
     wh_slices = data["properties"]["samples"]
     length = data["properties"]["length"]
     wh_start = ''
-    print('Pobierz dane dla dnia: rrrr-mm-dd: ', end='>> ')
+
     while True:
         try:
+            print('Pobierz dane z dnia: rrrr-mm-dd : ', end='>> ')
             wh_start = input()
             wh_start = [int(i) for i in wh_start.split('-')]
+            print('Ile dni mają dotyczyc dane : ', end='>> ')
+            dni=input()
             dt = datetime(wh_start[0], wh_start[1], wh_start[2])
             unixtime = time.mktime(dt.timetuple())  # - time.timezone
             date = datetime.fromtimestamp(unixtime).strftime('%Y-%m-%d  %H:%M:%S')
@@ -33,10 +36,11 @@ def range():
             else:
                 sys.exit(0)
 
-    return int(unixtime), wh_slices, date, length
+    return int(unixtime), wh_slices, date, length, dni
 
 
 if __name__ == "__main__":
-    unixtime, slices, date = range()
+    unixtime, slices, date,length ,dni = range()
     print(unixtime)
     print(date)
+    print('dni:' , dni)

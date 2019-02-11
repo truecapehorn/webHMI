@@ -23,7 +23,7 @@ Obsluga danych z wykresow na webHMI. Dane połaczenia w pliku head.py
 print(40 * '-')
 print("\nWybierz zakres danych do pobrania")
 
-wh_start, wh_slices, date, lenght = dataRange.range()
+wh_start, wh_slices, date, lenght, dni = dataRange.range()
 
 print('Pobranie wykresow w dniu {} ({}) ilość próbek {} ilosc dni {}'.format(date, wh_start, wh_slices, lenght))
 

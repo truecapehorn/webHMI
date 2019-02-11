@@ -5,7 +5,6 @@ import pandas as pd
 from registers import regList
 # %matplotlib inline
 import matplotlib.pyplot as plt
-from matplotlib.pyplot import figure
 
 
 def head(wh_start=1547078400, wh_slices=4, lenght=1):
@@ -87,18 +86,21 @@ if __name__ == "__main__":
     rawData = datas()
     print(rawData.keys())
     data = changeData(rawData)
-
     tabele_list=list(data.keys())
-
     wykres=data[tabele_list[1]]
 
-    wykres.plot(figsize=(15, 5))
-    plt.title("Title")
-    plt.xlabel("Data")
-    plt.ylabel("C")
-    plt.grid(True)
-    plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
-    plt.show()
+
+
+
+
+
+    # wykres.plot(figsize=(15, 5))
+    # plt.title("Title")
+    # plt.xlabel("Data")
+    # plt.ylabel("C")
+    # plt.grid(True)
+    # plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+    # plt.show()
 
 
 
