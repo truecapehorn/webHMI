@@ -13,6 +13,10 @@ def json_read(path):
 
 
 
+def make_date(unixtime):
+    date = datetime.fromtimestamp(int(unixtime)).strftime('%Y-%m-%d  %H:%M:%S')
+    return date
+
 def range():
     data = json_read(filepath)  # pobranie potrzbnych danych z pliku z ustawieniami
     wh_slices = data["properties"]["samples"]
@@ -42,7 +46,8 @@ def range():
 
 
 if __name__ == "__main__":
-    unixtime, slices, date,length ,dni = range()
+    unixtime, slices,length ,dni = range()
     print(unixtime)
+    date=make_date(unixtime)
     print(date)
     print('dni:' , dni)

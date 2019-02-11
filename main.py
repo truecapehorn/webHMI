@@ -32,7 +32,7 @@ graphs=graphsList.graphsDict
 rawData = {}
 data = {}
 for i in range(int(dni)):
-    date = datetime.fromtimestamp(wh_start).strftime('%Y-%m-%d  %H:%M:%S')
+    date = dataRange.make_date(wh_start)
     print('Pobranie wykresow od dnia {} ({}) ilość próbek {}'.format(date, wh_start, wh_slices, lenght))
     rawData = graphsData.datas(graphs,wh_start, wh_slices)
     data = graphsData.changeData(rawData)

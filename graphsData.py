@@ -5,6 +5,7 @@ import pandas as pd
 from registers import regList
 # %matplotlib inline
 import matplotlib.pyplot as plt
+from dataRange import make_date
 
 
 def head(wh_start=1547078400, wh_slices=4, lenght=1):
@@ -27,17 +28,18 @@ def graphDataReq(headers, k):
 
 def datas(graphsDict,wh_start=1547078400, wh_slices=200, lenght=1):
     # Pobranie zapisanych w webhmi wykresow
-    print('\nDane z wykresow')
+    date=make_date(wh_start)
+    print('\nDane z wykresow dla dnia : ', date )
     rawData = {}
     headers = head(wh_start, wh_slices, lenght)
     # stworzenie slownika z danymi wykresow
     for k in graphsDict.keys():
-        print('Pobranie wykresu {} : {} w {}'.format(k, graphsDict[k]['category'], graphsDict[k]['apartment']))
+        print('Pobranie wykresu {} : {} w {} dla dnia {}'.format(k, graphsDict[k]['category'], graphsDict[k]['apartment'], date))
         time.sleep(1)
         raw=graphDataReq(headers, k)
         raw_pd = pd.DataFrame(raw)
         rawData[k]=raw_pd
-        print('-------------\n')
+        print('-------------')
     return rawData
 
 
