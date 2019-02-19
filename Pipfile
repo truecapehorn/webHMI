@@ -12,6 +12,7 @@ numpy = "*"
 pandas = "*"
 scipy = "*"
 scikit-learn = "*"
+pynput = "*"
 
 [dev-packages]
 
