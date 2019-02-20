@@ -1,19 +1,19 @@
-import time
-from threading import Thread
-
-answer = None
-t = 5  # You can type for 5 seconds
-
-def check():
-    time.sleep(5)
-    if answer != None:
-        print('ok wykonuj program 1',answer)
-        return
-    print("Too Slow")
-
-Thread(target=check).start()
-
-answer = input("Input something: ")
+# import time
+# from threading import Thread
+#
+# answer = None
+# t = 5  # You can type for 5 seconds
+#
+# def check():
+#     time.sleep(5)
+#     if answer != None:
+#         print('ok wykonuj program 1',answer)
+#         return
+#     print("Too Slow")
+#
+# Thread(target=check).start()
+#
+# answer = input("Input something: ")
 
 
 
@@ -38,3 +38,12 @@ answer = input("Input something: ")
 #
 # timeup()
 
+
+from threading import Timer
+
+timeout = 2
+t = Timer(timeout, print, ['Sorry, times up'])
+t.start()
+prompt = "You have %d seconds to choose the correct answer...\n" % timeout
+answer = input(prompt)
+t.cancel()
