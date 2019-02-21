@@ -34,16 +34,31 @@
 #                 print('dupa')
 #                 break
 #
+#
 #     print("STOP TYPING")
 #
 # timeup()
-
-
+#
+#
 from threading import Timer
+import sys
+import time
 
-timeout = 2
-t = Timer(timeout, print, ['Sorry, times up'])
+def printer(s):
+    print(s)
+    for i in range(1,10):
+        print(i)
+        time.sleep(0.3)
+    sys.exit()
+
+timeout = 5
+
+t = Timer(timeout, printer, ['Czas mnią i wykonuje sie program drugi'])
 t.start()
 prompt = "You have %d seconds to choose the correct answer...\n" % timeout
+
+
 answer = input(prompt)
+print(answer)
 t.cancel()
+
