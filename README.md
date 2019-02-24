@@ -2,7 +2,7 @@
 
 ### Odczytywanie danych wykresów z urządzenia webHMI
 Program main wykonuje zapytania requestowe. 
-Pobiera dane odnośnie wykresow i pobiera dane dla wskazanego zakresu. Następnie wypluwa pliki CSV.
+Pobiera listę wykresow i ich dane dla wskazanego zakresu. Następnie wypluwa pliki CSV.
 Wersja z użyciem pandy.
 
 
