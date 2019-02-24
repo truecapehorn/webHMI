@@ -39,3 +39,4 @@ for i in range(int(dni)):
     print('Zapisanie danych:')
     dataSave.save_data(wh_start, data)
     wh_start=wh_start+60*60*24
+input()
