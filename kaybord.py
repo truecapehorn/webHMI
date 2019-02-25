@@ -40,25 +40,41 @@
 # timeup()
 #
 #
-from threading import Timer
-import sys
-import time
+# from threading import Timer
+# import sys
+# import time
+#
+# def printer(s):
+#     print(s)
+#     for i in range(1,10):
+#         print(i)
+#         time.sleep(0.3)
+#     sys.exit()
+#
+# timeout = 5
+#
+# t = Timer(timeout, printer, ['Czas mnią i wykonuje sie program drugi'])
+# t.start()
+# prompt = "You have %d seconds to choose the correct answer...\n" % timeout
+#
+#
+# answer = input(prompt)
+# print(answer)
+# t.cancel()
 
-def printer(s):
-    print(s)
-    for i in range(1,10):
-        print(i)
-        time.sleep(0.3)
-    sys.exit()
-
-timeout = 5
-
-t = Timer(timeout, printer, ['Czas mnią i wykonuje sie program drugi'])
-t.start()
-prompt = "You have %d seconds to choose the correct answer...\n" % timeout
 
 
-answer = input(prompt)
-print(answer)
-t.cancel()
+import thread
+import threading
 
+def raw_input_with_timeout(prompt, timeout=30.0):
+    print(prompt)
+    timer = threading.Timer(timeout, thread.interrupt_main)
+    astring = None
+    try:
+        timer.start()
+        astring = input(prompt)
+    except KeyboardInterrupt:
+        pass
+    timer.cancel()
+    return astring
