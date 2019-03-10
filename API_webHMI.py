@@ -14,6 +14,17 @@ def response_status(action, r):
     print('<!---------koniec-----------!>')
 
 
+def walidate(r):
+
+    if r.status_code != 200:
+        print('Bład połaczenia . !!\n Status code {}'.format(r.status_code))
+        input()
+        exit(0)
+    else:
+        return r
+
+
+
 def connectionList(device_adress, headers):
     '''Zczytanie listy połaczen webHMI'''
     # ADRESS
@@ -23,7 +34,7 @@ def connectionList(device_adress, headers):
     r = requests.get(url, headers=headers)
     #response
     # response_status('connextion', r)
-
+    r=walidate(r)
     return r.json()
 
 
@@ -34,7 +45,9 @@ def registerList(device_adress, headers):
     url = device_adress + api_adress
     # GET
     r = requests.get(url, headers=headers)
+    r=walidate(r)
     return r.json()
+
 
 
 def trendList(device_adress, headers):
@@ -44,6 +57,7 @@ def trendList(device_adress, headers):
     url = device_adress + api_adress
     # GET
     r = requests.get(url, headers=headers)
+    r=walidate(r)
     return r.json()
 
 
@@ -54,6 +68,7 @@ def graphList(device_adress, headers):
     url = device_adress + api_adress
     # GET
     r = requests.get(url, headers=headers)
+    r=walidate(r)
     return r.json()
 
 
@@ -64,6 +79,7 @@ def getCurValue(device_adress, headers):
     url = device_adress + api_adress
     # GET
     r = requests.get(url, headers=headers)
+    r=walidate(r)
     return r.json()
 
 
@@ -74,6 +90,7 @@ def getLocTime(device_adress, headers):
     url = device_adress + api_adress
     # GET
     r = requests.get(url, headers=headers)
+    r=walidate(r)
     return r.json()
 
 
@@ -84,6 +101,7 @@ def getRegLog(device_adress, headers):
     url = device_adress + api_adress
     # GET
     r = requests.get(url, headers=headers)
+    r=walidate(r)
     return r.json()
 
 
@@ -96,6 +114,7 @@ def getGraphData(device_adress, headers):
     r = requests.get(url, headers=headers)
     action = 'pobranie wykresow'
     response_status(action, r)
+    r=walidate(r)
     return r.json()
 
 
@@ -108,6 +127,7 @@ def getGraph(device_adress, headers, graphID):
     r = requests.get(url, headers=headers)
     action = 'pobranie wykresow'
     # response_status(action,r)
+    r=walidate(r)
     return r.json()
 
 
@@ -129,3 +149,5 @@ if __name__ == "__main__":
                }
 
     conn=connectionList(device_adress,headers)
+    print(conn)
+

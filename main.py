@@ -22,7 +22,6 @@ Obsluga danych z wykresow na webHMI. Dane połaczenia w pliku head.py
 '''
 
 
-
 print(40 * '-')
 print("\nWybierz zakres danych do pobrania")
 
