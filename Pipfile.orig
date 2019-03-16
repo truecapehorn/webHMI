@@ -2,8 +2,9 @@
 name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
-
-[dev-packages]
+<<<<<<< HEAD
+=======
+name = "pypi"
 
 [packages]
 requests = "*"
@@ -14,8 +15,12 @@ numpy = "*"
 pandas = "*"
 scipy = "*"
 scikit-learn = "*"
+pynput = "*"
+>>>>>>> panda
 
 [dev-packages]
 
+[packages]
+
 [requires]
-python_version = "3.7.2"
+python_version = "3.7"
