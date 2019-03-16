@@ -6,16 +6,6 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-requests = "*"
-pytz = "*"
-jupyter = "*"
-matplotlib = "*"
-numpy = "*"
-pandas = "*"
-scipy = "*"
-scikit-learn = "*"
-
-[dev-packages]
 
 [requires]
-python_version = "3.7.2"
+python_version = "3.7"
