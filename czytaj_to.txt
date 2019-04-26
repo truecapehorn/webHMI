@@ -1,0 +1,14 @@
+''
+Obsluga danych z wykresow na webHMI. Dane po³aczenia w pliku head.py
+
+# aby zrobic exeka to :
+# zaisntalowac pyinstalera
+# pip install pyinstaller
+# pip install PyWin32 # jak w windows
+# Sprawdzic czy skrypt dzia³a
+# python your_script.py
+# uruchmoc pyinstalera
+# pyinstaller --onefile <your_script_name>.py
+# exec bedzie w folderze dist
+
+'''
