@@ -47,7 +47,7 @@ def changeData(rawData):
     data={}
     for k,v in rawData.items():
         wykres=v
-        wykres['x'] = pd.to_datetime(wykres['x'], unit='ms')
+        wykres['x'] = pd.to_datetime(wykres['x'], unit='ms').dt.tz_localize('UTC').dt.tz_convert('Europe/Warsaw')
 
         old_names = wykres.columns.tolist()
         new_names = ['{}_{}'.format(i, regList['title_y'].loc[i]) for i in old_names if i != 'x']
