@@ -30,8 +30,8 @@ def range():
             wh_start = [int(i) for i in wh_start.split('-')]
             print('Ile dni mają dotyczyc dane : ', end='>> ')
             dni=input()
-            if int(dni)>14:
-                dni='14'
+            if int(dni)>31:
+                dni='31'
             dt = datetime(wh_start[0], wh_start[1], wh_start[2])
             unixtime = time.mktime(dt.timetuple())  # - time.timezone
 
