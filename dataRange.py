@@ -47,7 +47,7 @@ def range():
             str3 = datetime_in_utc.strftime('%Y-%m-%d %H:%M:%S %Z')
 
 
-            unixtime = datetime_in_utc_ts  # - time.timezone
+            unixtime = datetime_in_utc_ts # uzycie czasu UTC dla webHMI
 
             break
         except:
