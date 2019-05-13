@@ -1,9 +1,11 @@
-from datetime import datetime
+import datetime
 import time, json
-# import pytz
+import pytz
 import sys
 
 filepath = 'setup.json'  # link do pliku z ustawieniami !!
+
+local_tz = pytz.timezone ('Europe/Warsaw')
 
 
 def json_read(path):
@@ -32,8 +34,20 @@ def range():
             dni=input()
             if int(dni)>31:
                 dni='31'
-            dt = datetime(wh_start[0], wh_start[1], wh_start[2])
-            unixtime = time.mktime(dt.timetuple())  # - time.timezone
+            datetime_without_tz = datetime.datetime.strptime(f"{wh_start[0]}-{wh_start[1]}-{wh_start[2] - 1} 23:00:00","%Y-%m-%d %H:%M:%S")
+            datetime_with_tz = local_tz.localize(datetime_without_tz, is_dst=True)
+            datetime_in_utc = datetime_with_tz.astimezone(pytz.utc)
+
+            datetime_without_tz_ts = time.mktime(datetime_without_tz.timetuple())
+            datetime_with_tz_ts = time.mktime(datetime_with_tz.timetuple())
+            datetime_in_utc_ts = time.mktime(datetime_in_utc.timetuple())
+
+            str1 = datetime_without_tz.strftime('%Y-%m-%d %H:%M:%S %Z')
+            str2 = datetime_with_tz.strftime('%Y-%m-%d %H:%M:%S %Z')
+            str3 = datetime_in_utc.strftime('%Y-%m-%d %H:%M:%S %Z')
+
+
+            unixtime = datetime_in_utc_ts  # - time.timezone
 
             break
         except:
