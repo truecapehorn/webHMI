@@ -37,4 +37,4 @@ for i in range(int(dni)):
     data = graphsData.changeData(rawData)
     print('Zapisanie danych:')
     dataSave.save_data(day, data)
-    # wh_start=wh_start+60*60*24
+    wh_start=wh_start+60*60*24
