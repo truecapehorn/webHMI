@@ -1,6 +1,7 @@
 from datetime import datetime
 from graphsList import graphsDict
 import graphsData
+import dataRange
 import os
 import shutil
 from defs import csv_writer
@@ -8,8 +9,8 @@ from defs import csv_writer
 import pandas as pd
 
 
-def save_data(unixtime, graphDatas):
-    day = datetime.fromtimestamp(unixtime).strftime('%Y-%m-%d')
+def save_data(day, graphDatas):
+
     log_dir = 'logi/dane_{}'.format(day)
     log_dir = log_dir.replace('/', os.sep)
     try:

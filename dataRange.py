@@ -16,7 +16,7 @@ def json_read(path):
 
 
 def make_date(unixtime):
-    date = datetime.fromtimestamp(int(unixtime)).strftime('%Y-%m-%d  %H:%M:%S')
+    date = datetime.datetime.fromtimestamp(int(unixtime+7200)).strftime('%Y-%m-%d')
     return date
 
 def range():
@@ -48,6 +48,7 @@ def range():
 
 
             unixtime = datetime_in_utc_ts # uzycie czasu UTC dla webHMI
+            date = str2
 
             break
         except:
