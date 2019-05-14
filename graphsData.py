@@ -45,7 +45,7 @@ def datas(graphsDict,wh_start=1557691200, wh_slices=200, lenght=1):
     # stworzenie slownika z danymi wykresow
     for k in graphsDict.keys():
         print('Pobranie wykresu {} : {} w {} dla dnia {}'.format(k, graphsDict[k]['category'], graphsDict[k]['apartment'], date))
-        print(headers)
+        # print(headers)
         time.sleep(1)
         raw=graphDataReq(headers, k)
         raw_pd = pd.DataFrame(raw)
