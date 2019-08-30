@@ -22,20 +22,19 @@ Obsluga danych z wykresow na webHMI. Dane połaczenia w pliku head.py
 '''
 
 
-
 print(40 * '-')
 print("\nWybierz zakres danych do pobrania")
 
-wh_start, wh_slices,lenght, dni = dataRange.range()
+wh_start, wh_slices,lenght, dni= dataRange.range()
 graphs=graphsList.graphsDict
 
 rawData = {}
 data = {}
 for i in range(int(dni)):
-    date = dataRange.make_date(wh_start)
-    print('Pobranie wykresow od dnia {} ({}) ilość próbek {}'.format(date, wh_start, wh_slices, lenght))
+    day = dataRange.make_date(wh_start)
+    print('Pobranie wykresow od dnia {} ({}) ilość próbek {}'.format(day, wh_start, wh_slices, lenght))
     rawData = graphsData.datas(graphs,wh_start, wh_slices)
     data = graphsData.changeData(rawData)
     print('Zapisanie danych:')
-    dataSave.save_data(wh_start, data)
+    dataSave.save_data(day, data)
     wh_start=wh_start+60*60*24

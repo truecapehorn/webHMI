@@ -1,6 +1,6 @@
 from API_webHMI import *
 from head import headers, device_adress
-# from graphsList import graphsDict
+import graphsList
 import pandas as pd
 from registers import regList
 # %matplotlib inline
@@ -10,7 +10,7 @@ from dataRange import make_date
 
 def head(wh_start=1547078400, wh_slices=4, lenght=1):
     # Ustalenie nagłowka dla wykresu
-    wh_stop = wh_start + lenght * 60 * 60 * 24
+    wh_stop = wh_start+7200 + lenght * 60 * 60 * 24
     headers['X-WH-CONNS'] = ''
     headers['X-WH-REGS'] = ''
     headers['X-WH-START'] = str(wh_start)
@@ -26,7 +26,17 @@ def graphDataReq(headers, k):
     return req4
 
 
-def datas(graphsDict,wh_start=1547078400, wh_slices=200, lenght=1):
+def cut_data(frame):
+    ''' usuniecie zbednych dni'''
+    frr=frame.copy()
+    day = frr['x'].dt.day.value_counts()
+    dayy = day[day == frr['x'].dt.day.value_counts().sort_values().max()].index.to_list()[0]
+    filtr_day = (frr['x'].dt.day == dayy)
+    return frr[filtr_day]
+
+
+
+def datas(graphsDict,wh_start=1557691200, wh_slices=200, lenght=1):
     # Pobranie zapisanych w webhmi wykresow
     date=make_date(wh_start)
     print('\nDane z wykresow dla dnia : ', date )
@@ -35,19 +45,24 @@ def datas(graphsDict,wh_start=1547078400, wh_slices=200, lenght=1):
     # stworzenie slownika z danymi wykresow
     for k in graphsDict.keys():
         print('Pobranie wykresu {} : {} w {} dla dnia {}'.format(k, graphsDict[k]['category'], graphsDict[k]['apartment'], date))
+        # print(headers)
         time.sleep(1)
         raw=graphDataReq(headers, k)
         raw_pd = pd.DataFrame(raw)
         rawData[k]=raw_pd
         print('-------------')
+
     return rawData
 
 
 def changeData(rawData):
+
     data={}
     for k,v in rawData.items():
         wykres=v
-        wykres['x'] = pd.to_datetime(wykres['x'], unit='ms')
+        wykres['x'] = pd.to_datetime(wykres['x'], unit='ms').dt.tz_localize('UTC').dt.tz_convert('Europe/Warsaw')
+
+        wykres=cut_data(wykres) # usuniecie danych z poprzedniego i nastepnego dnia
 
         old_names = wykres.columns.tolist()
         new_names = ['{}_{}'.format(i, regList['title_y'].loc[i]) for i in old_names if i != 'x']
@@ -80,11 +95,17 @@ def changeData(rawData):
 
 
 if __name__ == "__main__":
-    rawData = datas()
-    print(rawData.keys())
+
+    graphs=graphsList.graphsDict
+    gg=dict((k, graphs[k]) for k in ['1'])
+
+    rawData = datas(gg)
+
+    print(rawData)
     data = changeData(rawData)
-    tabele_list=list(data.keys())
-    wykres=data[tabele_list[1]]
+
+    # print(data)
+
 
 
 

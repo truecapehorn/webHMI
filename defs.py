@@ -36,7 +36,7 @@ def csv_writer(file_path, df):
 
     print("Zapis do: ", file_path)
     try:
-        df.to_csv(file_path)
+        df.to_csv(file_path, sep=';')
     except Exception as e:
         print('Nie mozna zapisac pliku csv', e)
 
