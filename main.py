@@ -1,3 +1,7 @@
+from API_webHMI import ApiWebHmi
+from settings import device_adress, APIKEY
+
+
 
 import dataRange
 import graphsData
@@ -20,6 +24,8 @@ Obsluga danych z wykresow na webHMI. Dane połaczenia w pliku head.py
 # exec bedzie w folderze dist
 
 '''
+
+hmi = ApiWebHmi(device_adress, APIKEY)
 
 
 print(40 * '-')

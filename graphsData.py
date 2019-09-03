@@ -1,5 +1,4 @@
-from API_webHMI import *
-from head import headers, device_adress
+from main import hmi
 import graphsList
 import pandas as pd
 from registers import regList
@@ -8,21 +7,16 @@ import matplotlib.pyplot as plt
 from dataRange import make_date
 
 
-def head(wh_start=1547078400, wh_slices=4, lenght=1):
-    # Ustalenie nagłowka dla wykresu
-    wh_stop = wh_start+7200 + lenght * 60 * 60 * 24
-    headers['X-WH-CONNS'] = ''
-    headers['X-WH-REGS'] = ''
-    headers['X-WH-START'] = str(wh_start)
-    headers['X-WH-END'] = str(wh_stop)
-    headers['X-WH-SLICES'] = str(wh_slices)
-    return headers
 
-
-def graphDataReq(headers, k):
+def graphDataReq(k,X_WH_START,X_WH_END,X_WH_SLICES):
     print('\n4 :Graph Data Req\n')
     # displayHeader(headers)  # wystarczy podstawowy naglowek
-    req4 = getGraph(device_adress, headers, k)  # odczytanie danych z wykresow
+    req4 = hmi.make_req('getGraphData',
+                        response=False,
+                        ID=k,
+                        X_WH_START=X_WH_START,
+                        X_WH_END=X_WH_END,
+                        X_WH_SLICES=X_WH_SLICES)  # odczytanie danych z wykresow
     return req4
 
 
