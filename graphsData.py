@@ -41,7 +41,7 @@ def datas(graphsDict,wh_start=1557691200, wh_slices=200, lenght=1):
         print('Pobranie wykresu {} : {} w {} dla dnia {}'.format(k, graphsDict[k]['category'], graphsDict[k]['apartment'], date))
         # print(headers)
         time.sleep(1)
-        raw=graphDataReq(headers, k)
+        raw=graphDataReq(k,wh_start,wh_end,wh_slices)
         raw_pd = pd.DataFrame(raw)
         rawData[k]=raw_pd
         print('-------------')
