@@ -7,6 +7,9 @@ filepath = 'setup.json'  # link do pliku z ustawieniami !!
 
 local_tz = pytz.timezone ('Europe/Warsaw')
 
+from settings import hmi
+
+
 
 def json_read(path):
     with open(path, 'r') as f:
@@ -34,30 +37,33 @@ def range():
             dni=input()
             if int(dni)>31:
                 dni='31'
-            datetime_without_tz = datetime.datetime.strptime(f"{wh_start[0]}-{wh_start[1]}-{wh_start[2] - 1} 23:00:00","%Y-%m-%d %H:%M:%S")
-            datetime_with_tz = local_tz.localize(datetime_without_tz, is_dst=True)
-            datetime_in_utc = datetime_with_tz.astimezone(pytz.utc)
+            # datetime_without_tz = datetime.datetime.strptime(f"{wh_start[0]}-{wh_start[1]}-{wh_start[2] - 1} 23:00:00","%Y-%m-%d %H:%M:%S")
+            # datetime_with_tz = local_tz.localize(datetime_without_tz, is_dst=True)
+            # datetime_in_utc = datetime_with_tz.astimezone(pytz.utc)
+            #
+            # datetime_without_tz_ts = time.mktime(datetime_without_tz.timetuple())
+            # datetime_with_tz_ts = time.mktime(datetime_with_tz.timetuple())
+            # datetime_in_utc_ts = time.mktime(datetime_in_utc.timetuple())
+            #
+            # str1 = datetime_without_tz.strftime('%Y-%m-%d %H:%M:%S %Z')
+            # str2 = datetime_with_tz.strftime('%Y-%m-%d %H:%M:%S %Z')
+            # str3 = datetime_in_utc.strftime('%Y-%m-%d %H:%M:%S %Z')
+            X_WH_START = float(hmi.req_time(wh_start[0],wh_start[1],wh_start[2], 0, 0))
 
-            datetime_without_tz_ts = time.mktime(datetime_without_tz.timetuple())
-            datetime_with_tz_ts = time.mktime(datetime_with_tz.timetuple())
-            datetime_in_utc_ts = time.mktime(datetime_in_utc.timetuple())
 
-            str1 = datetime_without_tz.strftime('%Y-%m-%d %H:%M:%S %Z')
-            str2 = datetime_with_tz.strftime('%Y-%m-%d %H:%M:%S %Z')
-            str3 = datetime_in_utc.strftime('%Y-%m-%d %H:%M:%S %Z')
-
-
-            unixtime = datetime_in_utc_ts # uzycie czasu UTC dla webHMI
-            date = str2
+            # unixtime = datetime_in_utc_ts # uzycie czasu UTC dla webHMI
+            # date = str2
 
             break
-        except:
+        except Exception as e:
+            print(e)
             if wh_start != 'q':
                 print('Zła date!!\nWprowadz jescze raz date rrrr-mm-dd: ', end='>> ')
             else:
                 sys.exit(0)
 
-    return int(unixtime), wh_slices, length, dni
+    # return int(unixtime), wh_slices, length, dni
+    return int(X_WH_START), wh_slices, length, dni
 
 
 if __name__ == "__main__":

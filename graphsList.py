@@ -1,5 +1,4 @@
-from API_webHMI import *
-from head import headers, device_adress
+from settings import hmi
 
 '''
 Pobranie listy wykresow
@@ -9,8 +8,7 @@ graphsDict = {}
 
 def graphListReq():
     print('\n3 :Graph Req\n')
-    # displayHeader(headers)  # wystarczy podstawowy naglowek
-    req3 = graphList(device_adress, headers)
+    req3= hmi.make_req('graphList')
     return req3
 
 

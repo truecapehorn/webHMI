@@ -1,4 +1,6 @@
 import json, os
+from API_webHMI import ApiWebHmi
+
 
 cur_path = os.path.dirname(__file__)
 
@@ -21,6 +23,9 @@ data = json_read(filepath)
 
 APIKEY = data["properties"]['APIKEY']
 device_adress = data["properties"]['device_adress']
+
+hmi = ApiWebHmi(device_adress, APIKEY)
+
 
 if __name__ == "__main__":
     print(data)

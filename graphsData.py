@@ -1,9 +1,10 @@
-from main import hmi
 import graphsList
 import pandas as pd
 from registers import regList
 from dataRange import make_date
 import time
+from settings import hmi
+
 
 
 def graphDataReq(k,X_WH_START,X_WH_END,X_WH_SLICES):
@@ -39,7 +40,7 @@ def datas(graphsDict,wh_start=1557691200, wh_slices=200, lenght=1):
         print('Pobranie wykresu {} : {} w {} dla dnia {}'.format(k, graphsDict[k]['category'], graphsDict[k]['apartment'], date))
         # print(headers)
         time.sleep(1)
-        raw=graphDataReq(k,wh_start,wh_stop,wh_slices)
+        raw=graphDataReq(k,str(wh_start),str(wh_stop),str(wh_slices))
         raw_pd = pd.DataFrame(raw)
         rawData[k]=raw_pd
         print('-------------')
@@ -52,18 +53,17 @@ def changeData(rawData):
     data={}
     for k,v in rawData.items():
         wykres=v
-        wykres['x'] = pd.to_datetime(wykres['x'], unit='ms').dt.tz_localize('UTC').dt.tz_convert('Europe/Warsaw')
-
+        # wykres['x'] = pd.to_datetime(wykres['x'], unit='ms').dt.tz_localize('UTC').dt.tz_convert('Europe/Warsaw')
+        wykres['x'] = pd.to_datetime(hmi.string_time(wykres['x']/1000))
         wykres=cut_data(wykres) # usuniecie danych z poprzedniego i nastepnego dnia
-
         old_names = wykres.columns.tolist()
+        old_names.remove('x')
         new_names = ['{}_{}'.format(i, regList['title_y'].loc[i]) for i in old_names if i != 'x']
         wykres.rename(columns=dict(zip(old_names, new_names)), inplace=True)
-        wykres.head()
+
         wind = pd.DataFrame(dict([(('Time', ''), wykres['x'])]))
         dd = [wind]
-        # dd=[]
-        # print(wykres.keys().tolist())
+
         for i in wykres.keys():
             if i != 'x':
                 vals = ['min', 'avg', 'max']

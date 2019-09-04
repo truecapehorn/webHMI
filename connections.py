@@ -2,6 +2,8 @@
 import pandas as pd
 from API_webHMI import *
 from head import headers, device_adress
+from settings import hmi
+
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
@@ -14,7 +16,7 @@ pd.set_option('display.max_rows', None)
 def conn():
     print('1: Connection Req\n')
     # displayHeader(headers)
-    req1 = connectionList(device_adress, headers)  # pobranie listy polaczen plc.
+    req1 = hmi.make_req('connectionList') # pobranie listy polaczen plc.
     return req1
 
 
