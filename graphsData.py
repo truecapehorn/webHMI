@@ -2,10 +2,8 @@ from main import hmi
 import graphsList
 import pandas as pd
 from registers import regList
-# %matplotlib inline
-import matplotlib.pyplot as plt
 from dataRange import make_date
-
+import time
 
 
 def graphDataReq(k,X_WH_START,X_WH_END,X_WH_SLICES):
@@ -35,13 +33,13 @@ def datas(graphsDict,wh_start=1557691200, wh_slices=200, lenght=1):
     date=make_date(wh_start)
     print('\nDane z wykresow dla dnia : ', date )
     rawData = {}
-    headers = head(wh_start, wh_slices, lenght)
+    wh_stop = wh_start + 7200 + lenght * 60 * 60 * 24
     # stworzenie slownika z danymi wykresow
     for k in graphsDict.keys():
         print('Pobranie wykresu {} : {} w {} dla dnia {}'.format(k, graphsDict[k]['category'], graphsDict[k]['apartment'], date))
         # print(headers)
         time.sleep(1)
-        raw=graphDataReq(k,wh_start,wh_end,wh_slices)
+        raw=graphDataReq(k,wh_start,wh_stop,wh_slices)
         raw_pd = pd.DataFrame(raw)
         rawData[k]=raw_pd
         print('-------------')
