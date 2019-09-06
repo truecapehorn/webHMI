@@ -53,8 +53,7 @@ def changeData(rawData):
     data={}
     for k,v in rawData.items():
         wykres=v
-        # wykres['x'] = pd.to_datetime(wykres['x'], unit='ms').dt.tz_localize('UTC').dt.tz_convert('Europe/Warsaw')
-        wykres['x'] = pd.to_datetime(hmi.string_time(wykres['x']/1000))
+        wykres['x'] = pd.to_datetime(wykres['x'], unit='ms').dt.tz_localize('UTC').dt.tz_convert('Europe/Warsaw')
         wykres=cut_data(wykres) # usuniecie danych z poprzedniego i nastepnego dnia
         old_names = wykres.columns.tolist()
         old_names.remove('x')

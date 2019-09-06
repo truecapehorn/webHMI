@@ -1,5 +1,5 @@
 import datetime
-import time, json
+import json
 import pytz
 import sys
 

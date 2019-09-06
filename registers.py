@@ -1,6 +1,4 @@
-from API_webHMI import *
-from defs import csv_writer
-from head import headers, device_adress
+
 import pandas as pd
 from connections import connections
 from settings import hmi
@@ -10,7 +8,7 @@ import os
 
 # req2=[]
 
-regList = {}
+# regList = {}
 
 
 def reg():

@@ -1,6 +1,5 @@
-import csv, os
+import os
 
-import pandas as pd
 
 def displayHeader(dic):
     print('\nHeader')

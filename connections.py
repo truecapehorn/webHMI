@@ -1,7 +1,5 @@
 
 import pandas as pd
-from API_webHMI import *
-from head import headers, device_adress
 from settings import hmi
 
 
