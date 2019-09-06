@@ -12,6 +12,7 @@ numpy = "*"
 matplotlib = "*"
 jupyter = "*"
 pyinstaller = "*"
+pywin32 = "*"
 
 [requires]
 python_version = "3.7"
