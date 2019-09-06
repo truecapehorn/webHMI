@@ -1,28 +1,21 @@
-from API_webHMI import *
-from head import headers, device_adress
 import graphsList
 import pandas as pd
 from registers import regList
-# %matplotlib inline
-import matplotlib.pyplot as plt
 from dataRange import make_date
+import time
+from settings import hmi
 
 
-def head(wh_start=1547078400, wh_slices=4, lenght=1):
-    # Ustalenie nagłowka dla wykresu
-    wh_stop = wh_start+7200 + lenght * 60 * 60 * 24
-    headers['X-WH-CONNS'] = ''
-    headers['X-WH-REGS'] = ''
-    headers['X-WH-START'] = str(wh_start)
-    headers['X-WH-END'] = str(wh_stop)
-    headers['X-WH-SLICES'] = str(wh_slices)
-    return headers
 
-
-def graphDataReq(headers, k):
+def graphDataReq(k,X_WH_START,X_WH_END,X_WH_SLICES):
     print('\n4 :Graph Data Req\n')
     # displayHeader(headers)  # wystarczy podstawowy naglowek
-    req4 = getGraph(device_adress, headers, k)  # odczytanie danych z wykresow
+    req4 = hmi.make_req('getGraphData',
+                        response=False,
+                        ID=k,
+                        X_WH_START=X_WH_START,
+                        X_WH_END=X_WH_END,
+                        X_WH_SLICES=X_WH_SLICES)  # odczytanie danych z wykresow
     return req4
 
 
@@ -41,13 +34,13 @@ def datas(graphsDict,wh_start=1557691200, wh_slices=200, lenght=1):
     date=make_date(wh_start)
     print('\nDane z wykresow dla dnia : ', date )
     rawData = {}
-    headers = head(wh_start, wh_slices, lenght)
+    wh_stop = wh_start + 7200 + lenght * 60 * 60 * 24
     # stworzenie slownika z danymi wykresow
     for k in graphsDict.keys():
         print('Pobranie wykresu {} : {} w {} dla dnia {}'.format(k, graphsDict[k]['category'], graphsDict[k]['apartment'], date))
         # print(headers)
         time.sleep(1)
-        raw=graphDataReq(headers, k)
+        raw=graphDataReq(k,str(wh_start),str(wh_stop),str(wh_slices))
         raw_pd = pd.DataFrame(raw)
         rawData[k]=raw_pd
         print('-------------')
@@ -61,17 +54,15 @@ def changeData(rawData):
     for k,v in rawData.items():
         wykres=v
         wykres['x'] = pd.to_datetime(wykres['x'], unit='ms').dt.tz_localize('UTC').dt.tz_convert('Europe/Warsaw')
-
         wykres=cut_data(wykres) # usuniecie danych z poprzedniego i nastepnego dnia
-
         old_names = wykres.columns.tolist()
+        old_names.remove('x')
         new_names = ['{}_{}'.format(i, regList['title_y'].loc[i]) for i in old_names if i != 'x']
         wykres.rename(columns=dict(zip(old_names, new_names)), inplace=True)
-        wykres.head()
+
         wind = pd.DataFrame(dict([(('Time', ''), wykres['x'])]))
         dd = [wind]
-        # dd=[]
-        # print(wykres.keys().tolist())
+
         for i in wykres.keys():
             if i != 'x':
                 vals = ['min', 'avg', 'max']

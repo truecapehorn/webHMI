@@ -1,9 +1,8 @@
-
 import dataRange
 import graphsData
 import dataSave
 import graphsList
-from datetime import datetime
+
 
 
 '''
@@ -20,6 +19,7 @@ Obsluga danych z wykresow na webHMI. Dane połaczenia w pliku head.py
 # exec bedzie w folderze dist
 
 '''
+
 
 
 print(40 * '-')
