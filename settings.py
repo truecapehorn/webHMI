@@ -6,7 +6,7 @@ cur_path = os.path.dirname(__file__)
 
 filepath = cur_path+'/setup.json'
 
-
+print(cur_path)
 
 def json_save(path, data):
     with open(path, 'w') as f:
@@ -28,6 +28,7 @@ hmi = ApiWebHmi(device_adress, APIKEY)
 
 
 if __name__ == "__main__":
+    print(cur_path)
     print(data)
     print(APIKEY)
     print(device_adress)

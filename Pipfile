@@ -13,6 +13,7 @@ matplotlib = "*"
 jupyter = "*"
 pyinstaller = "*"
 pywin32 = "*"
+cython = "*"
 
 [requires]
 python_version = "3.7"
