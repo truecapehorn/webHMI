@@ -7,13 +7,11 @@ verify_ssl = true
 
 [packages]
 requests = "*"
-pandas = "*"
-numpy = "*"
 matplotlib = "*"
 jupyter = "*"
-pyinstaller = "*"
-pywin32 = "*"
-cython = "*"
+numpy = "*"
+pytz = "*"
+pandas = "*"
 
 [requires]
 python_version = "3.7"
