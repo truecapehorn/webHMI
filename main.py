@@ -16,6 +16,7 @@ Obsluga danych z wykresow na webHMI. Dane połaczenia w pliku head.py
 # python your_script.py
 # uruchmoc pyinstalera
 # pyinstaller --onefile <your_script_name>.py
+# lub : pyinstaller --name webHMI main.py
 # exec bedzie w folderze dist
 
 '''
