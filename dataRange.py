@@ -1,11 +1,9 @@
-import datetime
 import json
-import pytz
 import sys
 
 filepath = 'setup.json'  # link do pliku z ustawieniami !!
 
-local_tz = pytz.timezone ('Europe/Warsaw')
+# local_tz = pytz.timezone ('Europe/Warsaw')
 
 from settings import hmi
 
@@ -19,7 +17,7 @@ def json_read(path):
 
 
 def make_date(unixtime):
-    date = datetime.datetime.fromtimestamp(int(unixtime+7200)).strftime('%Y-%m-%d')
+    date = hmi.string_time(unixtime+7200)
     return date
 
 def range():
