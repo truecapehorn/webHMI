@@ -12,6 +12,7 @@ jupyter = "*"
 numpy = "*"
 pytz = "*"
 pandas = "*"
+pendulum = "*"
 
 [requires]
 python_version = "3.7"
