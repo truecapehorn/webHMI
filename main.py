@@ -16,8 +16,10 @@ Obsluga danych z wykresow na webHMI. Dane połaczenia w pliku head.py
 # python your_script.py
 # uruchmoc pyinstalera
 # pyinstaller --onefile <your_script_name>.py
-# lub : pyinstaller --name webHMI main.py
+# lub : pyinstaller --name webHMI_v08 main.py
 # exec bedzie w folderze dist
+
+#dla pendelum nalezy skopiowac pliki hook do: C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python37-32\\Lib\\site-packages\\PyInstaller\\hooks
 
 '''
 
