@@ -9,7 +9,7 @@ import pandas as pd
 
 def save_data(day, graphDatas):
 
-    log_dir = 'logi/dane_{}'.format(day)
+    log_dir = 'logi/dane_{}'.format(day[:10])
     log_dir = log_dir.replace('/', os.sep)
     try:
         os.makedirs(log_dir)
