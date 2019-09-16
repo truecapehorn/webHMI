@@ -9,7 +9,7 @@ import graphsList
 Obsluga danych z wykresow na webHMI. Dane połaczenia w pliku head.py
 
 # aby zrobic exeka to :
-# zaisntalowac pyinstalera
+# zaisntalowac pyinstalera2019-
 # pip install pyinstaller
 # pip install PyWin32 # jak w windows
 # Sprawdzic czy skrypt działa
